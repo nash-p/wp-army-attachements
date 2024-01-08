@@ -1,9 +1,13 @@
+###############
+## EQUIPMENT ##
+###############
+## TIER 1
 attachment_trait_jet_pack = {
+	# Jet packs
 	veteran_class_locked_trait = yes
 	inline_script = {
 		script = trait/icon
 		CLASS = commander
-		ICON = "GFX_attachment_mechanical"
 		RARITY = veteran
 		COUNCIL = no
 		TIER = 1
@@ -47,5 +51,741 @@ attachment_trait_jet_pack = {
 	}
 	prerequisites = {
 		tech_attachment_jet_pack
+	}
+}
+
+attachment_trait_power_armour = {
+	# Power Armor
+	veteran_class_locked_trait = yes
+	inline_script = {
+		script = trait/icon
+		CLASS = commander
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 1
+	}
+	icon = "gfx/interface/icons/army_attachments/attachment_mechanical.dds"
+	army_modifier = {
+		army_damage_mult = 0.05
+		#army_morale_damage_mult = 0.0
+		#army_collateral_damage_mult = 0.0
+		army_health = 0.1
+		#army_morale = 0.0
+		#army_disengage_chance_mult = 0.0
+		#armies_upkeep_mult = -0.0
+	}
+	leader_potential_add = {
+		has_paragon_dlc = yes
+		has_trait = subclass_commander_general
+	}
+	leader_class = {
+		commander
+	}
+	opposites = {
+		attachment_trait_jet_pack
+		#"attachment_trait_power_armour"
+		attachment_trait_chemical_stimulant
+		attachment_trait_combat_software_1
+		attachment_trait_flame_thrower
+		attachment_trait_shield_unit
+		attachment_trait_slave_collar
+		attachment_trait_nerve_armour
+		attachment_trait_cybernetic_replacement
+		attachment_trait_combat_software_2
+		attachment_trait_inversion_grenade
+		attachment_trait_chemical_thrower
+		attachment_trait_dark_matter_blade
+		attachment_trait_living_metal_armour
+		attachment_trait_mini_nuke
+	}
+	selectable_weight = {
+		weight = 999
+	}
+	prerequisites = {
+		tech_attachment_power_armour
+	}
+}
+
+attachment_trait_chemical_stimulant = {
+	# Chem stims
+	veteran_class_locked_trait = yes
+	inline_script = {
+		script = trait/icon
+		CLASS = commander
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 1
+	}
+	icon = "gfx/interface/icons/army_attachments/attachment_genetic.dds"
+	army_modifier = {
+		#army_damage_mult = 0.0
+		#army_morale_damage_mult = 0.0
+		#army_collateral_damage_mult = 0.0
+		army_health = 0.2
+		army_morale = -0.05
+		#army_disengage_chance_mult = 0.0
+		#armies_upkeep_mult = -0.0
+	}
+	leader_potential_add = {
+		has_paragon_dlc = yes
+		has_trait = subclass_commander_general
+	}
+	leader_class = {
+		commander
+	}
+	opposites = {
+		attachment_trait_jet_pack
+		attachment_trait_power_armour
+		#"attachment_trait_chemical_stimulant"
+		attachment_trait_combat_software_1
+		attachment_trait_flame_thrower
+		attachment_trait_shield_unit
+		attachment_trait_slave_collar
+		attachment_trait_nerve_armour
+		attachment_trait_cybernetic_replacement
+		attachment_trait_combat_software_2
+		attachment_trait_inversion_grenade
+		attachment_trait_chemical_thrower
+		attachment_trait_dark_matter_blade
+		attachment_trait_living_metal_armour
+		attachment_trait_mini_nuke
+	}
+	selectable_weight = {
+		weight = 999
+	}
+	prerequisites = {
+		tech_attachment_chemical_stimulant
+	}
+}
+
+## TIER 2
+attachment_trait_combat_software_1 = {
+	# Combat Software 1.0
+	veteran_class_locked_trait = yes
+	inline_script = {
+		script = trait/icon
+		CLASS = commander
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 1
+	}
+	icon = "gfx/interface/icons/army_attachments/attachment_mechanical.dds"
+	army_modifier = {
+		army_damage_mult = 0.1
+		#army_morale_damage_mult = 0.0
+		army_collateral_damage_mult = 0.5
+		#army_health = 0.0
+		#army_morale = 0.0
+		army_disengage_chance_mult = 0.1
+		#armies_upkeep_mult = -0.0
+	}
+	leader_potential_add = {
+		has_paragon_dlc = yes
+		has_trait = subclass_commander_general
+	}
+	leader_class = {
+		commander
+	}
+	opposites = {
+		attachment_trait_jet_pack
+		attachment_trait_power_armour
+		attachment_trait_chemical_stimulant
+		#attachment_trait_combat_software_1
+		attachment_trait_flame_thrower
+		attachment_trait_shield_unit
+		attachment_trait_slave_collar
+		attachment_trait_nerve_armour
+		attachment_trait_cybernetic_replacement
+		attachment_trait_combat_software_2
+		attachment_trait_inversion_grenade
+		attachment_trait_chemical_thrower
+		attachment_trait_dark_matter_blade
+		attachment_trait_living_metal_armour
+		attachment_trait_mini_nuke
+	}
+	selectable_weight = {
+		weight = 999
+	}
+	prerequisites = {
+		tech_attachment_combat_software_1
+	}
+}
+
+attachment_trait_flame_thrower = {
+	# Flamer
+	veteran_class_locked_trait = yes
+	inline_script = {
+		script = trait/icon
+		CLASS = commander
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 1
+	}
+	icon = "gfx/interface/icons/army_attachments/attachment_mechanical.dds"
+	army_modifier = {
+		army_damage_mult = 0.3
+		#army_morale_damage_mult = 0.0
+		#army_collateral_damage_mult = 0.0
+		army_health = -0.1
+		#army_morale = 0.0
+		#army_disengage_chance_mult = 0.0
+		#armies_upkeep_mult = -0.0
+	}
+	leader_potential_add = {
+		has_paragon_dlc = yes
+		has_trait = subclass_commander_general
+	}
+	leader_class = {
+		commander
+	}
+	opposites = {
+		attachment_trait_jet_pack
+		attachment_trait_power_armour
+		attachment_trait_chemical_stimulant
+		attachment_trait_combat_software_1
+		#"attachment_trait_flame_thrower"
+		attachment_trait_shield_unit
+		attachment_trait_slave_collar
+		attachment_trait_nerve_armour
+		attachment_trait_cybernetic_replacement
+		attachment_trait_combat_software_2
+		attachment_trait_inversion_grenade
+		attachment_traiSt_chemical_thrower
+		attachment_trait_dark_matter_blade
+		attachment_trait_living_metal_armour
+		attachment_trait_mini_nuke
+	}
+	selectable_weight = {
+		weight = 999
+	}
+	prerequisites = {
+		tech_attachment_flame_thrower
+	}
+}
+
+attachment_trait_shield_unit = {
+	# Personal shields
+	veteran_class_locked_trait = yes
+	inline_script = {
+		script = trait/icon
+		CLASS = commander
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 1
+	}
+	icon = "gfx/interface/icons/army_attachments/attachment_shield.dds"
+	army_modifier = {
+		#army_damage_mult = 0.0
+		#army_morale_damage_mult = 0.0
+		#army_collateral_damage_mult = 0.0
+		army_health = 0.25
+		#army_morale = 0.0
+		#army_disengage_chance_mult = 0.0
+		#armies_upkeep_mult = -0.0
+	}
+	leader_potential_add = {
+		has_paragon_dlc = yes
+		has_trait = subclass_commander_general
+	}
+	leader_class = {
+		commander
+	}
+	opposites = {
+		attachment_trait_jet_pack
+		attachment_trait_power_armour
+		attachment_trait_chemical_stimulant
+		attachment_trait_combat_software_1
+		attachment_trait_flame_thrower
+		#"attachment_trait_shield_unit"
+		attachment_trait_slave_collar
+		attachment_trait_nerve_armour
+		attachment_trait_cybernetic_replacement
+		attachment_trait_combat_software_2
+		attachment_trait_inversion_grenade
+		attachment_trait_chemical_thrower
+		attachment_trait_dark_matter_blade
+		attachment_trait_living_metal_armour
+		attachment_trait_mini_nuke
+	}
+	selectable_weight = {
+		weight = 999
+	}
+	prerequisites = {
+		tech_attachment_personal_shield_unit
+	}
+}
+
+## TIER 3
+attachment_trait_slave_collar = {
+	# Slave collars
+	veteran_class_locked_trait = yes
+	inline_script = {
+		script = trait/icon
+		CLASS = commander
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 1
+	}
+	icon = "gfx/interface/icons/army_attachments/attachment_slaves.dds"
+	army_modifier = {
+		army_damage_mult = 0.3
+		#army_morale_damage_mult = 0.0
+		army_collateral_damage_mult = 0.25
+		#army_health = 0.0
+		army_morale = -0.2
+		#army_disengage_chance_mult = 0.0
+		#armies_upkeep_mult = -0.0
+	}
+	leader_potential_add = {
+		has_paragon_dlc = yes
+		has_trait = subclass_commander_general
+	}
+	leader_class = {
+		commander
+	}
+	opposites = {
+		attachment_trait_jet_pack
+		attachment_trait_power_armour
+		attachment_trait_chemical_stimulant
+		attachment_trait_combat_software_1
+		attachment_trait_flame_thrower
+		attachment_trait_shield_unit
+		#"attachment_trait_slave_collar"
+		attachment_trait_nerve_armour
+		attachment_trait_cybernetic_replacement
+		attachment_trait_combat_software_2
+		attachment_trait_inversion_grenade
+		attachment_trait_chemical_thrower
+		attachment_trait_dark_matter_blade
+		attachment_trait_living_metal_armour
+		attachment_trait_mini_nuke
+	}
+	selectable_weight = {
+		weight = 999
+	}
+	prerequisites = {
+		tech_attachment_exploding_slave_collar
+	}
+}
+
+attachment_trait_nerve_armour = {
+	# Nerve armor
+	veteran_class_locked_trait = yes
+	inline_script = {
+		script = trait/icon
+		CLASS = commander
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 1
+	}
+	icon = "gfx/interface/icons/army_attachments/attachment_genetic.dds"
+	army_modifier = {
+		army_damage_mult = 0.1
+		#army_morale_damage_mult = 0.0
+		#army_collateral_damage_mult = 0.0
+		army_health = 0.25
+		#army_morale = 0.0
+		#army_disengage_chance_mult = 0.0
+		#armies_upkeep_mult = -0.0
+	}
+	leader_potential_add = {
+		has_paragon_dlc = yes
+		has_trait = subclass_commander_general
+	}
+	leader_class = {
+		commander
+	}
+	opposites = {
+		attachment_trait_jet_pack
+		attachment_trait_power_armour
+		attachment_trait_chemical_stimulant
+		attachment_trait_combat_software_1
+		attachment_trait_flame_thrower
+		attachment_trait_shield_unit
+		attachment_trait_slave_collar
+		#"attachment_trait_nerve_armour"
+		attachment_trait_cybernetic_replacement
+		attachment_trait_combat_software_2
+		attachment_trait_inversion_grenade
+		attachment_trait_chemical_thrower
+		attachment_trait_dark_matter_blade
+		attachment_trait_living_metal_armour
+		attachment_trait_mini_nuke
+	}
+	selectable_weight = {
+		weight = 999
+	}
+	prerequisites = {
+		tech_attachment_nerve_link_armour
+	}
+}
+
+attachment_trait_cybernetic_replacement = {
+	# Cybernetic replacements
+	veteran_class_locked_trait = yes
+	inline_script = {
+		script = trait/icon
+		CLASS = commander
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 1
+	}
+	icon = "gfx/interface/icons/army_attachments/attachment_mechanical.dds"
+	army_modifier = {
+		army_damage_mult = 0.15
+		#army_morale_damage_mult = 0.0
+		#army_collateral_damage_mult = 0.0
+		army_health = 0.1
+		army_morale = 0.1
+		#army_disengage_chance_mult = 0.0
+		#armies_upkeep_mult = -0.0
+	}
+	leader_potential_add = {
+		has_paragon_dlc = yes
+		has_trait = subclass_commander_general
+	}
+	leader_class = {
+		commander
+	}
+	opposites = {
+		attachment_trait_jet_pack
+		attachment_trait_power_armour
+		attachment_trait_chemical_stimulant
+		attachment_trait_combat_software_1
+		attachment_trait_flame_thrower
+		attachment_trait_shield_unit
+		attachment_trait_slave_collar
+		attachment_trait_nerve_armour
+		#"attachment_trait_cybernetic_replacement"
+		attachment_trait_combat_software_2
+		attachment_trait_inversion_grenade
+		attachment_trait_chemical_thrower
+		attachment_trait_dark_matter_blade
+		attachment_trait_living_metal_armour
+		attachment_trait_mini_nuke
+	}
+	selectable_weight = {
+		weight = 999
+	}
+	prerequisites = {
+		tech_attachment_cybernetic_replacement
+	}
+}
+
+## TIER 4
+attachment_trait_combat_software_2 = {
+	# Combat software 2.0
+	veteran_class_locked_trait = yes
+	inline_script = {
+		script = trait/icon
+		CLASS = commander
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 1
+	}
+	icon = "gfx/interface/icons/army_attachments/attachment_mechanical.dds"
+	army_modifier = {
+		army_damage_mult = 0.2
+		#army_morale_damage_mult = 0.0
+		army_collateral_damage_mult = 0.1
+		#army_health = 0.0
+		#army_morale = 0.0
+		army_disengage_chance_mult = 0.15
+		#armies_upkeep_mult = -0.0
+	}
+	leader_potential_add = {
+		has_paragon_dlc = yes
+		has_trait = subclass_commander_general
+	}
+	leader_class = {
+		commander
+	}
+	opposites = {
+		attachment_trait_jet_pack
+		attachment_trait_power_armour
+		attachment_trait_chemical_stimulant
+		attachment_trait_combat_software_1
+		attachment_trait_flame_thrower
+		attachment_trait_shield_unit
+		attachment_trait_slave_collar
+		attachment_trait_nerve_armour
+		attachment_trait_cybernetic_replacement
+		#attachment_trait_combat_software_2
+		attachment_trait_inversion_grenade
+		attachment_trait_chemical_thrower
+		attachment_trait_dark_matter_blade
+		attachment_trait_living_metal_armour
+		attachment_trait_mini_nuke
+	}
+	selectable_weight = {
+		weight = 999
+	}
+	prerequisites = {
+		tech_attachment_combat_software_2
+	}
+}
+
+
+attachment_trait_inversion_grenade = {
+	# Inversion grenade
+	veteran_class_locked_trait = yes
+	inline_script = {
+		script = trait/icon
+		CLASS = commander
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 1
+	}
+	icon = "gfx/interface/icons/army_attachments/attachment_mechanical.dds"
+	army_modifier = {
+		army_damage_mult = 0.15
+		#army_morale_damage_mult = 0.0
+		army_collateral_damage_mult = 0.3
+		#army_health = 0.0
+		#army_morale = 0.0
+		#army_disengage_chance_mult = 0.0
+		#armies_upkeep_mult = -0.0
+	}
+	leader_potential_add = {
+		has_paragon_dlc = yes
+		has_trait = subclass_commander_general
+	}
+	leader_class = {
+		commander
+	}
+	opposites = {
+		attachment_trait_jet_pack
+		attachment_trait_power_armour
+		attachment_trait_chemical_stimulant
+		attachment_trait_combat_software_1
+		attachment_trait_flame_thrower
+		attachment_trait_shield_unit
+		attachment_trait_slave_collar
+		attachment_trait_nerve_armour
+		attachment_trait_cybernetic_replacement
+		attachment_trait_combat_software_2
+		#attachment_trait_inversion_grenade
+		attachment_trait_chemical_thrower
+		attachment_trait_dark_matter_blade
+		attachment_trait_living_metal_armour
+		attachment_trait_mini_nuke
+	}
+	selectable_weight = {
+		weight = 999
+	}
+	prerequisites = {
+		tech_attachment_inversion_grenade
+	}
+}
+
+
+attachment_trait_chemical_thrower = {
+	# Chemical thrower
+	veteran_class_locked_trait = yes
+	inline_script = {
+		script = trait/icon
+		CLASS = commander
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 1
+	}
+	icon = "gfx/interface/icons/army_attachments/attachment_mechanical.dds"
+	army_modifier = {
+		army_damage_mult = 0.25
+		army_morale_damage_mult = 0.1
+		army_collateral_damage_mult = 0.1
+		#army_health = 0.0
+		#army_morale = 0.0
+		#army_disengage_chance_mult = 0.0
+		#armies_upkeep_mult = -0.0
+	}
+	leader_potential_add = {
+		has_paragon_dlc = yes
+		has_trait = subclass_commander_general
+	}
+	leader_class = {
+		commander
+	}
+	opposites = {
+		attachment_trait_jet_pack
+		attachment_trait_power_armour
+		attachment_trait_chemical_stimulant
+		attachment_trait_combat_software_1
+		attachment_trait_flame_thrower
+		attachment_trait_shield_unit
+		attachment_trait_slave_collar
+		attachment_trait_nerve_armour
+		attachment_trait_cybernetic_replacement
+		attachment_trait_combat_software_2
+		attachment_trait_inversion_grenade
+		#attachment_trait_chemical_thrower
+		attachment_trait_dark_matter_blade
+		attachment_trait_living_metal_armour
+		attachment_trait_mini_nuke
+	}
+	selectable_weight = {
+		weight = 999
+	}
+	prerequisites = {
+		tech_attachment_chemical_thrower
+	}
+}
+
+attachment_trait_dark_matter_blade = {
+	# Dark matter blade
+	veteran_class_locked_trait = yes
+	inline_script = {
+		script = trait/icon
+		CLASS = commander
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 1
+	}
+	icon = "gfx/interface/icons/army_attachments/attachment_shield.dds"
+	army_modifier = {
+		army_damage_mult = 0.55
+		army_morale_damage_mult = 0.25
+		#army_collateral_damage_mult = 0.0
+		#army_health = 0.0
+		#army_morale = 0.0
+		army_disengage_chance_mult = -0.2
+		#armies_upkeep_mult = -0.0
+	}
+	leader_potential_add = {
+		has_paragon_dlc = yes
+		has_trait = subclass_commander_general
+	}
+	leader_class = {
+		commander
+	}
+	opposites = {
+		attachment_trait_jet_pack
+		attachment_trait_power_armour
+		attachment_trait_chemical_stimulant
+		attachment_trait_combat_software_1
+		attachment_trait_flame_thrower
+		attachment_trait_shield_unit
+		attachment_trait_slave_collar
+		attachment_trait_nerve_armour
+		attachment_trait_cybernetic_replacement
+		attachment_trait_combat_software_2
+		attachment_trait_inversion_grenade
+		attachment_trait_chemical_thrower
+		#attachment_trait_dark_matter_blade
+		attachment_trait_living_metal_armour
+		attachment_trait_mini_nuke
+	}
+	selectable_weight = {
+		weight = 999
+	}
+	prerequisites = {
+		tech_attachment_dark_matter_blade
+	}
+}
+
+
+## TIER 5
+attachment_trait_living_metal_armour = {
+	# Living armor
+	veteran_class_locked_trait = yes
+	inline_script = {
+		script = trait/icon
+		CLASS = commander
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 1
+	}
+	icon = "gfx/interface/icons/army_attachments/attachment_shield.dds"
+	army_modifier = {
+		#army_damage_mult = 0.0
+		#army_morale_damage_mult = 0.0
+		#army_collateral_damage_mult = 0.0
+		army_health = 0.7
+		army_morale = 0.1
+		#army_disengage_chance_mult = 0.0
+		armies_upkeep_mult = 0.2
+	}
+	leader_potential_add = {
+		has_paragon_dlc = yes
+		has_trait = subclass_commander_general
+	}
+	leader_class = {
+		commander
+	}
+	opposites = {
+		attachment_trait_jet_pack
+		attachment_trait_power_armour
+		attachment_trait_chemical_stimulant
+		attachment_trait_combat_software_1
+		attachment_trait_flame_thrower
+		attachment_trait_shield_unit
+		attachment_trait_slave_collar
+		attachment_trait_nerve_armour
+		attachment_trait_cybernetic_replacement
+		attachment_trait_combat_software_2
+		attachment_trait_inversion_grenade
+		attachment_trait_chemical_thrower
+		attachment_trait_dark_matter_blade
+		#attachment_trait_living_metal_armour
+		attachment_trait_mini_nuke
+	}
+	selectable_weight = {
+		weight = 999
+	}
+	prerequisites = {
+		tech_attachment_living_metal_armour
+	}
+}
+
+
+attachment_trait_mini_nuke = {
+	# Mini nuke
+	veteran_class_locked_trait = yes
+	inline_script = {
+		script = trait/icon
+		CLASS = commander
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 1
+	}
+	icon = "gfx/interface/icons/army_attachments/attachment_mechanical.dds"
+	army_modifier = {
+		army_damage_mult = 0.2
+		#army_morale_damage_mult = 0.0
+		army_collateral_damage_mult = 0.6
+		#army_health = 0.0
+		#army_morale = 0.0
+		#army_disengage_chance_mult = 0.0
+		armies_upkeep_mult = 0.2
+	}
+	leader_potential_add = {
+		has_paragon_dlc = yes
+		has_trait = subclass_commander_general
+	}
+	leader_class = {
+		commander
+	}
+	opposites = {
+		attachment_trait_jet_pack
+		attachment_trait_power_armour
+		attachment_trait_chemical_stimulant
+		attachment_trait_combat_software_1
+		attachment_trait_flame_thrower
+		attachment_trait_shield_unit
+		attachment_trait_slave_collar
+		attachment_trait_nerve_armour
+		attachment_trait_cybernetic_replacement
+		attachment_trait_combat_software_2
+		attachment_trait_inversion_grenade
+		attachment_trait_chemical_thrower
+		attachment_trait_dark_matter_blade
+		attachment_trait_living_metal_armour
+		#attachment_trait_mini_nuke
+	}
+	selectable_weight = {
+		weight = 999
+	}
+	prerequisites = {
+		tech_attachment_mini_nuke
 	}
 }
