@@ -1,0 +1,3 @@
+# Base weight for attachement traits
+@wp_army_attachement_trait_weight = 200
+# EOF Comment

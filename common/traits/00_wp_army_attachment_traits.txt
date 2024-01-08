@@ -14,12 +14,12 @@ attachment_trait_jet_pack = {
 	}
 	icon = "gfx/interface/icons/army_attachments/attachment_mechanical.dds"
 	army_modifier = {
-		army_damage_mult = 0.1
+		army_damage_mult = 0.05
 		#army_morale_damage_mult = 0.0
 		#army_collateral_damage_mult = 0.0
-		#army_health = 0.0
+		army_health = -0.05
 		#army_morale = 0.0
-		army_disengage_chance_mult = 0.05
+		army_disengage_chance_mult = 0.1
 		#armies_upkeep_mult = -0.0
 	}
 	leader_class = {
@@ -66,13 +66,13 @@ attachment_trait_power_armour = {
 	}
 	icon = "gfx/interface/icons/army_attachments/attachment_mechanical.dds"
 	army_modifier = {
-		army_damage_mult = 0.05
+		army_damage_mult = 0.1
 		#army_morale_damage_mult = 0.0
 		#army_collateral_damage_mult = 0.0
 		army_health = 0.1
 		#army_morale = 0.0
-		#army_disengage_chance_mult = 0.0
-		#armies_upkeep_mult = -0.0
+		army_disengage_chance_mult = -0.1
+		armies_upkeep_mult = 0.05
 	}
 	leader_potential_add = {
 		has_paragon_dlc = yes
@@ -89,13 +89,13 @@ attachment_trait_power_armour = {
 		attachment_trait_flame_thrower
 		attachment_trait_shield_unit
 		attachment_trait_slave_collar
-		attachment_trait_nerve_armour
+		#attachment_trait_nerve_armour
 		attachment_trait_cybernetic_replacement
 		attachment_trait_combat_software_2
 		attachment_trait_inversion_grenade
 		attachment_trait_chemical_thrower
 		attachment_trait_dark_matter_blade
-		attachment_trait_living_metal_armour
+		#attachment_trait_living_metal_armour
 		attachment_trait_mini_nuke
 	}
 	selectable_weight = {
@@ -160,7 +160,7 @@ attachment_trait_chemical_stimulant = {
 
 ## TIER 2
 attachment_trait_combat_software_1 = {
-	# Combat Software 1.0
+	# Combat Software 1.1
 	veteran_class_locked_trait = yes
 	inline_script = {
 		script = trait/icon
@@ -195,8 +195,8 @@ attachment_trait_combat_software_1 = {
 		attachment_trait_shield_unit
 		attachment_trait_slave_collar
 		attachment_trait_nerve_armour
-		attachment_trait_cybernetic_replacement
-		attachment_trait_combat_software_2
+		#attachment_trait_cybernetic_replacement
+		#attachment_trait_combat_software_2
 		attachment_trait_inversion_grenade
 		attachment_trait_chemical_thrower
 		attachment_trait_dark_matter_blade
@@ -250,10 +250,10 @@ attachment_trait_flame_thrower = {
 		attachment_trait_cybernetic_replacement
 		attachment_trait_combat_software_2
 		attachment_trait_inversion_grenade
-		attachment_traiSt_chemical_thrower
+		#attachment_traiSt_chemical_thrower
 		attachment_trait_dark_matter_blade
 		attachment_trait_living_metal_armour
-		attachment_trait_mini_nuke
+		#attachment_trait_mini_nuke
 	}
 	selectable_weight = {
 		weight = 999
@@ -371,12 +371,15 @@ attachment_trait_slave_collar = {
 attachment_trait_nerve_armour = {
 	# Nerve armor
 	veteran_class_locked_trait = yes
+	replace_traits = {
+		"attachment_trait_power_armour"
+	}
 	inline_script = {
 		script = trait/icon
 		CLASS = commander
 		RARITY = veteran
 		COUNCIL = no
-		TIER = 1
+		TIER = 2
 	}
 	icon = "gfx/interface/icons/army_attachments/attachment_genetic.dds"
 	army_modifier = {
@@ -397,19 +400,19 @@ attachment_trait_nerve_armour = {
 	}
 	opposites = {
 		attachment_trait_jet_pack
-		attachment_trait_power_armour
+		#attachment_trait_power_armour
 		attachment_trait_chemical_stimulant
 		attachment_trait_combat_software_1
 		attachment_trait_flame_thrower
 		attachment_trait_shield_unit
 		attachment_trait_slave_collar
-		#"attachment_trait_nerve_armour"
+		#attachment_trait_nerve_armour
 		attachment_trait_cybernetic_replacement
 		attachment_trait_combat_software_2
 		attachment_trait_inversion_grenade
 		attachment_trait_chemical_thrower
 		attachment_trait_dark_matter_blade
-		attachment_trait_living_metal_armour
+		#attachment_trait_living_metal_armour
 		attachment_trait_mini_nuke
 	}
 	selectable_weight = {
@@ -422,13 +425,16 @@ attachment_trait_nerve_armour = {
 
 attachment_trait_cybernetic_replacement = {
 	# Cybernetic replacements
+	replace_traits = {
+		"attachment_trait_combat_software_1"
+	}
 	veteran_class_locked_trait = yes
 	inline_script = {
 		script = trait/icon
 		CLASS = commander
 		RARITY = veteran
 		COUNCIL = no
-		TIER = 1
+		TIER = 2
 	}
 	icon = "gfx/interface/icons/army_attachments/attachment_mechanical.dds"
 	army_modifier = {
@@ -451,13 +457,13 @@ attachment_trait_cybernetic_replacement = {
 		attachment_trait_jet_pack
 		attachment_trait_power_armour
 		attachment_trait_chemical_stimulant
-		attachment_trait_combat_software_1
+		#attachment_trait_combat_software_1
 		attachment_trait_flame_thrower
 		attachment_trait_shield_unit
 		attachment_trait_slave_collar
 		attachment_trait_nerve_armour
-		#"attachment_trait_cybernetic_replacement"
-		attachment_trait_combat_software_2
+		#attachment_trait_cybernetic_replacement
+		#attachment_trait_combat_software_2
 		attachment_trait_inversion_grenade
 		attachment_trait_chemical_thrower
 		attachment_trait_dark_matter_blade
@@ -475,13 +481,16 @@ attachment_trait_cybernetic_replacement = {
 ## TIER 4
 attachment_trait_combat_software_2 = {
 	# Combat software 2.0
+	replace_traits = {
+		"attachment_trait_cybernetic_replacement"
+	}
 	veteran_class_locked_trait = yes
 	inline_script = {
 		script = trait/icon
 		CLASS = commander
 		RARITY = veteran
 		COUNCIL = no
-		TIER = 1
+		TIER = 3
 	}
 	icon = "gfx/interface/icons/army_attachments/attachment_mechanical.dds"
 	army_modifier = {
@@ -504,12 +513,12 @@ attachment_trait_combat_software_2 = {
 		attachment_trait_jet_pack
 		attachment_trait_power_armour
 		attachment_trait_chemical_stimulant
-		attachment_trait_combat_software_1
+		#attachment_trait_combat_software_1
 		attachment_trait_flame_thrower
 		attachment_trait_shield_unit
 		attachment_trait_slave_collar
 		attachment_trait_nerve_armour
-		attachment_trait_cybernetic_replacement
+		#attachment_trait_cybernetic_replacement
 		#attachment_trait_combat_software_2
 		attachment_trait_inversion_grenade
 		attachment_trait_chemical_thrower
@@ -579,13 +588,16 @@ attachment_trait_inversion_grenade = {
 
 attachment_trait_chemical_thrower = {
 	# Chemical thrower
+	replace_traits = {
+		"attachment_trait_flame_thrower"
+	}
 	veteran_class_locked_trait = yes
 	inline_script = {
 		script = trait/icon
 		CLASS = commander
 		RARITY = veteran
 		COUNCIL = no
-		TIER = 1
+		TIER = 2
 	}
 	icon = "gfx/interface/icons/army_attachments/attachment_mechanical.dds"
 	army_modifier = {
@@ -609,7 +621,7 @@ attachment_trait_chemical_thrower = {
 		attachment_trait_power_armour
 		attachment_trait_chemical_stimulant
 		attachment_trait_combat_software_1
-		attachment_trait_flame_thrower
+		#attachment_trait_flame_thrower
 		attachment_trait_shield_unit
 		attachment_trait_slave_collar
 		attachment_trait_nerve_armour
@@ -619,7 +631,7 @@ attachment_trait_chemical_thrower = {
 		#attachment_trait_chemical_thrower
 		attachment_trait_dark_matter_blade
 		attachment_trait_living_metal_armour
-		attachment_trait_mini_nuke
+		#attachment_trait_mini_nuke
 	}
 	selectable_weight = {
 		weight = 999
@@ -629,6 +641,7 @@ attachment_trait_chemical_thrower = {
 	}
 }
 
+## TIER 5
 attachment_trait_dark_matter_blade = {
 	# Dark matter blade
 	veteran_class_locked_trait = yes
@@ -681,16 +694,18 @@ attachment_trait_dark_matter_blade = {
 	}
 }
 
-## TIER 5
 attachment_trait_living_metal_armour = {
 	# Living armor
 	veteran_class_locked_trait = yes
+	replace_traits = {
+		"attachment_trait_nerve_armour"
+	}
 	inline_script = {
 		script = trait/icon
 		CLASS = commander
 		RARITY = veteran
 		COUNCIL = no
-		TIER = 1
+		TIER = 3
 	}
 	icon = "gfx/interface/icons/army_attachments/attachment_shield.dds"
 	army_modifier = {
@@ -711,13 +726,13 @@ attachment_trait_living_metal_armour = {
 	}
 	opposites = {
 		attachment_trait_jet_pack
-		attachment_trait_power_armour
+		#attachment_trait_power_armour
 		attachment_trait_chemical_stimulant
 		attachment_trait_combat_software_1
 		attachment_trait_flame_thrower
 		attachment_trait_shield_unit
 		attachment_trait_slave_collar
-		attachment_trait_nerve_armour
+		#attachment_trait_nerve_armour
 		attachment_trait_cybernetic_replacement
 		attachment_trait_combat_software_2
 		attachment_trait_inversion_grenade
@@ -737,12 +752,15 @@ attachment_trait_living_metal_armour = {
 attachment_trait_mini_nuke = {
 	# Mini nuke
 	veteran_class_locked_trait = yes
+	replace_traits = {
+		"attachment_trait_chemical_thrower"
+	}
 	inline_script = {
 		script = trait/icon
 		CLASS = commander
 		RARITY = veteran
 		COUNCIL = no
-		TIER = 1
+		TIER = 3
 	}
 	icon = "gfx/interface/icons/army_attachments/attachment_mechanical.dds"
 	army_modifier = {
@@ -766,14 +784,14 @@ attachment_trait_mini_nuke = {
 		attachment_trait_power_armour
 		attachment_trait_chemical_stimulant
 		attachment_trait_combat_software_1
-		attachment_trait_flame_thrower
+		#attachment_trait_flame_thrower
 		attachment_trait_shield_unit
 		attachment_trait_slave_collar
 		attachment_trait_nerve_armour
 		attachment_trait_cybernetic_replacement
 		attachment_trait_combat_software_2
 		attachment_trait_inversion_grenade
-		attachment_trait_chemical_thrower
+		#attachment_trait_chemical_thrower
 		attachment_trait_dark_matter_blade
 		attachment_trait_living_metal_armour
 		#attachment_trait_mini_nuke
@@ -804,16 +822,16 @@ attachment_trait_air_defence = {
 		commander
 	}
 	opposites = {
-		#"attachment_trait_air_defence"
-		"attachment_trait_neo_concrete"
-		"attachment_trait_mine_field"
-		"attachment_trait_missile_pylon"
-		"attachment_trait_tesla_coil"
-		"attachment_trait_holo_doc"
-		"attachment_trait_tremor_generator"
-		"attachment_trait_cloaking_generator"
-		"attachment_trait_storm_generator"
-		"attachment_trait_warp_platform"
+		#attachment_trait_air_defence
+		attachment_trait_neo_concrete
+		attachment_trait_mine_field
+		#attachment_trait_missile_pylon
+		attachment_trait_tesla_coil
+		attachment_trait_holo_doc
+		attachment_trait_tremor_generator
+		attachment_trait_cloaking_generator
+		attachment_trait_storm_generator
+		attachment_trait_warp_platform
 	}
 	army_modifier = {
 		army_damage_mult = 0.05
@@ -851,16 +869,16 @@ attachment_trait_neo_concrete = {
 		commander
 	}
 	opposites = {
-		"attachment_trait_air_defence"
-		#"attachment_trait_neo_concrete"
-		"attachment_trait_mine_field"
-		"attachment_trait_missile_pylon"
-		"attachment_trait_tesla_coil"
-		"attachment_trait_holo_doc"
-		"attachment_trait_tremor_generator"
-		"attachment_trait_cloaking_generator"
-		"attachment_trait_storm_generator"
-		"attachment_trait_warp_platform"
+		attachment_trait_air_defence
+		#attachment_trait_neo_concrete
+		attachment_trait_mine_field
+		attachment_trait_missile_pylon
+		attachment_trait_tesla_coil
+		#attachment_trait_holo_doc
+		attachment_trait_tremor_generator
+		attachment_trait_cloaking_generator
+		attachment_trait_storm_generator
+		#attachment_trait_warp_platform
 	}
 	army_modifier = {
 		#army_damage_mult = 0.0
@@ -898,16 +916,16 @@ attachment_trait_mine_field = {
 		commander
 	}
 	opposites = {
-		"attachment_trait_air_defence"
-		"attachment_trait_neo_concrete"
-		#"attachment_trait_mine_field"
-		"attachment_trait_missile_pylon"
-		"attachment_trait_tesla_coil"
-		"attachment_trait_holo_doc"
-		"attachment_trait_tremor_generator"
-		"attachment_trait_cloaking_generator"
-		"attachment_trait_storm_generator"
-		"attachment_trait_warp_platform"
+		attachment_trait_air_defence
+		attachment_trait_neo_concrete
+		#attachment_trait_mine_field
+		attachment_trait_missile_pylon
+		attachment_trait_tesla_coil
+		attachment_trait_holo_doc
+		attachment_trait_tremor_generator
+		attachment_trait_cloaking_generator
+		attachment_trait_storm_generator
+		attachment_trait_warp_platform
 	}
 	army_modifier = {
 		army_damage_mult = 0.1
@@ -931,29 +949,32 @@ attachment_trait_mine_field = {
 }
 
 attachment_trait_missile_pylon = {
+	replace_traits = {
+		attachment_trait_air_defence
+	}
 	veteran_class_locked_trait = yes
 	inline_script = {
 		script = trait/icon
 		CLASS = commander
 		RARITY = veteran
 		COUNCIL = no
-		TIER = 1
+		TIER = 2
 	}
 	icon = "gfx/interface/icons/army_attachments/attachment_mechanical.dds"
 	leader_class = {
 		commander
 	}
 	opposites = {
-		"attachment_trait_air_defence"
-		"attachment_trait_neo_concrete"
-		"attachment_trait_mine_field"
-		#"attachment_trait_missile_pylon"
-		"attachment_trait_tesla_coil"
-		"attachment_trait_holo_doc"
-		"attachment_trait_tremor_generator"
-		"attachment_trait_cloaking_generator"
-		"attachment_trait_storm_generator"
-		"attachment_trait_warp_platform"
+		#attachment_trait_air_defence
+		attachment_trait_neo_concrete
+		attachment_trait_mine_field
+		#attachment_trait_missile_pylon
+		attachment_trait_tesla_coil
+		attachment_trait_holo_doc
+		attachment_trait_tremor_generator
+		attachment_trait_cloaking_generator
+		attachment_trait_storm_generator
+		attachment_trait_warp_platform
 	}
 	army_modifier = {
 		army_damage_mult = 0.15
@@ -991,16 +1012,16 @@ attachment_trait_tesla_coil = {
 		commander
 	}
 	opposites = {
-		"attachment_trait_air_defence"
-		"attachment_trait_neo_concrete"
-		"attachment_trait_mine_field"
-		"attachment_trait_missile_pylon"
-		#"attachment_trait_tesla_coil"
-		"attachment_trait_holo_doc"
-		"attachment_trait_tremor_generator"
-		"attachment_trait_cloaking_generator"
-		"attachment_trait_storm_generator"
-		"attachment_trait_warp_platform"
+		attachment_trait_air_defence
+		attachment_trait_neo_concrete
+		attachment_trait_mine_field
+		attachment_trait_missile_pylon
+		#attachment_trait_tesla_coil
+		attachment_trait_holo_doc
+		attachment_trait_tremor_generator
+		attachment_trait_cloaking_generator
+		#attachment_trait_storm_generator
+		attachment_trait_warp_platform
 	}
 	army_modifier = {
 		army_damage_mult = 0.45
@@ -1025,28 +1046,31 @@ attachment_trait_tesla_coil = {
 
 attachment_trait_holo_doc = {
 	veteran_class_locked_trait = yes
+	replace_traits = {
+		"attachment_trait_neo_concrete"
+	}
 	inline_script = {
 		script = trait/icon
 		CLASS = commander
 		RARITY = veteran
 		COUNCIL = no
-		TIER = 1
+		TIER = 2
 	}
 	icon = "gfx/interface/icons/army_attachments/attachment_shield.dds"
 	leader_class = {
 		commander
 	}
 	opposites = {
-		"attachment_trait_air_defence"
-		"attachment_trait_neo_concrete"
-		"attachment_trait_mine_field"
-		"attachment_trait_missile_pylon"
-		"attachment_trait_tesla_coil"
-		#"attachment_trait_holo_doc"
-		"attachment_trait_tremor_generator"
-		"attachment_trait_cloaking_generator"
-		"attachment_trait_storm_generator"
-		"attachment_trait_warp_platform"
+		attachment_trait_air_defence
+		#attachment_trait_neo_concrete
+		attachment_trait_mine_field
+		attachment_trait_missile_pylon
+		attachment_trait_tesla_coil
+		#attachment_trait_holo_doc
+		attachment_trait_tremor_generator
+		attachment_trait_cloaking_generator
+		attachment_trait_storm_generator
+		#attachment_trait_warp_platform
 	}
 	army_modifier = {
 		#army_damage_mult = 0.0
@@ -1083,16 +1107,16 @@ attachment_trait_tremor_generator = {
 		commander
 	}
 	opposites = {
-		"attachment_trait_air_defence"
-		"attachment_trait_neo_concrete"
-		"attachment_trait_mine_field"
-		"attachment_trait_missile_pylon"
-		"attachment_trait_tesla_coil"
-		"attachment_trait_holo_doc"
-		#"attachment_trait_tremor_generator"
-		"attachment_trait_cloaking_generator"
-		"attachment_trait_storm_generator"
-		"attachment_trait_warp_platform"
+		attachment_trait_air_defence
+		attachment_trait_neo_concrete
+		attachment_trait_mine_field
+		attachment_trait_missile_pylon
+		attachment_trait_tesla_coil
+		attachment_trait_holo_doc
+		#attachment_trait_tremor_generator
+		attachment_trait_cloaking_generator
+		attachment_trait_storm_generator
+		attachment_trait_warp_platform
 	}
 	army_modifier = {
 		army_damage_mult = 0.05
@@ -1130,16 +1154,16 @@ attachment_trait_cloaking_generator = {
 		commander
 	}
 	opposites = {
-		"attachment_trait_air_defence"
-		"attachment_trait_neo_concrete"
-		"attachment_trait_mine_field"
-		"attachment_trait_missile_pylon"
-		"attachment_trait_tesla_coil"
-		"attachment_trait_holo_doc"
-		"attachment_trait_tremor_generator"
-		#"attachment_trait_cloaking_generator"
-		"attachment_trait_storm_generator"
-		"attachment_trait_warp_platform"
+		attachment_trait_air_defence
+		attachment_trait_neo_concrete
+		attachment_trait_mine_field
+		attachment_trait_missile_pylon
+		attachment_trait_tesla_coil
+		attachment_trait_holo_doc
+		attachment_trait_tremor_generator
+		#attachment_trait_cloaking_generator
+		attachment_trait_storm_generator
+		attachment_trait_warp_platform
 	}
 	army_modifier = {
 		#army_damage_mult = 0.0
@@ -1164,28 +1188,31 @@ attachment_trait_cloaking_generator = {
 
 attachment_trait_storm_generator = {
 	veteran_class_locked_trait = yes
+	replace_traits = {
+		"attachment_trait_tesla_coil"
+	}
 	inline_script = {
 		script = trait/icon
 		CLASS = commander
 		RARITY = veteran
 		COUNCIL = no
-		TIER = 1
+		TIER = 2
 	}
 	icon = "gfx/interface/icons/army_attachments/attachment_shield.dds"
 	leader_class = {
 		commander
 	}
 	opposites = {
-		"attachment_trait_air_defence"
-		"attachment_trait_neo_concrete"
-		"attachment_trait_mine_field"
-		"attachment_trait_missile_pylon"
-		"attachment_trait_tesla_coil"
-		"attachment_trait_holo_doc"
-		"attachment_trait_tremor_generator"
-		"attachment_trait_cloaking_generator"
-		#"attachment_trait_storm_generator"
-		"attachment_trait_warp_platform"
+		attachment_trait_air_defence
+		attachment_trait_neo_concrete
+		attachment_trait_mine_field
+		attachment_trait_missile_pylon
+		#attachment_trait_tesla_coil
+		attachment_trait_holo_doc
+		attachment_trait_tremor_generator
+		attachment_trait_cloaking_generator
+		#attachment_trait_storm_generator
+		attachment_trait_warp_platform
 	}
 	army_modifier = {
 		army_damage_mult = 0.2
@@ -1210,28 +1237,31 @@ attachment_trait_storm_generator = {
 
 attachment_trait_warp_platform = {
 	veteran_class_locked_trait = yes
+	replace_traits = {
+		"attachment_trait_holo_doc"
+	}
 	inline_script = {
 		script = trait/icon
 		CLASS = commander
 		RARITY = veteran
 		COUNCIL = no
-		TIER = 1
+		TIER = 3
 	}
 	icon = "gfx/interface/icons/army_attachments/attachment_shield.dds"
 	leader_class = {
 		commander
 	}
 	opposites = {
-		"attachment_trait_air_defence"
-		"attachment_trait_neo_concrete"
-		"attachment_trait_mine_field"
-		"attachment_trait_missile_pylon"
-		"attachment_trait_tesla_coil"
-		"attachment_trait_holo_doc"
-		"attachment_trait_tremor_generator"
-		"attachment_trait_cloaking_generator"
-		"attachment_trait_storm_generator"
-		#"attachment_trait_warp_platform"
+		attachment_trait_air_defence
+		#attachment_trait_neo_concrete
+		attachment_trait_mine_field
+		attachment_trait_missile_pylon
+		attachment_trait_tesla_coil
+		#attachment_trait_holo_doc
+		attachment_trait_tremor_generator
+		attachment_trait_cloaking_generator
+		attachment_trait_storm_generator
+		#attachment_trait_warp_platform
 	}
 	army_modifier = {
 		army_damage_mult = 0.2
@@ -1254,9 +1284,9 @@ attachment_trait_warp_platform = {
 	}
 }
 
-###########
-## BEAST ##
-###########
+############
+## BEASTs ##
+############
 ## TIER 1
 attachment_trait_war_canine = {
 	veteran_class_locked_trait = yes
@@ -1272,14 +1302,14 @@ attachment_trait_war_canine = {
 		commander
 	}
 	opposites = {
-		"attachment_trait_war_canine"
-		"attachment_trait_raptor_flock"
-		"attachment_trait_battle_worm"
-		"attachment_trait_mutant_horde"
-		"attachment_trait_therapod"
-		"attachment_trait_parasite_swarm"
-		"attachment_trait_xeno_cavalry"
-		"attachment_trait_brood_coordinator"
+		#attachment_trait_war_canine
+		attachment_trait_raptor_flock
+		attachment_trait_battle_worm
+		#attachment_trait_mutant_horde
+		attachment_trait_therapod
+		attachment_trait_parasite_swarm
+		#attachment_trait_xeno_cavalry
+		attachment_trait_brood_coordinator
 	}
 	army_modifier = {
 		army_damage_mult = 0.05
@@ -1316,14 +1346,14 @@ attachment_trait_raptor_flock = {
 		commander
 	}
 	opposites = {
-		"attachment_trait_war_canine"
-		"attachment_trait_raptor_flock"
-		"attachment_trait_battle_worm"
-		"attachment_trait_mutant_horde"
-		"attachment_trait_therapod"
-		"attachment_trait_parasite_swarm"
-		"attachment_trait_xeno_cavalry"
-		"attachment_trait_brood_coordinator"
+		attachment_trait_war_canine
+		#attachment_trait_raptor_flock
+		attachment_trait_battle_worm
+		attachment_trait_mutant_horde
+		attachment_trait_therapod
+		attachment_trait_parasite_swarm
+		attachment_trait_xeno_cavalry
+		attachment_trait_brood_coordinator
 	}
 	army_modifier = {
 		army_damage_mult = 0.15
@@ -1361,14 +1391,14 @@ attachment_trait_battle_worm = {
 		commander
 	}
 	opposites = {
-		"attachment_trait_war_canine"
-		"attachment_trait_raptor_flock"
-		"attachment_trait_battle_worm"
-		"attachment_trait_mutant_horde"
-		"attachment_trait_therapod"
-		"attachment_trait_parasite_swarm"
-		"attachment_trait_xeno_cavalry"
-		"attachment_trait_brood_coordinator"
+		attachment_trait_war_canine
+		attachment_trait_raptor_flock
+		#attachment_trait_battle_worm
+		attachment_trait_mutant_horde
+		#attachment_trait_therapod
+		attachment_trait_parasite_swarm
+		attachment_trait_xeno_cavalry
+		attachment_trait_brood_coordinator
 	}
 	army_modifier = {
 		#army_damage_mult = 0.0
@@ -1394,26 +1424,29 @@ attachment_trait_battle_worm = {
 ## TIER 3
 attachment_trait_mutant_horde = {
 	veteran_class_locked_trait = yes
+	replace_traits = {
+		"attachment_trait_war_canine"
+	}
 	inline_script = {
 		script = trait/icon
 		CLASS = commander
 		RARITY = veteran
 		COUNCIL = no
-		TIER = 1
+		TIER = 2
 	}
 	icon = "gfx/interface/icons/army_attachments/attachment_xeno.dds"
 	leader_class = {
 		commander
 	}
 	opposites = {
-		"attachment_trait_war_canine"
-		"attachment_trait_raptor_flock"
-		"attachment_trait_battle_worm"
-		"attachment_trait_mutant_horde"
-		"attachment_trait_therapod"
-		"attachment_trait_parasite_swarm"
-		"attachment_trait_xeno_cavalry"
-		"attachment_trait_brood_coordinator"
+		#attachment_trait_war_canine
+		attachment_trait_raptor_flock
+		attachment_trait_battle_worm
+		#attachment_trait_mutant_horde
+		attachment_trait_therapod
+		attachment_trait_parasite_swarm
+		#attachment_trait_xeno_cavalry
+		attachment_trait_brood_coordinator
 	}
 	army_modifier = {
 		army_damage_mult = 0.15
@@ -1439,26 +1472,29 @@ attachment_trait_mutant_horde = {
 ## TIER 4
 attachment_trait_therapod = {
 	veteran_class_locked_trait = yes
+	replace_traits = {
+		attachment_trait_battle_worm
+	}
 	inline_script = {
 		script = trait/icon
 		CLASS = commander
 		RARITY = veteran
 		COUNCIL = no
-		TIER = 1
+		TIER = 2
 	}
 	icon = "gfx/interface/icons/army_attachments/attachment_xeno.dds"
 	leader_class = {
 		commander
 	}
 	opposites = {
-		"attachment_trait_war_canine"
-		"attachment_trait_raptor_flock"
-		"attachment_trait_battle_worm"
-		"attachment_trait_mutant_horde"
-		"attachment_trait_therapod"
-		"attachment_trait_parasite_swarm"
-		"attachment_trait_xeno_cavalry"
-		"attachment_trait_brood_coordinator"
+		attachment_trait_war_canine
+		attachment_trait_raptor_flock
+		#attachment_trait_battle_worm
+		attachment_trait_mutant_horde
+		#attachment_trait_therapod
+		attachment_trait_parasite_swarm
+		attachment_trait_xeno_cavalry
+		attachment_trait_brood_coordinator
 	}
 	army_modifier = {
 		army_damage_mult = 0.2
@@ -1496,14 +1532,14 @@ attachment_trait_parasite_swarm = {
 		commander
 	}
 	opposites = {
-		"attachment_trait_war_canine"
-		"attachment_trait_raptor_flock"
-		"attachment_trait_battle_worm"
-		"attachment_trait_mutant_horde"
-		"attachment_trait_therapod"
-		"attachment_trait_parasite_swarm"
-		"attachment_trait_xeno_cavalry"
-		"attachment_trait_brood_coordinator"
+		attachment_trait_war_canine
+		attachment_trait_raptor_flock
+		attachment_trait_battle_worm
+		attachment_trait_mutant_horde
+		attachment_trait_therapod
+		#attachment_trait_parasite_swarm
+		attachment_trait_xeno_cavalry
+		attachment_trait_brood_coordinator
 	}
 	army_modifier = {
 		#army_damage_mult = 0.0
@@ -1528,26 +1564,29 @@ attachment_trait_parasite_swarm = {
 
 attachment_trait_xeno_cavalry = {
 	veteran_class_locked_trait = yes
+	replace_traits = {
+		attachment_trait_therapod
+	}
 	inline_script = {
 		script = trait/icon
 		CLASS = commander
 		RARITY = veteran
 		COUNCIL = no
-		TIER = 1
+		TIER = 3
 	}
 	icon = "gfx/interface/icons/army_attachments/attachment_xeno.dds"
 	leader_class = {
 		commander
 	}
 	opposites = {
-		"attachment_trait_war_canine"
-		"attachment_trait_raptor_flock"
-		"attachment_trait_battle_worm"
-		"attachment_trait_mutant_horde"
-		"attachment_trait_therapod"
-		"attachment_trait_parasite_swarm"
-		"attachment_trait_xeno_cavalry"
-		"attachment_trait_brood_coordinator"
+		#attachment_trait_war_canine
+		attachment_trait_raptor_flock
+		attachment_trait_battle_worm
+		#attachment_trait_mutant_horde
+		attachment_trait_therapod
+		attachment_trait_parasite_swarm
+		#attachment_trait_xeno_cavalry
+		attachment_trait_brood_coordinator
 	}
 	army_modifier = {
 		army_damage_mult = 0.3
@@ -1584,14 +1623,14 @@ attachment_trait_brood_coordinator = {
 		commander
 	}
 	opposites = {
-		"attachment_trait_war_canine"
-		"attachment_trait_raptor_flock"
-		"attachment_trait_battle_worm"
-		"attachment_trait_mutant_horde"
-		"attachment_trait_therapod"
-		"attachment_trait_parasite_swarm"
-		"attachment_trait_xeno_cavalry"
-		"attachment_trait_brood_coordinator"
+		attachment_trait_war_canine
+		attachment_trait_raptor_flock
+		attachment_trait_battle_worm
+		attachment_trait_mutant_horde
+		attachment_trait_therapod
+		attachment_trait_parasite_swarm
+		attachment_trait_xeno_cavalry
+		#attachment_trait_brood_coordinator
 	}
 	army_modifier = {
 		army_damage_mult = 0.4
@@ -1632,21 +1671,21 @@ attachment_trait_military_police = {
 		commander
 	}
 	opposites = {
-		#"attachment_trait_military_police"
-		"attachment_trait_clone_commando"
-		"attachment_trait_hypnotized_clone"
-		"attachment_trait_slave_raider"
-		"attachment_trait_special_forces"
-		"attachment_trait_clone_suicide"
-		"attachment_trait_commissar_squad"
-		"attachment_trait_psi_warrior"
-		"attachment_trait_gene_shock"
-		"attachment_trait_shadow_assassin"
-		"attachment_trait_psi_shield"
-		"attachment_trait_telekenetic_devastator"
-		"attachment_trait_class_a_psi"
-		"attachment_trait_void_walker"
-		"attachment_trait_cyborg_infiltration"
+		#attachment_trait_military_police
+		attachment_trait_clone_commando
+		attachment_trait_hypnotized_clone
+		attachment_trait_slave_raider
+		attachment_trait_special_forces
+		attachment_trait_clone_suicide
+		#attachment_trait_commissar_squad
+		attachment_trait_psi_warrior
+		attachment_trait_gene_shock
+		attachment_trait_shadow_assassin
+		attachment_trait_psi_shield
+		attachment_trait_telekenetic_devastator
+		attachment_trait_class_a_psi
+		attachment_trait_void_walker
+		attachment_trait_cyborg_infiltration
 	}
 	army_modifier = {
 		#army_damage_mult = 0.0
@@ -1683,21 +1722,21 @@ attachment_trait_clone_commando = {
 		commander
 	}
 	opposites = {
-		"attachment_trait_military_police"
-		#"attachment_trait_clone_commando"
-		"attachment_trait_hypnotized_clone"
-		"attachment_trait_slave_raider"
-		"attachment_trait_special_forces"
-		"attachment_trait_clone_suicide"
-		"attachment_trait_commissar_squad"
-		"attachment_trait_psi_warrior"
-		"attachment_trait_gene_shock"
-		"attachment_trait_shadow_assassin"
-		"attachment_trait_psi_shield"
-		"attachment_trait_telekenetic_devastator"
-		"attachment_trait_class_a_psi"
-		"attachment_trait_void_walker"
-		"attachment_trait_cyborg_infiltration"
+		attachment_trait_military_police
+		#attachment_trait_clone_commando
+		attachment_trait_hypnotized_clone
+		attachment_trait_slave_raider
+		#attachment_trait_special_forces
+		attachment_trait_clone_suicide
+		attachment_trait_commissar_squad
+		attachment_trait_psi_warrior
+		attachment_trait_gene_shock
+		#attachment_trait_shadow_assassin
+		attachment_trait_psi_shield
+		attachment_trait_telekenetic_devastator
+		attachment_trait_class_a_psi
+		attachment_trait_void_walker
+		attachment_trait_cyborg_infiltration
 	}
 	army_modifier = {
 		army_damage_mult = 0.1
@@ -1735,21 +1774,21 @@ attachment_trait_hypnotized_clone = {
 		commander
 	}
 	opposites = {
-		"attachment_trait_military_police"
-		"attachment_trait_clone_commando"
-		#"attachment_trait_hypnotized_clone"
-		"attachment_trait_slave_raider"
-		"attachment_trait_special_forces"
-		"attachment_trait_clone_suicide"
-		"attachment_trait_commissar_squad"
-		"attachment_trait_psi_warrior"
-		"attachment_trait_gene_shock"
-		"attachment_trait_shadow_assassin"
-		"attachment_trait_psi_shield"
-		"attachment_trait_telekenetic_devastator"
-		"attachment_trait_class_a_psi"
-		"attachment_trait_void_walker"
-		"attachment_trait_cyborg_infiltration"
+		attachment_trait_military_police
+		attachment_trait_clone_commando
+		#attachment_trait_hypnotized_clone
+		attachment_trait_slave_raider
+		attachment_trait_special_forces
+		#attachment_trait_clone_suicide
+		attachment_trait_commissar_squad
+		attachment_trait_psi_warrior
+		attachment_trait_gene_shock
+		attachment_trait_shadow_assassin
+		attachment_trait_psi_shield
+		attachment_trait_telekenetic_devastator
+		attachment_trait_class_a_psi
+		attachment_trait_void_walker
+		attachment_trait_cyborg_infiltration
 	}
 	army_modifier = {
 		army_damage_mult = 0.15
@@ -1786,21 +1825,21 @@ attachment_trait_slave_raider = {
 		commander
 	}
 	opposites = {
-		"attachment_trait_military_police"
-		"attachment_trait_clone_commando"
-		"attachment_trait_hypnotized_clone"
-		#"attachment_trait_slave_raider"
-		"attachment_trait_special_forces"
-		"attachment_trait_clone_suicide"
-		"attachment_trait_commissar_squad"
-		"attachment_trait_psi_warrior"
-		"attachment_trait_gene_shock"
-		"attachment_trait_shadow_assassin"
-		"attachment_trait_psi_shield"
-		"attachment_trait_telekenetic_devastator"
-		"attachment_trait_class_a_psi"
-		"attachment_trait_void_walker"
-		"attachment_trait_cyborg_infiltration"
+		attachment_trait_military_police
+		attachment_trait_clone_commando
+		attachment_trait_hypnotized_clone
+		#attachment_trait_slave_raider
+		attachment_trait_special_forces
+		attachment_trait_clone_suicide
+		attachment_trait_commissar_squad
+		attachment_trait_psi_warrior
+		attachment_trait_gene_shock
+		attachment_trait_shadow_assassin
+		attachment_trait_psi_shield
+		attachment_trait_telekenetic_devastator
+		attachment_trait_class_a_psi
+		attachment_trait_void_walker
+		attachment_trait_cyborg_infiltration
 	}
 	army_modifier = {
 		army_damage_mult = 0.1
@@ -1825,33 +1864,36 @@ attachment_trait_slave_raider = {
 
 attachment_trait_special_forces = {
 	veteran_class_locked_trait = yes
+	replace_traits = {
+		attachment_trait_clone_commando
+	}
 	inline_script = {
 		script = trait/icon
 		CLASS = commander
 		RARITY = veteran
 		COUNCIL = no
-		TIER = 1
+		TIER = 2
 	}
 	icon = "gfx/interface/icons/army_attachments/attachment_special_forces.dds"
 	leader_class = {
 		commander
 	}
 	opposites = {
-		"attachment_trait_military_police"
-		"attachment_trait_clone_commando"
-		"attachment_trait_hypnotized_clone"
-		"attachment_trait_slave_raider"
-		#"attachment_trait_special_forces"
-		"attachment_trait_clone_suicide"
-		"attachment_trait_commissar_squad"
-		"attachment_trait_psi_warrior"
-		"attachment_trait_gene_shock"
-		"attachment_trait_shadow_assassin"
-		"attachment_trait_psi_shield"
-		"attachment_trait_telekenetic_devastator"
-		"attachment_trait_class_a_psi"
-		"attachment_trait_void_walker"
-		"attachment_trait_cyborg_infiltration"
+		attachment_trait_military_police
+		#attachment_trait_clone_commando
+		attachment_trait_hypnotized_clone
+		attachment_trait_slave_raider
+		#attachment_trait_special_forces
+		attachment_trait_clone_suicide
+		attachment_trait_commissar_squad
+		attachment_trait_psi_warrior
+		attachment_trait_gene_shock
+		#attachment_trait_shadow_assassin
+		attachment_trait_psi_shield
+		attachment_trait_telekenetic_devastator
+		attachment_trait_class_a_psi
+		attachment_trait_void_walker
+		attachment_trait_cyborg_infiltration
 	}
 	army_modifier = {
 		army_damage_mult = 0.05
@@ -1877,33 +1919,36 @@ attachment_trait_special_forces = {
 ## TIER 3
 attachment_trait_clone_suicide = {
 	veteran_class_locked_trait = yes
+	replace_traits = {
+		attachment_trait_hypnotized_clone
+	}
 	inline_script = {
 		script = trait/icon
 		CLASS = commander
 		RARITY = veteran
 		COUNCIL = no
-		TIER = 1
+		TIER = 2
 	}
 	icon = "gfx/interface/icons/army_attachments/attachment_genetic.dds"
 	leader_class = {
 		commander
 	}
 	opposites = {
-		"attachment_trait_military_police"
-		"attachment_trait_clone_commando"
-		"attachment_trait_hypnotized_clone"
-		"attachment_trait_slave_raider"
-		"attachment_trait_special_forces"
-		#"attachment_trait_clone_suicide"
-		"attachment_trait_commissar_squad"
-		"attachment_trait_psi_warrior"
-		"attachment_trait_gene_shock"
-		"attachment_trait_shadow_assassin"
-		"attachment_trait_psi_shield"
-		"attachment_trait_telekenetic_devastator"
-		"attachment_trait_class_a_psi"
-		"attachment_trait_void_walker"
-		"attachment_trait_cyborg_infiltration"
+		attachment_trait_military_police
+		attachment_trait_clone_commando
+		#attachment_trait_hypnotized_clone
+		attachment_trait_slave_raider
+		attachment_trait_special_forces
+		#attachment_trait_clone_suicide
+		attachment_trait_commissar_squad
+		attachment_trait_psi_warrior
+		attachment_trait_gene_shock
+		attachment_trait_shadow_assassin
+		attachment_trait_psi_shield
+		attachment_trait_telekenetic_devastator
+		attachment_trait_class_a_psi
+		attachment_trait_void_walker
+		attachment_trait_cyborg_infiltration
 	}
 	army_modifier = {
 		#army_damage_mult = 0.0
@@ -1928,33 +1973,36 @@ attachment_trait_clone_suicide = {
 
 attachment_trait_commissar_squad = {
 	veteran_class_locked_trait = yes
+	replace_traits = {
+		attachment_trait_military_police
+	}
 	inline_script = {
 		script = trait/icon
 		CLASS = commander
 		RARITY = veteran
 		COUNCIL = no
-		TIER = 1
+		TIER = 2
 	}
 	icon = "gfx/interface/icons/army_attachments/attachment_slaves.dds"
 	leader_class = {
 		commander
 	}
 	opposites = {
-		"attachment_trait_military_police"
-		"attachment_trait_clone_commando"
-		"attachment_trait_hypnotized_clone"
-		"attachment_trait_slave_raider"
-		"attachment_trait_special_forces"
-		"attachment_trait_clone_suicide"
-		#"attachment_trait_commissar_squad"
-		"attachment_trait_psi_warrior"
-		"attachment_trait_gene_shock"
-		"attachment_trait_shadow_assassin"
-		"attachment_trait_psi_shield"
-		"attachment_trait_telekenetic_devastator"
-		"attachment_trait_class_a_psi"
-		"attachment_trait_void_walker"
-		"attachment_trait_cyborg_infiltration"
+		#attachment_trait_military_police
+		attachment_trait_clone_commando
+		attachment_trait_hypnotized_clone
+		attachment_trait_slave_raider
+		attachment_trait_special_forces
+		attachment_trait_clone_suicide
+		#attachment_trait_commissar_squad
+		attachment_trait_psi_warrior
+		attachment_trait_gene_shock
+		attachment_trait_shadow_assassin
+		attachment_trait_psi_shield
+		attachment_trait_telekenetic_devastator
+		attachment_trait_class_a_psi
+		attachment_trait_void_walker
+		attachment_trait_cyborg_infiltration
 	}
 	army_modifier = {
 		#army_damage_mult = 0.0
@@ -1991,21 +2039,21 @@ attachment_trait_psi_warrior = {
 		commander
 	}
 	opposites = {
-		"attachment_trait_military_police"
-		"attachment_trait_clone_commando"
-		"attachment_trait_hypnotized_clone"
-		"attachment_trait_slave_raider"
-		"attachment_trait_special_forces"
-		"attachment_trait_clone_suicide"
-		"attachment_trait_commissar_squad"
-		#"attachment_trait_psi_warrior"
-		"attachment_trait_gene_shock"
-		"attachment_trait_shadow_assassin"
-		"attachment_trait_psi_shield"
-		"attachment_trait_telekenetic_devastator"
-		"attachment_trait_class_a_psi"
-		"attachment_trait_void_walker"
-		"attachment_trait_cyborg_infiltration"
+		attachment_trait_military_police
+		attachment_trait_clone_commando
+		attachment_trait_hypnotized_clone
+		attachment_trait_slave_raider
+		attachment_trait_special_forces
+		attachment_trait_clone_suicide
+		attachment_trait_commissar_squad
+		#attachment_trait_psi_warrior
+		attachment_trait_gene_shock
+		attachment_trait_shadow_assassin
+		attachment_trait_psi_shield
+		attachment_trait_telekenetic_devastator
+		#attachment_trait_class_a_psi
+		attachment_trait_void_walker
+		attachment_trait_cyborg_infiltration
 	}
 	army_modifier = {
 		army_damage_mult = 0.25
@@ -2043,21 +2091,21 @@ attachment_trait_gene_shock = {
 		commander
 	}
 	opposites = {
-		"attachment_trait_military_police"
-		"attachment_trait_clone_commando"
-		"attachment_trait_hypnotized_clone"
-		"attachment_trait_slave_raider"
-		"attachment_trait_special_forces"
-		"attachment_trait_clone_suicide"
-		"attachment_trait_commissar_squad"
-		"attachment_trait_psi_warrior"
-		#"attachment_trait_gene_shock"
-		"attachment_trait_shadow_assassin"
-		"attachment_trait_psi_shield"
-		"attachment_trait_telekenetic_devastator"
-		"attachment_trait_class_a_psi"
-		"attachment_trait_void_walker"
-		"attachment_trait_cyborg_infiltration"
+		attachment_trait_military_police
+		attachment_trait_clone_commando
+		attachment_trait_hypnotized_clone
+		attachment_trait_slave_raider
+		attachment_trait_special_forces
+		attachment_trait_clone_suicide
+		attachment_trait_commissar_squad
+		attachment_trait_psi_warrior
+		#attachment_trait_gene_shock
+		attachment_trait_shadow_assassin
+		attachment_trait_psi_shield
+		attachment_trait_telekenetic_devastator
+		attachment_trait_class_a_psi
+		#attachment_trait_void_walker
+		attachment_trait_cyborg_infiltration
 	}
 	army_modifier = {
 		army_damage_mult = 0.25
@@ -2082,33 +2130,36 @@ attachment_trait_gene_shock = {
 
 attachment_trait_shadow_assassin = {
 	veteran_class_locked_trait = yes
+	replace_traits = {
+		attachment_trait_special_forces
+	}
 	inline_script = {
 		script = trait/icon
 		CLASS = commander
 		RARITY = veteran
 		COUNCIL = no
-		TIER = 1
+		TIER = 3
 	}
 	icon = "gfx/interface/icons/army_attachments/attachment_special_forces.dds"
 	leader_class = {
 		commander
 	}
 	opposites = {
-		"attachment_trait_military_police"
-		"attachment_trait_clone_commando"
-		"attachment_trait_hypnotized_clone"
-		"attachment_trait_slave_raider"
-		"attachment_trait_special_forces"
-		"attachment_trait_clone_suicide"
-		"attachment_trait_commissar_squad"
-		"attachment_trait_psi_warrior"
-		"attachment_trait_gene_shock"
-		#"attachment_trait_shadow_assassin"
-		"attachment_trait_psi_shield"
-		"attachment_trait_telekenetic_devastator"
-		"attachment_trait_class_a_psi"
-		"attachment_trait_void_walker"
-		"attachment_trait_cyborg_infiltration"
+		attachment_trait_military_police
+		#attachment_trait_clone_commando
+		attachment_trait_hypnotized_clone
+		attachment_trait_slave_raider
+		#attachment_trait_special_forces
+		attachment_trait_clone_suicide
+		attachment_trait_commissar_squad
+		attachment_trait_psi_warrior
+		attachment_trait_gene_shock
+		#attachment_trait_shadow_assassin
+		attachment_trait_psi_shield
+		attachment_trait_telekenetic_devastator
+		attachment_trait_class_a_psi
+		attachment_trait_void_walker
+		attachment_trait_cyborg_infiltration
 	}
 	army_modifier = {
 		army_damage_mult = 0.15
@@ -2145,21 +2196,21 @@ attachment_trait_psi_shield = {
 		commander
 	}
 	opposites = {
-		"attachment_trait_military_police"
-		"attachment_trait_clone_commando"
-		"attachment_trait_hypnotized_clone"
-		"attachment_trait_slave_raider"
-		"attachment_trait_special_forces"
-		"attachment_trait_clone_suicide"
-		"attachment_trait_commissar_squad"
-		"attachment_trait_psi_warrior"
-		"attachment_trait_gene_shock"
-		"attachment_trait_shadow_assassin"
-		#"attachment_trait_psi_shield"
-		"attachment_trait_telekenetic_devastator"
-		"attachment_trait_class_a_psi"
-		"attachment_trait_void_walker"
-		"attachment_trait_cyborg_infiltration"
+		attachment_trait_military_police
+		attachment_trait_clone_commando
+		attachment_trait_hypnotized_clone
+		attachment_trait_slave_raider
+		attachment_trait_special_forces
+		attachment_trait_clone_suicide
+		attachment_trait_commissar_squad
+		attachment_trait_psi_warrior
+		attachment_trait_gene_shock
+		attachment_trait_shadow_assassin
+		#attachment_trait_psi_shield
+		#attachment_trait_telekenetic_devastator
+		attachment_trait_class_a_psi
+		attachment_trait_void_walker
+		attachment_trait_cyborg_infiltration
 	}
 	army_modifier = {
 		#army_damage_mult = 0.0
@@ -2185,33 +2236,36 @@ attachment_trait_psi_shield = {
 ## TIER 5
 attachment_trait_telekenetic_devastator = {
 	veteran_class_locked_trait = yes
+	replace_traits = {
+		attachment_trait_psi_shield
+	}
 	inline_script = {
 		script = trait/icon
 		CLASS = commander
 		RARITY = veteran
 		COUNCIL = no
-		TIER = 1
+		TIER = 2
 	}
 	icon = "gfx/interface/icons/army_attachments/attachment_special_forces.dds"
 	leader_class = {
 		commander
 	}
 	opposites = {
-		"attachment_trait_military_police"
-		"attachment_trait_clone_commando"
-		"attachment_trait_hypnotized_clone"
-		"attachment_trait_slave_raider"
-		"attachment_trait_special_forces"
-		"attachment_trait_clone_suicide"
-		"attachment_trait_commissar_squad"
-		"attachment_trait_psi_warrior"
-		"attachment_trait_gene_shock"
-		"attachment_trait_shadow_assassin"
-		"attachment_trait_psi_shield"
-		#"attachment_trait_telekenetic_devastator"
-		"attachment_trait_class_a_psi"
-		"attachment_trait_void_walker"
-		"attachment_trait_cyborg_infiltration"
+		attachment_trait_military_police
+		attachment_trait_clone_commando
+		attachment_trait_hypnotized_clone
+		attachment_trait_slave_raider
+		attachment_trait_special_forces
+		attachment_trait_clone_suicide
+		attachment_trait_commissar_squad
+		attachment_trait_psi_warrior
+		attachment_trait_gene_shock
+		attachment_trait_shadow_assassin
+		#attachment_trait_psi_shield
+		#attachment_trait_telekenetic_devastator
+		attachment_trait_class_a_psi
+		attachment_trait_void_walker
+		attachment_trait_cyborg_infiltration
 	}
 	army_modifier = {
 		#army_damage_mult = 0.0
@@ -2236,33 +2290,36 @@ attachment_trait_telekenetic_devastator = {
 
 attachment_trait_class_a_psi = {
 	veteran_class_locked_trait = yes
+	replace_traits = {
+		attachment_trait_psi_warrior
+	}
 	inline_script = {
 		script = trait/icon
 		CLASS = commander
 		RARITY = veteran
 		COUNCIL = no
-		TIER = 1
+		TIER = 2
 	}
 	icon = "gfx/interface/icons/army_attachments/attachment_special_forces.dds"
 	leader_class = {
 		commander
 	}
 	opposites = {
-		"attachment_trait_military_police"
-		"attachment_trait_clone_commando"
-		"attachment_trait_hypnotized_clone"
-		"attachment_trait_slave_raider"
-		"attachment_trait_special_forces"
-		"attachment_trait_clone_suicide"
-		"attachment_trait_commissar_squad"
-		"attachment_trait_psi_warrior"
-		"attachment_trait_gene_shock"
-		"attachment_trait_shadow_assassin"
-		"attachment_trait_psi_shield"
-		"attachment_trait_telekenetic_devastator"
-		#"attachment_trait_class_a_psi"
-		"attachment_trait_void_walker"
-		"attachment_trait_cyborg_infiltration"
+		attachment_trait_military_police
+		attachment_trait_clone_commando
+		attachment_trait_hypnotized_clone
+		attachment_trait_slave_raider
+		attachment_trait_special_forces
+		attachment_trait_clone_suicide
+		attachment_trait_commissar_squad
+		#attachment_trait_psi_warrior
+		attachment_trait_gene_shock
+		attachment_trait_shadow_assassin
+		attachment_trait_psi_shield
+		attachment_trait_telekenetic_devastator
+		#attachment_trait_class_a_psi
+		attachment_trait_void_walker
+		attachment_trait_cyborg_infiltration
 	}
 	army_modifier = {
 		army_damage_mult = 0.4
@@ -2287,33 +2344,36 @@ attachment_trait_class_a_psi = {
 
 attachment_trait_void_walker = {
 	veteran_class_locked_trait = yes
+	replace_traits = {
+		attachment_trait_gene_shock
+	}
 	inline_script = {
 		script = trait/icon
 		CLASS = commander
 		RARITY = veteran
 		COUNCIL = no
-		TIER = 1
+		TIER = 2
 	}
 	icon = "gfx/interface/icons/army_attachments/attachment_genetic.dds"
 	leader_class = {
 		commander
 	}
 	opposites = {
-		"attachment_trait_military_police"
-		"attachment_trait_clone_commando"
-		"attachment_trait_hypnotized_clone"
-		"attachment_trait_slave_raider"
-		"attachment_trait_special_forces"
-		"attachment_trait_clone_suicide"
-		"attachment_trait_commissar_squad"
-		"attachment_trait_psi_warrior"
-		"attachment_trait_gene_shock"
-		"attachment_trait_shadow_assassin"
-		"attachment_trait_psi_shield"
-		"attachment_trait_telekenetic_devastator"
-		"attachment_trait_class_a_psi"
-		#"attachment_trait_void_walker"
-		"attachment_trait_cyborg_infiltration"
+		attachment_trait_military_police
+		attachment_trait_clone_commando
+		attachment_trait_hypnotized_clone
+		attachment_trait_slave_raider
+		attachment_trait_special_forces
+		attachment_trait_clone_suicide
+		attachment_trait_commissar_squad
+		attachment_trait_psi_warrior
+		#attachment_trait_gene_shock
+		attachment_trait_shadow_assassin
+		attachment_trait_psi_shield
+		attachment_trait_telekenetic_devastator
+		attachment_trait_class_a_psi
+		#attachment_trait_void_walker
+		attachment_trait_cyborg_infiltration
 	}
 	army_modifier = {
 		army_damage_mult = 0.25
@@ -2350,21 +2410,21 @@ attachment_trait_cyborg_infiltration = {
 		commander
 	}
 	opposites = {
-		"attachment_trait_military_police"
-		"attachment_trait_clone_commando"
-		"attachment_trait_hypnotized_clone"
-		"attachment_trait_slave_raider"
-		"attachment_trait_special_forces"
-		"attachment_trait_clone_suicide"
-		"attachment_trait_commissar_squad"
-		"attachment_trait_psi_warrior"
-		"attachment_trait_gene_shock"
-		"attachment_trait_shadow_assassin"
-		"attachment_trait_psi_shield"
-		"attachment_trait_telekenetic_devastator"
-		"attachment_trait_class_a_psi"
-		"attachment_trait_void_walker"
-		#"attachment_trait_cyborg_infiltration"
+		attachment_trait_military_police
+		attachment_trait_clone_commando
+		attachment_trait_hypnotized_clone
+		attachment_trait_slave_raider
+		attachment_trait_special_forces
+		attachment_trait_clone_suicide
+		attachment_trait_commissar_squad
+		attachment_trait_psi_warrior
+		attachment_trait_gene_shock
+		attachment_trait_shadow_assassin
+		attachment_trait_psi_shield
+		attachment_trait_telekenetic_devastator
+		attachment_trait_class_a_psi
+		attachment_trait_void_walker
+		#attachment_trait_cyborg_infiltration
 	}
 	army_modifier = {
 		army_damage_mult = 0.2
@@ -2405,17 +2465,17 @@ attachment_trait_mobile_shield = {
 		commander
 	}
 	opposites = {
-		#"attachment_trait_mobile_shield"
-		"attachment_trait_dropship"
-		"attachment_trait_drone_swarm"
-		"attachment_trait_battle_strider"
-		"attachment_trait_drop_pod"
-		"attachment_trait_plasma_plane"
-		"attachment_trait_hover_tank"
-		"attachment_trait_war_mech"
-		"attachment_trait_sonic_speeder"
-		"attachment_trait_all_terrain"
-		"attachment_trait_armageddon_mech"
+		#attachment_trait_mobile_shield
+		attachment_trait_dropship
+		attachment_trait_drone_swarm
+		attachment_trait_battle_strider
+		attachment_trait_drop_pod
+		attachment_trait_plasma_plane
+		attachment_trait_hover_tank
+		attachment_trait_war_mech
+		attachment_trait_sonic_speeder
+		attachment_trait_all_terrain
+		attachment_trait_armageddon_mech
 	}
 	army_modifier = {
 		#army_damage_mult = 0.0
@@ -2452,17 +2512,17 @@ attachment_trait_dropship = {
 		commander
 	}
 	opposites = {
-		"attachment_trait_mobile_shield"
-		#"attachment_trait_dropship"
-		"attachment_trait_drone_swarm"
-		"attachment_trait_battle_strider"
-		"attachment_trait_drop_pod"
-		"attachment_trait_plasma_plane"
-		"attachment_trait_hover_tank"
-		"attachment_trait_war_mech"
-		"attachment_trait_sonic_speeder"
-		"attachment_trait_all_terrain"
-		"attachment_trait_armageddon_mech"
+		attachment_trait_mobile_shield
+		#attachment_trait_dropship
+		attachment_trait_drone_swarm
+		attachment_trait_battle_strider
+		#attachment_trait_drop_pod
+		attachment_trait_plasma_plane
+		attachment_trait_hover_tank
+		attachment_trait_war_mech
+		attachment_trait_sonic_speeder
+		attachment_trait_all_terrain
+		attachment_trait_armageddon_mech
 	}
 	army_modifier = {
 		#army_damage_mult = 0.0
@@ -2499,17 +2559,17 @@ attachment_trait_drone_swarm = {
 		commander
 	}
 	opposites = {
-		"attachment_trait_mobile_shield"
-		"attachment_trait_dropship"
-		#"attachment_trait_drone_swarm"
-		"attachment_trait_battle_strider"
-		"attachment_trait_drop_pod"
-		"attachment_trait_plasma_plane"
-		"attachment_trait_hover_tank"
-		"attachment_trait_war_mech"
-		"attachment_trait_sonic_speeder"
-		"attachment_trait_all_terrain"
-		"attachment_trait_armageddon_mech"
+		attachment_trait_mobile_shield
+		attachment_trait_dropship
+		#attachment_trait_drone_swarm
+		attachment_trait_battle_strider
+		attachment_trait_drop_pod
+		attachment_trait_plasma_plane
+		attachment_trait_hover_tank
+		attachment_trait_war_mech
+		attachment_trait_sonic_speeder
+		attachment_trait_all_terrain
+		attachment_trait_armageddon_mech
 	}
 	army_modifier = {
 		army_damage_mult = 0.2
@@ -2547,17 +2607,17 @@ attachment_trait_battle_strider = {
 		commander
 	}
 	opposites = {
-		"attachment_trait_mobile_shield"
-		"attachment_trait_dropship"
-		"attachment_trait_drone_swarm"
-		#"attachment_trait_battle_strider"
-		"attachment_trait_drop_pod"
-		"attachment_trait_plasma_plane"
-		"attachment_trait_hover_tank"
-		"attachment_trait_war_mech"
-		"attachment_trait_sonic_speeder"
-		"attachment_trait_all_terrain"
-		"attachment_trait_armageddon_mech"
+		attachment_trait_mobile_shield
+		attachment_trait_dropship
+		attachment_trait_drone_swarm
+		#attachment_trait_battle_strider
+		attachment_trait_drop_pod
+		attachment_trait_plasma_plane
+		attachment_trait_hover_tank
+		#attachment_trait_war_mech
+		attachment_trait_sonic_speeder
+		attachment_trait_all_terrain
+		#attachment_trait_armageddon_mech
 	}
 	army_modifier = {
 		army_damage_mult = 0.2
@@ -2594,17 +2654,17 @@ attachment_trait_drop_pod = {
 		commander
 	}
 	opposites = {
-		"attachment_trait_mobile_shield"
-		"attachment_trait_dropship"
-		"attachment_trait_drone_swarm"
-		"attachment_trait_battle_strider"
-		#"attachment_trait_drop_pod"
-		"attachment_trait_plasma_plane"
-		"attachment_trait_hover_tank"
-		"attachment_trait_war_mech"
-		"attachment_trait_sonic_speeder"
-		"attachment_trait_all_terrain"
-		"attachment_trait_armageddon_mech"
+		attachment_trait_mobile_shield
+		#attachment_trait_dropship
+		attachment_trait_drone_swarm
+		attachment_trait_battle_strider
+		#attachment_trait_drop_pod
+		attachment_trait_plasma_plane
+		attachment_trait_hover_tank
+		attachment_trait_war_mech
+		attachment_trait_sonic_speeder
+		attachment_trait_all_terrain
+		attachment_trait_armageddon_mech
 	}
 	army_modifier = {
 		#army_damage_mult = 0.0
@@ -2642,17 +2702,17 @@ attachment_trait_plasma_plane = {
 		commander
 	}
 	opposites = {
-		"attachment_trait_mobile_shield"
-		"attachment_trait_dropship"
-		"attachment_trait_drone_swarm"
-		"attachment_trait_battle_strider"
-		"attachment_trait_drop_pod"
-		#"attachment_trait_plasma_plane"
-		"attachment_trait_hover_tank"
-		"attachment_trait_war_mech"
-		"attachment_trait_sonic_speeder"
-		"attachment_trait_all_terrain"
-		"attachment_trait_armageddon_mech"
+		attachment_trait_mobile_shield
+		attachment_trait_dropship
+		attachment_trait_drone_swarm
+		attachment_trait_battle_strider
+		attachment_trait_drop_pod
+		#attachment_trait_plasma_plane
+		attachment_trait_hover_tank
+		attachment_trait_war_mech
+		#attachment_trait_sonic_speeder
+		attachment_trait_all_terrain
+		attachment_trait_armageddon_mech
 	}
 	army_modifier = {
 		army_damage_mult = 0.1
@@ -2682,24 +2742,24 @@ attachment_trait_hover_tank = {
 		CLASS = commander
 		RARITY = veteran
 		COUNCIL = no
-		TIER = 1
+		TIER = 2
 	}
 	icon = "gfx/interface/icons/army_attachments/attachment_mechanical.dds"
 	leader_class = {
 		commander
 	}
 	opposites = {
-		"attachment_trait_mobile_shield"
-		"attachment_trait_dropship"
-		"attachment_trait_drone_swarm"
-		"attachment_trait_battle_strider"
-		"attachment_trait_drop_pod"
-		"attachment_trait_plasma_plane"
-		#"attachment_trait_hover_tank"
-		"attachment_trait_war_mech"
-		"attachment_trait_sonic_speeder"
-		"attachment_trait_all_terrain"
-		"attachment_trait_armageddon_mech"
+		attachment_trait_mobile_shield
+		attachment_trait_dropship
+		attachment_trait_drone_swarm
+		attachment_trait_battle_strider
+		attachment_trait_drop_pod
+		attachment_trait_plasma_plane
+		#attachment_trait_hover_tank
+		attachment_trait_war_mech
+		attachment_trait_sonic_speeder
+		#attachment_trait_all_terrain
+		attachment_trait_armageddon_mech
 	}
 	army_modifier = {
 		army_damage_mult = 0.3
@@ -2725,29 +2785,32 @@ attachment_trait_hover_tank = {
 ## TIER 4
 attachment_trait_war_mech = {
 	veteran_class_locked_trait = yes
+	replace_traits = {
+		attachment_trait_battle_strider
+	}
 	inline_script = {
 		script = trait/icon
 		CLASS = commander
 		RARITY = veteran
 		COUNCIL = no
-		TIER = 1
+		TIER = 2
 	}
 	icon = "gfx/interface/icons/army_attachments/attachment_mechanical.dds"
 	leader_class = {
 		commander
 	}
 	opposites = {
-		"attachment_trait_mobile_shield"
-		"attachment_trait_dropship"
-		"attachment_trait_drone_swarm"
-		"attachment_trait_battle_strider"
-		"attachment_trait_drop_pod"
-		"attachment_trait_plasma_plane"
-		"attachment_trait_hover_tank"
-		#"attachment_trait_war_mech"
-		"attachment_trait_sonic_speeder"
-		"attachment_trait_all_terrain"
-		"attachment_trait_armageddon_mech"
+		attachment_trait_mobile_shield
+		attachment_trait_dropship
+		attachment_trait_drone_swarm
+		#attachment_trait_battle_strider
+		attachment_trait_drop_pod
+		attachment_trait_plasma_plane
+		attachment_trait_hover_tank
+		#attachment_trait_war_mech
+		attachment_trait_sonic_speeder
+		attachment_trait_all_terrain
+		#attachment_trait_armageddon_mech
 	}
 	army_modifier = {
 		army_damage_mult = 0.4
@@ -2772,29 +2835,32 @@ attachment_trait_war_mech = {
 
 attachment_trait_sonic_speeder = {
 	veteran_class_locked_trait = yes
+	replace_traits = {
+		attachment_trait_plasma_plane
+	}
 	inline_script = {
 		script = trait/icon
 		CLASS = commander
 		RARITY = veteran
 		COUNCIL = no
-		TIER = 1
+		TIER = 2
 	}
 	icon = "gfx/interface/icons/army_attachments/attachment_mechanical.dds"
 	leader_class = {
 		commander
 	}
 	opposites = {
-		"attachment_trait_mobile_shield"
-		"attachment_trait_dropship"
-		"attachment_trait_drone_swarm"
-		"attachment_trait_battle_strider"
-		"attachment_trait_drop_pod"
-		"attachment_trait_plasma_plane"
-		"attachment_trait_hover_tank"
-		"attachment_trait_war_mech"
-		#"attachment_trait_sonic_speeder"
-		"attachment_trait_all_terrain"
-		"attachment_trait_armageddon_mech"
+		attachment_trait_mobile_shield
+		attachment_trait_dropship
+		attachment_trait_drone_swarm
+		attachment_trait_battle_strider
+		attachment_trait_drop_pod
+		#attachment_trait_plasma_plane
+		attachment_trait_hover_tank
+		attachment_trait_war_mech
+		#attachment_trait_sonic_speeder
+		attachment_trait_all_terrain
+		attachment_trait_armageddon_mech
 	}
 	army_modifier = {
 		#army_damage_mult = 0.0
@@ -2819,6 +2885,9 @@ attachment_trait_sonic_speeder = {
 
 attachment_trait_all_terrain = {
 	veteran_class_locked_trait = yes
+	replace_traits = {
+		attachment_trait_hover_tank
+	}
 	inline_script = {
 		script = trait/icon
 		CLASS = commander
@@ -2831,17 +2900,17 @@ attachment_trait_all_terrain = {
 		commander
 	}
 	opposites = {
-		"attachment_trait_mobile_shield"
-		"attachment_trait_dropship"
-		"attachment_trait_drone_swarm"
-		"attachment_trait_battle_strider"
-		"attachment_trait_drop_pod"
-		"attachment_trait_plasma_plane"
-		"attachment_trait_hover_tank"
-		"attachment_trait_war_mech"
-		"attachment_trait_sonic_speeder"
-		#"attachment_trait_all_terrain"
-		"attachment_trait_armageddon_mech"
+		attachment_trait_mobile_shield
+		attachment_trait_dropship
+		attachment_trait_drone_swarm
+		attachment_trait_battle_strider
+		attachment_trait_drop_pod
+		attachment_trait_plasma_plane
+		#attachment_trait_hover_tank
+		attachment_trait_war_mech
+		attachment_trait_sonic_speeder
+		#attachment_trait_all_terrain
+		attachment_trait_armageddon_mech
 	}
 	army_modifier = {
 		army_damage_mult = 0.25
@@ -2867,29 +2936,32 @@ attachment_trait_all_terrain = {
 ## TIER 5
 attachment_trait_armageddon_mech = {
 	veteran_class_locked_trait = yes
+	replace_traits = {
+		attachment_trait_war_mech
+	}
 	inline_script = {
 		script = trait/icon
 		CLASS = commander
 		RARITY = veteran
 		COUNCIL = no
-		TIER = 1
+		TIER = 3
 	}
 	icon = "gfx/interface/icons/army_attachments/attachment_mechanical.dds"
 	leader_class = {
 		commander
 	}
 	opposites = {
-		"attachment_trait_mobile_shield"
-		"attachment_trait_dropship"
-		"attachment_trait_drone_swarm"
-		"attachment_trait_battle_strider"
-		"attachment_trait_drop_pod"
-		"attachment_trait_plasma_plane"
-		"attachment_trait_hover_tank"
-		"attachment_trait_war_mech"
-		"attachment_trait_sonic_speeder"
-		"attachment_trait_all_terrain"
-		#"attachment_trait_armageddon_mech"
+		attachment_trait_mobile_shield
+		attachment_trait_dropship
+		attachment_trait_drone_swarm
+		#attachment_trait_battle_strider
+		attachment_trait_drop_pod
+		attachment_trait_plasma_plane
+		attachment_trait_hover_tank
+		#attachment_trait_war_mech
+		attachment_trait_sonic_speeder
+		attachment_trait_all_terrain
+		#attachment_trait_armageddon_mech
 	}
 	army_modifier = {
 		army_damage_mult = 0.45
