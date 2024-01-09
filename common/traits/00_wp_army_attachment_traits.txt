@@ -47,7 +47,7 @@ attachment_trait_jet_pack = {
 		has_trait = subclass_commander_general
 	}
 	selectable_weight = {
-		weight = 999
+		weight = @wp_army_attachement_trait_weight
 	}
 	prerequisites = {
 		tech_attachment_jet_pack
@@ -99,7 +99,7 @@ attachment_trait_power_armour = {
 		attachment_trait_mini_nuke
 	}
 	selectable_weight = {
-		weight = 999
+		weight = @wp_army_attachement_trait_weight
 	}
 	prerequisites = {
 		tech_attachment_power_armour
@@ -151,7 +151,7 @@ attachment_trait_chemical_stimulant = {
 		attachment_trait_mini_nuke
 	}
 	selectable_weight = {
-		weight = 999
+		weight = @wp_army_attachement_trait_weight
 	}
 	prerequisites = {
 		tech_attachment_chemical_stimulant
@@ -204,7 +204,7 @@ attachment_trait_combat_software_1 = {
 		attachment_trait_mini_nuke
 	}
 	selectable_weight = {
-		weight = 999
+		weight = @wp_army_attachement_trait_weight
 	}
 	prerequisites = {
 		tech_attachment_combat_software_1
@@ -256,7 +256,7 @@ attachment_trait_flame_thrower = {
 		#attachment_trait_mini_nuke
 	}
 	selectable_weight = {
-		weight = 999
+		weight = @wp_army_attachement_trait_weight
 	}
 	prerequisites = {
 		tech_attachment_flame_thrower
@@ -308,7 +308,7 @@ attachment_trait_shield_unit = {
 		attachment_trait_mini_nuke
 	}
 	selectable_weight = {
-		weight = 999
+		weight = @wp_army_attachement_trait_weight
 	}
 	prerequisites = {
 		tech_attachment_personal_shield_unit
@@ -361,7 +361,7 @@ attachment_trait_slave_collar = {
 		attachment_trait_mini_nuke
 	}
 	selectable_weight = {
-		weight = 999
+		weight = @wp_army_attachement_trait_weight
 	}
 	prerequisites = {
 		tech_attachment_exploding_slave_collar
@@ -416,7 +416,7 @@ attachment_trait_nerve_armour = {
 		attachment_trait_mini_nuke
 	}
 	selectable_weight = {
-		weight = 999
+		weight = @wp_army_attachement_trait_weight
 	}
 	prerequisites = {
 		tech_attachment_nerve_link_armour
@@ -471,7 +471,7 @@ attachment_trait_cybernetic_replacement = {
 		attachment_trait_mini_nuke
 	}
 	selectable_weight = {
-		weight = 999
+		weight = @wp_army_attachement_trait_weight
 	}
 	prerequisites = {
 		tech_attachment_cybernetic_replacement
@@ -527,7 +527,7 @@ attachment_trait_combat_software_2 = {
 		attachment_trait_mini_nuke
 	}
 	selectable_weight = {
-		weight = 999
+		weight = @wp_army_attachement_trait_weight
 	}
 	prerequisites = {
 		tech_attachment_combat_software_2
@@ -579,7 +579,7 @@ attachment_trait_inversion_grenade = {
 		attachment_trait_mini_nuke
 	}
 	selectable_weight = {
-		weight = 999
+		weight = @wp_army_attachement_trait_weight
 	}
 	prerequisites = {
 		tech_attachment_inversion_grenade
@@ -634,7 +634,7 @@ attachment_trait_chemical_thrower = {
 		#attachment_trait_mini_nuke
 	}
 	selectable_weight = {
-		weight = 999
+		weight = @wp_army_attachement_trait_weight
 	}
 	prerequisites = {
 		tech_attachment_chemical_thrower
@@ -687,7 +687,7 @@ attachment_trait_dark_matter_blade = {
 		attachment_trait_mini_nuke
 	}
 	selectable_weight = {
-		weight = 999
+		weight = @wp_army_attachement_trait_weight
 	}
 	prerequisites = {
 		tech_attachment_dark_matter_blade
@@ -742,7 +742,7 @@ attachment_trait_living_metal_armour = {
 		attachment_trait_mini_nuke
 	}
 	selectable_weight = {
-		weight = 999
+		weight = @wp_army_attachement_trait_weight
 	}
 	prerequisites = {
 		tech_attachment_living_metal_armour
@@ -797,7 +797,7 @@ attachment_trait_mini_nuke = {
 		#attachment_trait_mini_nuke
 	}
 	selectable_weight = {
-		weight = 999
+		weight = @wp_army_attachement_trait_weight
 	}
 	prerequisites = {
 		tech_attachment_mini_nuke
@@ -847,7 +847,7 @@ attachment_trait_air_defence = {
 		has_trait = subclass_commander_general
 	}
 	selectable_weight = {
-		weight = 999
+		weight = @wp_army_attachement_trait_weight
 	}
 	prerequisites = {
 		tech_air_defence_artillery
@@ -894,7 +894,7 @@ attachment_trait_neo_concrete = {
 		has_trait = subclass_commander_general
 	}
 	selectable_weight = {
-		weight = 999
+		weight = @wp_army_attachement_trait_weight
 	}
 	prerequisites = {
 		tech_attachment_neo_concrete_fortification
@@ -941,7 +941,7 @@ attachment_trait_mine_field = {
 		has_trait = subclass_commander_general
 	}
 	selectable_weight = {
-		weight = 999
+		weight = @wp_army_attachement_trait_weight
 	}
 	prerequisites = {
 		tech_attachment_self_replicating_mine
@@ -990,7 +990,7 @@ attachment_trait_missile_pylon = {
 		has_trait = subclass_commander_general
 	}
 	selectable_weight = {
-		weight = 999
+		weight = @wp_army_attachement_trait_weight
 	}
 	prerequisites = {
 		tech_attachment_whirlwind_missile_pylon
@@ -1037,7 +1037,7 @@ attachment_trait_tesla_coil = {
 		has_trait = subclass_commander_general
 	}
 	selectable_weight = {
-		weight = 999
+		weight = @wp_army_attachement_trait_weight
 	}
 	prerequisites = {
 		tech_attachment_tesla_coil
@@ -1086,7 +1086,7 @@ attachment_trait_holo_doc = {
 		has_trait = subclass_commander_general
 	}
 	selectable_weight = {
-		weight = 999
+		weight = @wp_army_attachement_trait_weight
 	}
 	prerequisites = {
 		tech_attachment_holo_doc_med_centre
@@ -1132,7 +1132,7 @@ attachment_trait_tremor_generator = {
 		has_trait = subclass_commander_general
 	}
 	selectable_weight = {
-		weight = 999
+		weight = @wp_army_attachement_trait_weight
 	}
 	prerequisites = {
 		tech_attachment_surface_tremor_generator
@@ -1179,7 +1179,7 @@ attachment_trait_cloaking_generator = {
 		has_trait = subclass_commander_general
 	}
 	selectable_weight = {
-		weight = 999
+		weight = @wp_army_attachement_trait_weight
 	}
 	prerequisites = {
 		tech_attachment_cloaking_field_generator
@@ -1228,7 +1228,7 @@ attachment_trait_storm_generator = {
 		has_trait = subclass_commander_general
 	}
 	selectable_weight = {
-		weight = 999
+		weight = @wp_army_attachement_trait_weight
 	}
 	prerequisites = {
 		tech_attachment_atmospheric_storm_generator
@@ -1277,7 +1277,7 @@ attachment_trait_warp_platform = {
 		has_trait = subclass_commander_general
 	}
 	selectable_weight = {
-		weight = 999
+		weight = @wp_army_attachement_trait_weight
 	}
 	prerequisites = {
 		tech_attachment_planetary_warp_platform
@@ -1325,7 +1325,7 @@ attachment_trait_war_canine = {
 		has_trait = subclass_commander_general
 	}
 	selectable_weight = {
-		weight = 999
+		weight = @wp_army_attachement_trait_weight
 	}
 	prerequisites = {
 		tech_attachment_war_canine
@@ -1369,7 +1369,7 @@ attachment_trait_raptor_flock = {
 		has_trait = subclass_commander_general
 	}
 	selectable_weight = {
-		weight = 999
+		weight = @wp_army_attachement_trait_weight
 	}
 	prerequisites = {
 		tech_attachment_raptor_flock
@@ -1414,7 +1414,7 @@ attachment_trait_battle_worm = {
 		has_trait = subclass_commander_general
 	}
 	selectable_weight = {
-		weight = 999
+		weight = @wp_army_attachement_trait_weight
 	}
 	prerequisites = {
 		tech_attachment_battle_worm
@@ -1462,7 +1462,7 @@ attachment_trait_mutant_horde = {
 		has_trait = subclass_commander_general
 	}
 	selectable_weight = {
-		weight = 999
+		weight = @wp_army_attachement_trait_weight
 	}
 	prerequisites = {
 		tech_attachment_mutant_horde
@@ -1510,7 +1510,7 @@ attachment_trait_therapod = {
 		has_trait = subclass_commander_general
 	}
 	selectable_weight = {
-		weight = 999
+		weight = @wp_army_attachement_trait_weight
 	}
 	prerequisites = {
 		tech_attachment_platform_therapod
@@ -1555,7 +1555,7 @@ attachment_trait_parasite_swarm = {
 		has_trait = subclass_commander_general
 	}
 	selectable_weight = {
-		weight = 999
+		weight = @wp_army_attachement_trait_weight
 	}
 	prerequisites = {
 		tech_attachment_parasitic_swarm
@@ -1602,7 +1602,7 @@ attachment_trait_xeno_cavalry = {
 		has_trait = subclass_commander_general
 	}
 	selectable_weight = {
-		weight = 999
+		weight = @wp_army_attachement_trait_weight
 	}
 	prerequisites = {
 		tech_attachment_xeno_cavalry
@@ -1646,7 +1646,7 @@ attachment_trait_brood_coordinator = {
 		has_trait = subclass_commander_general
 	}
 	selectable_weight = {
-		weight = 999
+		weight = @wp_army_attachement_trait_weight
 	}
 	prerequisites = {
 		tech_attachment_brood_coordinator
@@ -1701,7 +1701,7 @@ attachment_trait_military_police = {
 		has_trait = subclass_commander_general
 	}
 	selectable_weight = {
-		weight = 999
+		weight = @wp_army_attachement_trait_weight
 	}
 	prerequisites = {
 		tech_attachment_military_police
@@ -1752,7 +1752,7 @@ attachment_trait_clone_commando = {
 		has_trait = subclass_commander_general
 	}
 	selectable_weight = {
-		weight = 999
+		weight = @wp_army_attachement_trait_weight
 	}
 	prerequisites = {
 		tech_attachment_clone_commando
@@ -1804,7 +1804,7 @@ attachment_trait_hypnotized_clone = {
 		has_trait = subclass_commander_general
 	}
 	selectable_weight = {
-		weight = 999
+		weight = @wp_army_attachement_trait_weight
 	}
 	prerequisites = {
 		tech_attachment_hypnotized_clone
@@ -1855,7 +1855,7 @@ attachment_trait_slave_raider = {
 		has_trait = subclass_commander_general
 	}
 	selectable_weight = {
-		weight = 999
+		weight = @wp_army_attachement_trait_weight
 	}
 	prerequisites = {
 		tech_attachment_slave_raider
@@ -1909,10 +1909,61 @@ attachment_trait_special_forces = {
 		has_trait = subclass_commander_general
 	}
 	selectable_weight = {
-		weight = 999
+		weight = @wp_army_attachement_trait_weight
 	}
 	prerequisites = {
 		tech_attachment_special_forces
+	}
+}
+
+attachment_trait_psi_shield = {
+	veteran_class_locked_trait = yes
+	inline_script = {
+		script = trait/icon
+		CLASS = commander
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 1
+	}
+	icon = "gfx/interface/icons/army_attachments/attachment_special_forces.dds"
+	leader_class = {
+		commander
+	}
+	opposites = {
+		attachment_trait_military_police
+		attachment_trait_clone_commando
+		attachment_trait_hypnotized_clone
+		attachment_trait_slave_raider
+		attachment_trait_special_forces
+		attachment_trait_clone_suicide
+		attachment_trait_commissar_squad
+		#attachment_trait_psi_warrior
+		attachment_trait_gene_shock
+		attachment_trait_shadow_assassin
+		#attachment_trait_psi_shield
+		#attachment_trait_telekenetic_devastator
+		#attachment_trait_class_a_psi
+		attachment_trait_void_walker
+		attachment_trait_cyborg_infiltration
+	}
+	army_modifier = {
+		#army_damage_mult = 0.0
+		#army_morale_damage_mult = 0.0
+		#army_collateral_damage_mult = 0.0
+		army_health = 0.35
+		army_morale = 0.1
+		#army_disengage_chance_mult = 0.0
+		#armies_upkeep_mult = -0.0
+	}
+	leader_potential_add = {
+		has_paragon_dlc = yes
+		has_trait = subclass_commander_general
+	}
+	selectable_weight = {
+		weight = @wp_army_attachement_trait_weight
+	}
+	prerequisites = {
+		tech_attachment_psi_shield
 	}
 }
 
@@ -1964,7 +2015,7 @@ attachment_trait_clone_suicide = {
 		has_trait = subclass_commander_general
 	}
 	selectable_weight = {
-		weight = 999
+		weight = @wp_army_attachement_trait_weight
 	}
 	prerequisites = {
 		tech_attachment_clone_suicide
@@ -2018,7 +2069,7 @@ attachment_trait_commissar_squad = {
 		has_trait = subclass_commander_general
 	}
 	selectable_weight = {
-		weight = 999
+		weight = @wp_army_attachement_trait_weight
 	}
 	prerequisites = {
 		tech_attachment_commissar
@@ -2027,12 +2078,15 @@ attachment_trait_commissar_squad = {
 
 attachment_trait_psi_warrior = {
 	veteran_class_locked_trait = yes
+	replace_traits = {
+		attachment_trait_psi_shield
+	}
 	inline_script = {
 		script = trait/icon
 		CLASS = commander
 		RARITY = veteran
 		COUNCIL = no
-		TIER = 1
+		TIER = 2
 	}
 	icon = "gfx/interface/icons/army_attachments/attachment_special_forces.dds"
 	leader_class = {
@@ -2049,8 +2103,8 @@ attachment_trait_psi_warrior = {
 		#attachment_trait_psi_warrior
 		attachment_trait_gene_shock
 		attachment_trait_shadow_assassin
-		attachment_trait_psi_shield
-		attachment_trait_telekenetic_devastator
+		#attachment_trait_psi_shield
+		#attachment_trait_telekenetic_devastator
 		#attachment_trait_class_a_psi
 		attachment_trait_void_walker
 		attachment_trait_cyborg_infiltration
@@ -2069,7 +2123,7 @@ attachment_trait_psi_warrior = {
 		has_trait = subclass_commander_general
 	}
 	selectable_weight = {
-		weight = 999
+		weight = @wp_army_attachement_trait_weight
 	}
 	prerequisites = {
 		tech_attachment_psi_warrior
@@ -2121,7 +2175,7 @@ attachment_trait_gene_shock = {
 		has_trait = subclass_commander_general
 	}
 	selectable_weight = {
-		weight = 999
+		weight = @wp_army_attachement_trait_weight
 	}
 	prerequisites = {
 		tech_attachment_gene_shock_warrior
@@ -2175,76 +2229,24 @@ attachment_trait_shadow_assassin = {
 		has_trait = subclass_commander_general
 	}
 	selectable_weight = {
-		weight = 999
+		weight = @wp_army_attachement_trait_weight
 	}
 	prerequisites = {
 		tech_attachment_shadow_assassin
 	}
 }
 
-attachment_trait_psi_shield = {
-	veteran_class_locked_trait = yes
-	inline_script = {
-		script = trait/icon
-		CLASS = commander
-		RARITY = veteran
-		COUNCIL = no
-		TIER = 1
-	}
-	icon = "gfx/interface/icons/army_attachments/attachment_special_forces.dds"
-	leader_class = {
-		commander
-	}
-	opposites = {
-		attachment_trait_military_police
-		attachment_trait_clone_commando
-		attachment_trait_hypnotized_clone
-		attachment_trait_slave_raider
-		attachment_trait_special_forces
-		attachment_trait_clone_suicide
-		attachment_trait_commissar_squad
-		attachment_trait_psi_warrior
-		attachment_trait_gene_shock
-		attachment_trait_shadow_assassin
-		#attachment_trait_psi_shield
-		#attachment_trait_telekenetic_devastator
-		attachment_trait_class_a_psi
-		attachment_trait_void_walker
-		attachment_trait_cyborg_infiltration
-	}
-	army_modifier = {
-		#army_damage_mult = 0.0
-		#army_morale_damage_mult = 0.0
-		#army_collateral_damage_mult = 0.0
-		army_health = 0.35
-		army_morale = 0.1
-		#army_disengage_chance_mult = 0.0
-		#armies_upkeep_mult = -0.0
-	}
-	leader_potential_add = {
-		has_paragon_dlc = yes
-		has_trait = subclass_commander_general
-	}
-	selectable_weight = {
-		weight = 999
-	}
-	prerequisites = {
-		tech_attachment_psi_shield
-	}
-}
-
-## TIER 5
 attachment_trait_telekenetic_devastator = {
 	veteran_class_locked_trait = yes
 	replace_traits = {
-		attachment_trait_psi_shield
+		attachment_trait_psi_warrior
 	}
 	inline_script = {
 		script = trait/icon
 		CLASS = commander
 		RARITY = veteran
 		COUNCIL = no
-		TIER = 2
+		TIER = 3
 	}
 	icon = "gfx/interface/icons/army_attachments/attachment_special_forces.dds"
 	leader_class = {
@@ -2258,12 +2260,12 @@ attachment_trait_telekenetic_devastator = {
 		attachment_trait_special_forces
 		attachment_trait_clone_suicide
 		attachment_trait_commissar_squad
-		attachment_trait_psi_warrior
+		#attachment_trait_psi_warrior
 		attachment_trait_gene_shock
 		attachment_trait_shadow_assassin
 		#attachment_trait_psi_shield
 		#attachment_trait_telekenetic_devastator
-		attachment_trait_class_a_psi
+		#attachment_trait_class_a_psi
 		attachment_trait_void_walker
 		attachment_trait_cyborg_infiltration
 	}
@@ -2281,24 +2283,25 @@ attachment_trait_telekenetic_devastator = {
 		has_trait = subclass_commander_general
 	}
 	selectable_weight = {
-		weight = 999
+		weight = @wp_army_attachement_trait_weight
 	}
 	prerequisites = {
 		tech_attachment_telekenetic_devastator
 	}
 }
 
+## TIER 5
 attachment_trait_class_a_psi = {
 	veteran_class_locked_trait = yes
 	replace_traits = {
-		attachment_trait_psi_warrior
+		attachment_trait_telekenetic_devastator
 	}
 	inline_script = {
 		script = trait/icon
 		CLASS = commander
 		RARITY = veteran
 		COUNCIL = no
-		TIER = 2
+		TIER = 4
 	}
 	icon = "gfx/interface/icons/army_attachments/attachment_special_forces.dds"
 	leader_class = {
@@ -2315,8 +2318,8 @@ attachment_trait_class_a_psi = {
 		#attachment_trait_psi_warrior
 		attachment_trait_gene_shock
 		attachment_trait_shadow_assassin
-		attachment_trait_psi_shield
-		attachment_trait_telekenetic_devastator
+		#attachment_trait_psi_shield
+		#attachment_trait_telekenetic_devastator
 		#attachment_trait_class_a_psi
 		attachment_trait_void_walker
 		attachment_trait_cyborg_infiltration
@@ -2335,7 +2338,7 @@ attachment_trait_class_a_psi = {
 		has_trait = subclass_commander_general
 	}
 	selectable_weight = {
-		weight = 999
+		weight = @wp_army_attachement_trait_weight
 	}
 	prerequisites = {
 		tech_attachment_class_a_psi
@@ -2389,7 +2392,7 @@ attachment_trait_void_walker = {
 		has_trait = subclass_commander_general
 	}
 	selectable_weight = {
-		weight = 999
+		weight = @wp_army_attachement_trait_weight
 	}
 	prerequisites = {
 		tech_attachment_void_walker
@@ -2440,7 +2443,7 @@ attachment_trait_cyborg_infiltration = {
 		has_trait = subclass_commander_general
 	}
 	selectable_weight = {
-		weight = 999
+		weight = @wp_army_attachement_trait_weight
 	}
 	prerequisites = {
 		tech_attachment_cyborg_infiltration
@@ -2491,7 +2494,7 @@ attachment_trait_mobile_shield = {
 		has_trait = subclass_commander_general
 	}
 	selectable_weight = {
-		weight = 999
+		weight = @wp_army_attachement_trait_weight
 	}
 	prerequisites = {
 		tech_attachment_mobile_shield
@@ -2538,7 +2541,7 @@ attachment_trait_dropship = {
 		has_trait = subclass_commander_general
 	}
 	selectable_weight = {
-		weight = 999
+		weight = @wp_army_attachement_trait_weight
 	}
 	prerequisites = {
 		tech_attachment_assault_dropship
@@ -2585,7 +2588,7 @@ attachment_trait_drone_swarm = {
 		has_trait = subclass_commander_general
 	}
 	selectable_weight = {
-		weight = 999
+		weight = @wp_army_attachement_trait_weight
 	}
 	prerequisites = {
 		tech_attachment_hunter_killer_drone
@@ -2633,7 +2636,7 @@ attachment_trait_battle_strider = {
 		has_trait = subclass_commander_general
 	}
 	selectable_weight = {
-		weight = 999
+		weight = @wp_army_attachement_trait_weight
 	}
 	prerequisites = {
 		tech_attachment_battle_strider
@@ -2680,7 +2683,7 @@ attachment_trait_drop_pod = {
 		has_trait = subclass_commander_general
 	}
 	selectable_weight = {
-		weight = 999
+		weight = @wp_army_attachement_trait_weight
 	}
 	prerequisites = {
 		tech_attachment_orbital_pod
@@ -2728,7 +2731,7 @@ attachment_trait_plasma_plane = {
 		has_trait = subclass_commander_general
 	}
 	selectable_weight = {
-		weight = 999
+		weight = @wp_army_attachement_trait_weight
 	}
 	prerequisites = {
 		tech_attachment_plasma_jet
@@ -2775,7 +2778,7 @@ attachment_trait_hover_tank = {
 		has_trait = subclass_commander_general
 	}
 	selectable_weight = {
-		weight = 999
+		weight = @wp_army_attachement_trait_weight
 	}
 	prerequisites = {
 		tech_attachment_hover_tank
@@ -2826,7 +2829,7 @@ attachment_trait_war_mech = {
 		has_trait = subclass_commander_general
 	}
 	selectable_weight = {
-		weight = 999
+		weight = @wp_army_attachement_trait_weight
 	}
 	prerequisites = {
 		tech_attachment_war_mech
@@ -2876,7 +2879,7 @@ attachment_trait_sonic_speeder = {
 		has_trait = subclass_commander_general
 	}
 	selectable_weight = {
-		weight = 999
+		weight = @wp_army_attachement_trait_weight
 	}
 	prerequisites = {
 		tech_attachment_sonic_speeder
@@ -2926,7 +2929,7 @@ attachment_trait_all_terrain = {
 		has_trait = subclass_commander_general
 	}
 	selectable_weight = {
-		weight = 999
+		weight = @wp_army_attachement_trait_weight
 	}
 	prerequisites = {
 		tech_attachment_terrain_augmentation
@@ -2977,7 +2980,7 @@ attachment_trait_armageddon_mech = {
 		has_trait = subclass_commander_general
 	}
 	selectable_weight = {
-		weight = 999
+		weight = @wp_army_attachement_trait_weight
 	}
 	prerequisites = {
 		tech_attachment_armageddon_mech

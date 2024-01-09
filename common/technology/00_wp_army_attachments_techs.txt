@@ -2,325 +2,383 @@
 ## ARMY ATTACHMENTS
 ## BY WP
 ##########################
-
 ###########
 # EQUIPMENT
 ###########
-
 # TIER 1 EQUIPMENT
-
 tech_attachment_jet_pack = {
 	cost = @tier1cost1
 	area = engineering
 	tier = 1
-	category = {propulsion}
-	prerequisites = { "tech_afterburners_1"}
+	category = {
+		propulsion
+	}
+	prerequisites = {
+		"tech_afterburners_1"
+	}
 	weight = @tier1weight1
 	#is_rare = yes
-
 	gateway = army_attachment
-
-	modifier = { custom_tooltip = army_attachment_tech_custom_tooltip_jet_pack }
-
-
-	weight_modifier = {}
-
-	ai_weight = {}
-
-	potential = {}
-
+	modifier = {
+		custom_tooltip = army_attachment_tech_custom_tooltip_jet_pack
+	}
+	weight_modifier = {
+	}
+	ai_weight = {
+	}
+	potential = {
+	}
 }
+
 tech_attachment_power_armour = {
 	cost = @tier1cost1
 	area = engineering
 	tier = 1
-	category = {materials}
-	prerequisites = { "tech_engineering_1" }
+	category = {
+		materials
+	}
+	prerequisites = {
+		"tech_engineering_1"
+	}
 	weight = @tier1weight1
 	#is_rare = yes
-
 	gateway = army_attachment
-
-	modifier = { custom_tooltip = army_attachment_tech_custom_tooltip_power_armour }
-
-	weight_modifier = {}
-
-	ai_weight = {}
-
-	potential = {}
-
+	modifier = {
+		custom_tooltip = army_attachment_tech_custom_tooltip_power_armour
+	}
+	weight_modifier = {
+	}
+	ai_weight = {
+	}
+	potential = {
+	}
 }
+
 tech_attachment_chemical_stimulant = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = {biology}
-	prerequisites = { "tech_society_1" }
+	category = {
+		biology
+	}
+	prerequisites = {
+		"tech_society_1"
+	}
 	weight = @tier1weight1
 	#is_rare = yes
-
 	gateway = army_attachment
-
-	modifier = { custom_tooltip = army_attachment_tech_custom_tooltip_chemical_stimulant }
-
-	weight_modifier = {}
-
-	ai_weight = {}
-
+	modifier = {
+		custom_tooltip = army_attachment_tech_custom_tooltip_chemical_stimulant
+	}
+	weight_modifier = {
+	}
+	ai_weight = {
+	}
 	potential = {
 		OR = {
-			NOT = { has_authority = auth_machine_intelligence }
+			NOT = {
+				has_authority = auth_machine_intelligence
+			}
 			has_civic = civic_machine_assimilator
 			has_civic = civic_machine_servitor
 		}
 	}
 }
+
 # TIER 2 EQUIPMENT
 tech_attachment_combat_software_1 = {
 	cost = @tier2cost1
 	area = physics
 	tier = 2
-	category = {computing}
-	prerequisites = { "tech_droid_workers" }
+	category = {
+		computing
+	}
+	prerequisites = {
+		"tech_droid_workers"
+	}
 	weight = @tier2weight1
 	#is_rare = yes
-
 	gateway = army_attachment
-
-	modifier = { custom_tooltip = army_attachment_tech_custom_tooltip_combat_software_1 }
-
-	weight_modifier = {}
-
-	ai_weight = {}
-
+	modifier = {
+		custom_tooltip = army_attachment_tech_custom_tooltip_combat_software_1
+	}
+	weight_modifier = {
+	}
+	ai_weight = {
+	}
 	potential = {
 		OR = {
-			NOT = { has_authority = auth_machine_intelligence }
+			NOT = {
+				has_authority = auth_machine_intelligence
+			}
 			has_civic = civic_machine_assimilator
 			has_civic = civic_machine_servitor
 		}
 	}
 }
+
 tech_attachment_flame_thrower = {
 	cost = @tier2cost1
 	area = engineering
 	tier = 2
-	category = {propulsion}
-	prerequisites = { "tech_attachment_jet_pack" }
+	category = {
+		propulsion
+	}
+	prerequisites = {
+		"tech_attachment_jet_pack"
+	}
 	weight = @tier2weight1
 	#is_rare = yes
-
 	gateway = army_attachment
-
-	modifier = { custom_tooltip = army_attachment_tech_custom_tooltip_flame_thrower }
-
-	weight_modifier = {}
-
-	ai_weight = {}
-
-	potential = {}
-
+	modifier = {
+		custom_tooltip = army_attachment_tech_custom_tooltip_flame_thrower
+	}
+	weight_modifier = {
+	}
+	ai_weight = {
+	}
+	potential = {
+	}
 }
+
 tech_attachment_personal_shield_unit = {
 	cost = @tier2cost1
 	area = physics
 	tier = 2
-	category = {field_manipulation}
-	prerequisites = { "tech_shields_3" }
+	category = {
+		field_manipulation
+	}
+	prerequisites = {
+		"tech_shields_3"
+	}
 	weight = @tier2weight1
 	#is_rare = yes
-
 	gateway = army_attachment
-
-	modifier = { custom_tooltip = army_attachment_tech_custom_tooltip_personal_shield_unit }
-
-	weight_modifier = {}
-
-	ai_weight = {}
-
-	potential = {}
-
+	modifier = {
+		custom_tooltip = army_attachment_tech_custom_tooltip_personal_shield_unit
+	}
+	weight_modifier = {
+	}
+	ai_weight = {
+	}
+	potential = {
+	}
 }
+
 # TIER 3 EQUIPMENT
 tech_attachment_exploding_slave_collar = {
 	cost = @tier3cost1
 	area = society
 	tier = 3
-	category = {military_theory}
-	prerequisites = { "tech_attachment_slave_raider" }
+	category = {
+		military_theory
+	}
+	prerequisites = {
+		"tech_attachment_slave_raider"
+	}
 	weight = @tier3weight1
 	#is_rare = yes
-
 	gateway = army_attachment
-
-	modifier = { custom_tooltip = army_attachment_tech_custom_tooltip_exploding_slave_collar }
-
+	modifier = {
+		custom_tooltip = army_attachment_tech_custom_tooltip_exploding_slave_collar
+	}
 	weight_modifier = {
 		modifier = {
-			factor = 0.0
+			factor = 0
 			OR = {
 				allows_slavery = no
-				NOT = { any_owned_pop = { is_enslaved = yes } }
+				NOT = {
+					any_owned_pop = {
+						is_enslaved = yes
+					}
+				}
 			}
 		}
 	}
-
-	ai_weight = {}
-
-	potential = {}
-
+	ai_weight = {
+	}
+	potential = {
+	}
 }
+
 tech_attachment_nerve_link_armour = {
 	cost = @tier3cost1
 	area = society
 	tier = 3
-	category = {biology}
-	prerequisites = { "tech_attachment_jet_pack"}
+	category = {
+		biology
+	}
+	prerequisites = {
+		"tech_attachment_jet_pack"
+	}
 	weight = @tier3weight1
 	#is_rare = yes
-
 	gateway = army_attachment
-
-	modifier = { custom_tooltip = army_attachment_tech_custom_tooltip_nerve_link_armour }
-
-	weight_modifier = {}
-
-	ai_weight = {}
-
+	modifier = {
+		custom_tooltip = army_attachment_tech_custom_tooltip_nerve_link_armour
+	}
+	weight_modifier = {
+	}
+	ai_weight = {
+	}
 	potential = {
 		OR = {
 			has_ascension_perk = ap_the_flesh_is_weak
 			has_ascension_perk = ap_organo_machine_interfacing
 		}
 		OR = {
-			NOT = { has_authority = auth_machine_intelligence }
+			NOT = {
+				has_authority = auth_machine_intelligence
+			}
 			has_civic = civic_machine_assimilator
 			has_civic = civic_machine_servitor
 		}
 	}
 }
+
 tech_attachment_cybernetic_replacement = {
 	cost = @tier3cost1
 	area = engineering
 	tier = 3
-	category = {materials}
-	prerequisites = { "tech_attachment_nerve_link_armour"}
+	category = {
+		materials
+	}
+	prerequisites = {
+		"tech_attachment_nerve_link_armour"
+	}
 	weight = @tier3weight1
 	#is_rare = yes
-
 	gateway = army_attachment
-
-	modifier = { custom_tooltip = army_attachment_tech_custom_tooltip_cybernetic_replacement }
-
-	weight_modifier = {}
-
-	ai_weight = {}
-
+	modifier = {
+		custom_tooltip = army_attachment_tech_custom_tooltip_cybernetic_replacement
+	}
+	weight_modifier = {
+	}
+	ai_weight = {
+	}
 	potential = {
 		OR = {
 			has_ascension_perk = ap_the_flesh_is_weak
 			has_ascension_perk = ap_organo_machine_interfacing
 		}
 	}
-
 }
+
 # TIER 4 EQUIPMENT
 tech_attachment_combat_software_2 = {
 	cost = @tier4cost1
 	area = physics
 	tier = 4
-	category = {computing}
-	prerequisites = { "tech_attachment_combat_software_1" }
+	category = {
+		computing
+	}
+	prerequisites = {
+		"tech_attachment_combat_software_1"
+	}
 	weight = @tier4weight3
 	#is_rare = yes
-
 	gateway = army_attachment
-
-	modifier = { custom_tooltip = army_attachment_tech_custom_tooltip_combat_software_2 }
-
-	weight_modifier = {}
-
-	ai_weight = {}
-
+	modifier = {
+		custom_tooltip = army_attachment_tech_custom_tooltip_combat_software_2
+	}
+	weight_modifier = {
+	}
+	ai_weight = {
+	}
 	potential = {
 		has_authority = auth_machine_intelligence
 	}
-
 }
+
 tech_attachment_inversion_grenade = {
 	cost = @tier4cost1
 	area = physics
 	tier = 4
-	category = {particles}
-	prerequisites = { "tech_missiles_3" }
+	category = {
+		particles
+	}
+	prerequisites = {
+		"tech_missiles_3"
+	}
 	weight = @tier4weight3
 	#is_rare = yes
-
 	gateway = army_attachment
-
-	modifier = { custom_tooltip = army_attachment_tech_custom_tooltip_inversion_grenade }
-
-	weight_modifier = {}
-
-	ai_weight = {}
-
-	potential = {}
-
+	modifier = {
+		custom_tooltip = army_attachment_tech_custom_tooltip_inversion_grenade
+	}
+	weight_modifier = {
+	}
+	ai_weight = {
+	}
+	potential = {
+	}
 }
+
 tech_attachment_chemical_thrower = {
 	cost = @tier4cost1
 	area = engineering
 	tier = 4
-	category = {propulsion}
-	prerequisites = { "tech_attachment_flame_thrower" }
+	category = {
+		propulsion
+	}
+	prerequisites = {
+		"tech_attachment_flame_thrower"
+	}
 	weight = @tier4weight3
 	#is_rare = yes
-
 	gateway = army_attachment
-
-	modifier = { custom_tooltip = army_attachment_tech_custom_tooltip_chemical_thrower }
-
-	weight_modifier = {}
-
-	ai_weight = {}
-
-	potential = {}
-
+	modifier = {
+		custom_tooltip = army_attachment_tech_custom_tooltip_chemical_thrower
+	}
+	weight_modifier = {
+	}
+	ai_weight = {
+	}
+	potential = {
+	}
 }
+
 # TIER 5 EQUIPMENT
 tech_attachment_dark_matter_blade = {
 	cost = @tier5cost1
 	area = physics
 	tier = 5
-	category = {field_manipulation}
-	prerequisites = { "tech_mine_dark_matter" }
+	category = {
+		field_manipulation
+	}
+	prerequisites = {
+		"tech_mine_dark_matter"
+	}
 	weight = @tier5weight3
 	is_rare = yes
-
 	gateway = army_attachment
-
-	modifier = { custom_tooltip = army_attachment_tech_custom_tooltip_dark_matter_blade }
-
-	weight_modifier = {}
-
-	ai_weight = {}
-
-	potential = {}
-
+	modifier = {
+		custom_tooltip = army_attachment_tech_custom_tooltip_dark_matter_blade
+	}
+	weight_modifier = {
+	}
+	ai_weight = {
+	}
+	potential = {
+	}
 }
+
 tech_attachment_living_metal_armour = {
 	cost = @tier5cost1
 	area = engineering
 	tier = 5
-	category = {materials}
-	prerequisites = { "tech_mine_living_metal" }
+	category = {
+		materials
+	}
+	prerequisites = {
+		"tech_mine_living_metal"
+	}
 	weight = @tier5weight3
 	is_rare = yes
-
 	gateway = army_attachment
-
-	modifier = { custom_tooltip = army_attachment_tech_custom_tooltip_living_metal_armour }
-
+	modifier = {
+		custom_tooltip = army_attachment_tech_custom_tooltip_living_metal_armour
+	}
 	weight_modifier = {
 		modifier = {
 			factor = 0
@@ -331,461 +389,549 @@ tech_attachment_living_metal_armour = {
 			}
 		}
 	}
-
-	ai_weight = {}
-
-	potential = {}
-
+	ai_weight = {
+	}
+	potential = {
+	}
 }
+
 tech_attachment_mini_nuke = {
 	cost = @tier5cost1
 	area = engineering
 	tier = 5
-	category = {propulsion}
-	prerequisites = { "tech_missiles_4" }
+	category = {
+		propulsion
+	}
+	prerequisites = {
+		"tech_missiles_4"
+	}
 	weight = @tier5weight3
 	is_rare = yes
-
 	gateway = army_attachment
-
-	modifier = { custom_tooltip = army_attachment_tech_custom_tooltip_mini_nuke }
-
-	weight_modifier = {}
-
-	ai_weight = {}
-
+	modifier = {
+		custom_tooltip = army_attachment_tech_custom_tooltip_mini_nuke
+	}
+	weight_modifier = {
+	}
+	ai_weight = {
+	}
 	potential = {
 		has_tradition = tr_supremacy_finish
 	}
-
 }
 
 ###########
 # INFRASTRUCTURE
 ###########
-
 # TIER 1 INFRASTRUCTURE
 tech_air_defence_artillery = {
 	cost = @tier1cost1
 	area = physics
 	tier = 1
-	category = {computing}
-	prerequisites = { "tech_ground_defense_planning" }
+	category = {
+		computing
+	}
+	prerequisites = {
+		"tech_ground_defense_planning"
+	}
 	weight = @tier1weight3
 	#is_rare = yes
-
 	gateway = army_attachment
-
-	modifier = { custom_tooltip = army_attachment_tech_custom_tooltip_air_defence_artillery }
-
-	weight_modifier = {}
-
-	ai_weight = {}
-
+	modifier = {
+		custom_tooltip = army_attachment_tech_custom_tooltip_air_defence_artillery
+	}
+	weight_modifier = {
+	}
+	ai_weight = {
+	}
 	potential = {
 		has_tradition = tr_unyielding_finish
 	}
 }
+
 # TIER 2 INFRASTRUCTURE
 tech_attachment_neo_concrete_fortification = {
 	cost = @tier2cost1
 	area = society
 	tier = 2
-	category = {military_theory}
-	prerequisites = { "tech_global_defense_grid" }
+	category = {
+		military_theory
+	}
+	prerequisites = {
+		"tech_global_defense_grid"
+	}
 	weight = @tier2weight3
 	#is_rare = yes
-
 	gateway = army_attachment
-
-	modifier = { custom_tooltip = army_attachment_tech_custom_tooltip_neo_concrete_fortification }
-
-	weight_modifier = {}
-
-	ai_weight = {}
-
+	modifier = {
+		custom_tooltip = army_attachment_tech_custom_tooltip_neo_concrete_fortification
+	}
+	weight_modifier = {
+	}
+	ai_weight = {
+	}
 	potential = {
 		has_tradition = tr_unyielding_finish
 	}
 }
+
 # TIER 3 INFRASTRUCTURE
 tech_attachment_self_replicating_mine = {
 	cost = @tier3cost1
 	area = physics
 	tier = 3
-	category = {particles}
-	prerequisites = { "tech_assembly_pattern" }
+	category = {
+		particles
+	}
+	prerequisites = {
+		"tech_assembly_pattern"
+	}
 	weight = @tier3weight1
 	#is_rare = yes
-
 	gateway = army_attachment
-
-	modifier = { custom_tooltip = army_attachment_tech_custom_tooltip_self_replicating_mine }
-
-	weight_modifier = {}
-
-	ai_weight = {}
-
+	modifier = {
+		custom_tooltip = army_attachment_tech_custom_tooltip_self_replicating_mine
+	}
+	weight_modifier = {
+	}
+	ai_weight = {
+	}
 	potential = {
 		has_tradition = tr_unyielding_finish
 	}
 }
+
 tech_attachment_whirlwind_missile_pylon = {
 	cost = @tier3cost1
 	area = engineering
 	tier = 3
-	category = {propulsion}
-	prerequisites = { "tech_swarmer_missiles_2" }
+	category = {
+		propulsion
+	}
+	prerequisites = {
+		"tech_swarmer_missiles_2"
+	}
 	weight = @tier3weight1
 	#is_rare = yes
-
 	gateway = army_attachment
-
-	modifier = { custom_tooltip = army_attachment_tech_custom_tooltip_whirlwind_missile_pylon }
-
-	weight_modifier = {}
-
-	ai_weight = {}
-
-	potential = {}
-
+	modifier = {
+		custom_tooltip = army_attachment_tech_custom_tooltip_whirlwind_missile_pylon
+	}
+	weight_modifier = {
+	}
+	ai_weight = {
+	}
+	potential = {
+	}
 }
+
 # TIER 4 INFRASTRUCTURE
 tech_attachment_tesla_coil = {
 	cost = @tier4cost1
 	area = physics
 	tier = 4
-	category = {field_manipulation}
-	prerequisites = { "tech_arc_emitter_1" }
+	category = {
+		field_manipulation
+	}
+	prerequisites = {
+		"tech_arc_emitter_1"
+	}
 	weight = @tier4weight3
 	#is_rare = yes
-
 	gateway = army_attachment
-
-	modifier = { custom_tooltip = army_attachment_tech_custom_tooltip_tesla_coil }
-
-	weight_modifier = {}
-
-	ai_weight = {}
-
-	potential = {}
-
+	modifier = {
+		custom_tooltip = army_attachment_tech_custom_tooltip_tesla_coil
+	}
+	weight_modifier = {
+	}
+	ai_weight = {
+	}
+	potential = {
+	}
 }
+
 tech_attachment_holo_doc_med_centre = {
 	cost = @tier4cost1
 	area = physics
 	tier = 4
-	category = {computing}
-	prerequisites = { "tech_sapient_ai" }
+	category = {
+		computing
+	}
+	prerequisites = {
+		"tech_sapient_ai"
+	}
 	weight = @tier4weight3
 	#is_rare = yes
-
 	gateway = army_attachment
-
-	modifier = { custom_tooltip = army_attachment_tech_custom_tooltip_holo_doc_med_centre }
-
-	weight_modifier = {}
-
-	ai_weight = {}
-
+	modifier = {
+		custom_tooltip = army_attachment_tech_custom_tooltip_holo_doc_med_centre
+	}
+	weight_modifier = {
+	}
+	ai_weight = {
+	}
 	potential = {
 		OR = {
-			NOT = { has_authority = auth_machine_intelligence }
+			NOT = {
+				has_authority = auth_machine_intelligence
+			}
 			has_civic = civic_machine_assimilator
 			has_civic = civic_machine_servitor
 		}
 	}
 }
+
 tech_attachment_surface_tremor_generator = {
 	cost = @tier4cost1
 	area = engineering
 	tier = 4
-	category = {propulsion}
-	prerequisites = { "tech_mining_2" } 
+	category = {
+		propulsion
+	}
+	prerequisites = {
+		"tech_mining_2"
+	}
 	weight = @tier4weight3
 	#is_rare = yes
-
 	gateway = army_attachment
-
-	modifier = { custom_tooltip = army_attachment_tech_custom_tooltip_tremor_generator }
-
-	weight_modifier = {}
-
-	ai_weight = {}
-
-	potential = {}
-
+	modifier = {
+		custom_tooltip = army_attachment_tech_custom_tooltip_tremor_generator
+	}
+	weight_modifier = {
+	}
+	ai_weight = {
+	}
+	potential = {
+	}
 }
+
 # TIER 5 INFRASTRUCTURE
 tech_attachment_cloaking_field_generator = {
 	cost = @tier5cost1
 	area = physics
 	tier = 5
-	category = {field_manipulation}
-	prerequisites = { "tech_attachment_shadow_assassin" }
+	category = {
+		field_manipulation
+	}
+	prerequisites = {
+		"tech_attachment_shadow_assassin"
+	}
 	weight = @tier5weight3
 	is_rare = yes
-
 	gateway = army_attachment
-
-	modifier = { custom_tooltip = army_attachment_tech_custom_tooltip_cloaking_field_generator }
-
-	weight_modifier = {}
-
-	ai_weight = {}
-
+	modifier = {
+		custom_tooltip = army_attachment_tech_custom_tooltip_cloaking_field_generator
+	}
+	weight_modifier = {
+	}
+	ai_weight = {
+	}
 	potential = {
 		has_tradition = tr_subterfuge_finish
 	}
-
 }
+
 tech_attachment_atmospheric_storm_generator = {
 	cost = @tier5cost1
 	area = physics
 	tier = 5
-	category = {field_manipulation}
-	prerequisites = { "tech_housing_1" "tech_attachment_surface_tremor_generator" }
+	category = {
+		field_manipulation
+	}
+	prerequisites = {
+		"tech_housing_1"
+		"tech_attachment_surface_tremor_generator"
+	}
 	weight = @tier5weight3
 	is_rare = yes
-
 	gateway = army_attachment
-
-	modifier = { custom_tooltip = army_attachment_tech_custom_tooltip_atmospheric_storm_generator }
-
-	weight_modifier = {}
-
-	ai_weight = {}
-
+	modifier = {
+		custom_tooltip = army_attachment_tech_custom_tooltip_atmospheric_storm_generator
+	}
+	weight_modifier = {
+	}
+	ai_weight = {
+	}
 	potential = {
 		has_tradition = tr_supremacy_finish
 	}
-
 }
+
 tech_attachment_planetary_warp_platform = {
 	cost = @tier5cost1
 	area = physics
 	tier = 5
-	category = {particles}
-	prerequisites = { "tech_jump_drive_1" }
+	category = {
+		particles
+	}
+	prerequisites = {
+		"tech_jump_drive_1"
+	}
 	weight = @tier5weight3
 	is_rare = yes
-
 	gateway = army_attachment
-
-	modifier = { custom_tooltip = army_attachment_tech_custom_tooltip_planetary_warp_platform }
-
-	weight_modifier = {}
-
-	ai_weight = {}
-
-	potential = {}
-
+	modifier = {
+		custom_tooltip = army_attachment_tech_custom_tooltip_planetary_warp_platform
+	}
+	weight_modifier = {
+	}
+	ai_weight = {
+	}
+	potential = {
+	}
 }
 
 ###########
 # BEAST
 ###########
-
 # TIER 1 BEAST
 tech_attachment_war_canine = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = {military_theory}
-	prerequisites = { "tech_alien_life_studies" }
+	category = {
+		military_theory
+	}
+	prerequisites = {
+		"tech_alien_life_studies"
+	}
 	weight = @tier1weight1
 	#is_rare = yes
-
 	gateway = army_attachment
-
-	modifier = { custom_tooltip = army_attachment_tech_custom_tooltip_war_canine }
-
-	weight_modifier = {}
-
-	ai_weight = {}
-
+	modifier = {
+		custom_tooltip = army_attachment_tech_custom_tooltip_war_canine
+	}
+	weight_modifier = {
+	}
+	ai_weight = {
+	}
 	potential = {
 		OR = {
-			NOT = { has_authority = auth_machine_intelligence }
+			NOT = {
+				has_authority = auth_machine_intelligence
+			}
 			has_civic = civic_machine_assimilator
 			has_civic = civic_machine_servitor
 		}
 	}
 }
+
 # TIER 2 BEAST
 tech_attachment_raptor_flock = {
 	cost = @tier2cost1
 	area = society
 	tier = 2
-	category = {military_theory}
-	prerequisites = { "tech_alien_life_studies" }
+	category = {
+		military_theory
+	}
+	prerequisites = {
+		"tech_alien_life_studies"
+	}
 	weight = @tier2weight1
 	#is_rare = yes
-
 	gateway = army_attachment
-
-	modifier = { custom_tooltip = army_attachment_tech_custom_tooltip_raptor_flock }
-
-	weight_modifier = {}
-
-	ai_weight = {}
-
+	modifier = {
+		custom_tooltip = army_attachment_tech_custom_tooltip_raptor_flock
+	}
+	weight_modifier = {
+	}
+	ai_weight = {
+	}
 	potential = {
 		OR = {
-			NOT = { has_authority = auth_machine_intelligence }
+			NOT = {
+				has_authority = auth_machine_intelligence
+			}
 			has_civic = civic_machine_assimilator
 			has_civic = civic_machine_servitor
 		}
 	}
 }
+
 tech_attachment_battle_worm = {
 	cost = @tier2cost1
 	area = society
 	tier = 2
-	category = {military_theory}
-	prerequisites = { "tech_dangerous_wildlife" }
+	category = {
+		military_theory
+	}
+	prerequisites = {
+		"tech_dangerous_wildlife"
+	}
 	weight = @tier2weight1
 	#is_rare = yes
-
 	gateway = army_attachment
-
-	modifier = { custom_tooltip = army_attachment_tech_custom_tooltip_battle_worm }
-
-	weight_modifier = {}
-
-	ai_weight = {}
-
+	modifier = {
+		custom_tooltip = army_attachment_tech_custom_tooltip_battle_worm
+	}
+	weight_modifier = {
+	}
+	ai_weight = {
+	}
 	potential = {
 		OR = {
-			NOT = { has_authority = auth_machine_intelligence }
+			NOT = {
+				has_authority = auth_machine_intelligence
+			}
 			has_civic = civic_machine_assimilator
 			has_civic = civic_machine_servitor
 		}
 	}
 }
+
 # TIER 3 BEAST
 tech_attachment_mutant_horde = {
 	cost = @tier3cost1
 	area = society
 	tier = 3
-	category = {biology}
-	prerequisites = { "tech_genome_mapping" }
+	category = {
+		biology
+	}
+	prerequisites = {
+		"tech_genome_mapping"
+	}
 	weight = @tier3weight1
 	#is_rare = yes
-
 	gateway = army_attachment
-
-	modifier = { custom_tooltip = army_attachment_tech_custom_tooltip_mutant_horde }
-
-	weight_modifier = {}
-
-	ai_weight = {}
-
+	modifier = {
+		custom_tooltip = army_attachment_tech_custom_tooltip_mutant_horde
+	}
+	weight_modifier = {
+	}
+	ai_weight = {
+	}
 	potential = {
 		OR = {
-			NOT = { has_authority = auth_machine_intelligence }
+			NOT = {
+				has_authority = auth_machine_intelligence
+			}
 			has_civic = civic_machine_assimilator
 			has_civic = civic_machine_servitor
 		}
 	}
 }
+
 # TIER 4 BEAST
 tech_attachment_platform_therapod = {
 	cost = @tier4cost1
 	area = society
 	tier = 4
-	category = {military_theory}
-	prerequisites = { "tech_ship_armor_3" "tech_dangerous_wildlife" }
+	category = {
+		military_theory
+	}
+	prerequisites = {
+		"tech_ship_armor_3"
+		"tech_dangerous_wildlife"
+	}
 	weight = @tier4weight1
 	#is_rare = yes
-
 	gateway = army_attachment
-
-	modifier = { custom_tooltip = army_attachment_tech_custom_tooltip_platform_therapod }
-
-	weight_modifier = {}
-
-	ai_weight = {}
-
+	modifier = {
+		custom_tooltip = army_attachment_tech_custom_tooltip_platform_therapod
+	}
+	weight_modifier = {
+	}
+	ai_weight = {
+	}
 	potential = {
 		OR = {
-			NOT = { has_authority = auth_machine_intelligence }
+			NOT = {
+				has_authority = auth_machine_intelligence
+			}
 			has_civic = civic_machine_assimilator
 			has_civic = civic_machine_servitor
 		}
 	}
 }
+
 # TIER 5 BEAST
 tech_attachment_parasitic_swarm = {
 	cost = @tier5cost1
 	area = society
 	tier = 5
-	category = {biology}
-	prerequisites = { "tech_dangerous_wildlife" }
+	category = {
+		biology
+	}
+	prerequisites = {
+		"tech_dangerous_wildlife"
+	}
 	weight = @tier5weight3
 	is_rare = yes
-
 	gateway = army_attachment
-
-	modifier = { custom_tooltip = army_attachment_tech_custom_tooltip_parasitic_swarm }
-
-	weight_modifier = {}
-
-	ai_weight = {}
-
+	modifier = {
+		custom_tooltip = army_attachment_tech_custom_tooltip_parasitic_swarm
+	}
+	weight_modifier = {
+	}
+	ai_weight = {
+	}
 	potential = {
 		OR = {
-			NOT = { has_authority = auth_machine_intelligence }
+			NOT = {
+				has_authority = auth_machine_intelligence
+			}
 			has_civic = civic_machine_assimilator
 			has_civic = civic_machine_servitor
 		}
 	}
 }
+
 tech_attachment_xeno_cavalry = {
 	cost = @tier5cost1
 	area = society
 	tier = 5
-	category = {biology}
-	prerequisites = { "tech_morphogenetic_field_mastery" }
+	category = {
+		biology
+	}
+	prerequisites = {
+		"tech_morphogenetic_field_mastery"
+	}
 	weight = @tier5weight3
 	is_rare = yes
-
 	gateway = army_attachment
-
-	modifier = { custom_tooltip = army_attachment_tech_custom_tooltip_xeno_cavalry }
-
-	weight_modifier = {}
-
-	ai_weight = {}
-
+	modifier = {
+		custom_tooltip = army_attachment_tech_custom_tooltip_xeno_cavalry
+	}
+	weight_modifier = {
+	}
+	ai_weight = {
+	}
 	potential = {
 		OR = {
-			NOT = { has_authority = auth_machine_intelligence }
+			NOT = {
+				has_authority = auth_machine_intelligence
+			}
 			has_civic = civic_machine_assimilator
 			has_civic = civic_machine_servitor
 		}
 	}
 }
+
 tech_attachment_brood_coordinator = {
 	cost = @tier5cost1
 	area = society
 	tier = 5
-	category = {biology}
-	prerequisites = { "tech_morphogenetic_field_mastery" }
+	category = {
+		biology
+	}
+	prerequisites = {
+		"tech_morphogenetic_field_mastery"
+	}
 	weight = @tier5weight3
 	is_rare = yes
-
 	gateway = army_attachment
-
-	modifier = { custom_tooltip = army_attachment_tech_custom_tooltip_brood_coordinator }
-
-	weight_modifier = {}
-
-	ai_weight = {}
-
+	modifier = {
+		custom_tooltip = army_attachment_tech_custom_tooltip_brood_coordinator
+	}
+	weight_modifier = {
+	}
+	ai_weight = {
+	}
 	potential = {
 		OR = {
-			NOT = { has_authority = auth_machine_intelligence }
+			NOT = {
+				has_authority = auth_machine_intelligence
+			}
 			has_civic = civic_machine_assimilator
 			has_civic = civic_machine_servitor
 		}
@@ -795,293 +941,346 @@ tech_attachment_brood_coordinator = {
 ###########
 # REINFORCEMENT
 ###########
-
 # TIER 1 REINFORCEMENT
 tech_attachment_military_police = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = {military_theory}
-	prerequisites = {}
+	category = {
+		military_theory
+	}
+	prerequisites = {
+	}
 	weight = @tier1weight1
 	#is_rare = yes
-
 	gateway = army_attachment
-
-	modifier = { custom_tooltip = army_attachment_tech_custom_tooltip_military_police }
-
-	weight_modifier = {}
-
-	ai_weight = {}
-
+	modifier = {
+		custom_tooltip = army_attachment_tech_custom_tooltip_military_police
+	}
+	weight_modifier = {
+	}
+	ai_weight = {
+	}
 	potential = {
 		is_gestalt = no
 	}
 }
+
 tech_attachment_clone_commando = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = {military_theory}
-	prerequisites = { "tech_gene_banks" }
+	category = {
+		military_theory
+	}
+	prerequisites = {
+		"tech_gene_banks"
+	}
 	weight = @tier1weight1
 	#is_rare = yes
-
 	gateway = army_attachment
-
-	modifier = { custom_tooltip = army_attachment_tech_custom_tooltip_clone_commando }
-
-	weight_modifier = {}
-
-	ai_weight = {}
-
+	modifier = {
+		custom_tooltip = army_attachment_tech_custom_tooltip_clone_commando
+	}
+	weight_modifier = {
+	}
+	ai_weight = {
+	}
 	potential = {
 		OR = {
-			NOT = { has_authority = auth_machine_intelligence }
+			NOT = {
+				has_authority = auth_machine_intelligence
+			}
 			has_civic = civic_machine_assimilator
 			has_civic = civic_machine_servitor
 		}
 	}
 }
+
 # TIER 2 REINFORCEMENT
 tech_attachment_hypnotized_clone = {
 	cost = @tier2cost1
 	area = society
 	tier = 2
-	category = {biology}
-	prerequisites = { "tech_attachment_clone_commando" }
+	category = {
+		biology
+	}
+	prerequisites = {
+		"tech_attachment_clone_commando"
+	}
 	weight = @tier2weight1
 	#is_rare = yes
-
 	gateway = army_attachment
-
-	modifier = { custom_tooltip = army_attachment_tech_custom_tooltip_hypnotized_clone }
-
-	weight_modifier = {}
-
-	ai_weight = {}
-
+	modifier = {
+		custom_tooltip = army_attachment_tech_custom_tooltip_hypnotized_clone
+	}
+	weight_modifier = {
+	}
+	ai_weight = {
+	}
 	potential = {
 		OR = {
-			NOT = { has_authority = auth_machine_intelligence }
+			NOT = {
+				has_authority = auth_machine_intelligence
+			}
 			has_civic = civic_machine_assimilator
 			has_civic = civic_machine_servitor
 		}
 	}
 }
+
 tech_attachment_slave_raider = {
 	cost = @tier2cost1
 	area = society
 	tier = 2
-	category = {biology}
-	prerequisites = { "tech_neural_implants" }
+	category = {
+		biology
+	}
+	prerequisites = {
+		"tech_neural_implants"
+	}
 	weight = @tier2weight1
 	#is_rare = yes
-
 	gateway = army_attachment
-
-	modifier = { custom_tooltip = army_attachment_tech_custom_tooltip_slave_raider }
-
+	modifier = {
+		custom_tooltip = army_attachment_tech_custom_tooltip_slave_raider
+	}
 	weight_modifier = {
 		modifier = {
-			factor = 0.0
+			factor = 0
 			OR = {
 				allows_slavery = no
-				NOT = { any_owned_pop = { is_enslaved = yes } }
+				NOT = {
+					any_owned_pop = {
+						is_enslaved = yes
+					}
+				}
 			}
 		}
 	}
-
-	ai_weight = {}
-
-	potential = {}
-
+	ai_weight = {
+	}
+	potential = {
+	}
 }
+
 tech_attachment_special_forces = {
 	cost = @tier2cost1
 	area = society
 	tier = 2
-	category = {military_theory}
-	prerequisites = { "tech_attachment_military_police" }
+	category = {
+		military_theory
+	}
+	prerequisites = {
+		"tech_attachment_military_police"
+	}
 	weight = @tier2weight1
 	#is_rare = yes
-
 	gateway = army_attachment
-
-	modifier = { custom_tooltip = army_attachment_tech_custom_tooltip_special_forces }
-
-	weight_modifier = {}
-
-	ai_weight = {}
-
+	modifier = {
+		custom_tooltip = army_attachment_tech_custom_tooltip_special_forces
+	}
+	weight_modifier = {
+	}
+	ai_weight = {
+	}
 	potential = {
 		has_tradition = tr_subterfuge_finish
 	}
-
 }
+
+tech_attachment_psi_shield = {
+	cost = @tier2cost3
+	area = society
+	tier = 2
+	category = {
+		psionics
+	}
+	prerequisites = {
+		"tech_psionic_barrier"
+	}
+	weight = @tier2weight2
+	#is_rare = yes
+	gateway = army_attachment
+	modifier = {
+		custom_tooltip = army_attachment_tech_custom_tooltip_psi_shield
+	}
+	weight_modifier = {
+	}
+	ai_weight = {
+	}
+	potential = {
+		has_tradition = tr_psionics_finish
+	}
+}
+
 # TIER 3 REINFORCEMENT
 tech_attachment_clone_suicide = {
 	cost = @tier3cost1
 	area = society
 	tier = 3
-	category = {military_theory}
-	prerequisites = { "tech_attachment_hypnotized_clone" }
+	category = {
+		military_theory
+	}
+	prerequisites = {
+		"tech_attachment_hypnotized_clone"
+	}
 	weight = @tier3weight1
 	#is_rare = yes
-
 	gateway = army_attachment
-
-	modifier = { custom_tooltip = army_attachment_tech_custom_tooltip_clone_suicide }
-
-	weight_modifier = {}
-
-	ai_weight = {}
-
+	modifier = {
+		custom_tooltip = army_attachment_tech_custom_tooltip_clone_suicide
+	}
+	weight_modifier = {
+	}
+	ai_weight = {
+	}
 	potential = {
 		OR = {
-			NOT = { has_authority = auth_machine_intelligence }
+			NOT = {
+				has_authority = auth_machine_intelligence
+			}
 			has_civic = civic_machine_assimilator
 			has_civic = civic_machine_servitor
 		}
 	}
 }
+
 tech_attachment_commissar = {
 	cost = @tier3cost1
 	area = society
 	tier = 3
-	category = {military_theory}
-	prerequisites = { "tech_attachment_exploding_slave_collar" }
+	category = {
+		military_theory
+	}
+	prerequisites = {
+		"tech_attachment_exploding_slave_collar"
+	}
 	weight = @tier3weight1
 	#is_rare = yes
-
 	gateway = army_attachment
-
-	modifier = { custom_tooltip = army_attachment_tech_custom_tooltip_commissar }
-
+	modifier = {
+		custom_tooltip = army_attachment_tech_custom_tooltip_commissar
+	}
 	weight_modifier = {
 		modifier = {
-			factor = 0.0
+			factor = 0
 			OR = {
 				allows_slavery = no
-				NOT = { any_owned_pop = { is_enslaved = yes } }
+				NOT = {
+					any_owned_pop = {
+						is_enslaved = yes
+					}
+				}
 			}
 		}
 	}
-
-	ai_weight = {}
-
-	potential = {}
-
+	ai_weight = {
+	}
+	potential = {
+	}
 }
+
 tech_attachment_psi_warrior = {
 	cost = @tier3cost1
 	area = society
 	tier = 3
-	category = {psionics}
-	prerequisites = { "tech_psionic_theory" }
+	category = {
+		psionics
+	}
+	prerequisites = {
+		"tech_attachment_psi_shield"
+	}
 	weight = @tier3weight1
 	#is_rare = yes
-
 	gateway = army_attachment
-
-	modifier = { custom_tooltip = army_attachment_tech_custom_tooltip_psi_warrior }
-
-	weight_modifier = {}
-
-	ai_weight = {}
-
+	modifier = {
+		custom_tooltip = army_attachment_tech_custom_tooltip_psi_warrior
+	}
+	weight_modifier = {
+	}
+	ai_weight = {
+	}
 	potential = {
 		has_tradition = tr_psionics_finish
 	}
-
 }
+
 # TIER 4 REINFORCEMENT
 tech_attachment_gene_shock_warrior = {
 	cost = @tier4cost1
 	area = society
 	tier = 4
-	category = {biology}
-	prerequisites = { "tech_gene_seed_purification" }
+	category = {
+		biology
+	}
+	prerequisites = {
+		"tech_gene_seed_purification"
+	}
 	weight = @tier4weight3
 	#is_rare = yes
-
 	gateway = army_attachment
-
-	modifier = { custom_tooltip = army_attachment_tech_custom_tooltip_gene_shock_warrior }
-
-	weight_modifier = {}
-
-	ai_weight = {}
-
+	modifier = {
+		custom_tooltip = army_attachment_tech_custom_tooltip_gene_shock_warrior
+	}
+	weight_modifier = {
+	}
+	ai_weight = {
+	}
 	potential = {
 		has_tradition = tr_genetics_finish
 	}
 }
+
 tech_attachment_shadow_assassin = {
 	cost = @tier4cost1
 	area = society
 	tier = 4
-	category = {military_theory}
-	prerequisites = { "tech_attachment_special_forces" }
+	category = {
+		military_theory
+	}
+	prerequisites = {
+		"tech_attachment_special_forces"
+	}
 	weight = @tier4weight3
 	#is_rare = yes
-
 	gateway = army_attachment
-
-	modifier = { custom_tooltip = army_attachment_tech_custom_tooltip_shadow_assassin }
-
-	weight_modifier = {}
-
-	ai_weight = {}
-
+	modifier = {
+		custom_tooltip = army_attachment_tech_custom_tooltip_shadow_assassin
+	}
+	weight_modifier = {
+	}
+	ai_weight = {
+	}
 	potential = {
 		has_tradition = tr_subterfuge_finish
 	}
-
 }
-tech_attachment_psi_shield = {
-	cost = @tier4cost1
-	area = society
-	tier = 4
-	category = {psionics}
-	prerequisites = { "tech_psionic_barrier" }
-	weight = @tier4weight3
-	#is_rare = yes
 
-	gateway = army_attachment
-
-	modifier = { custom_tooltip = army_attachment_tech_custom_tooltip_psi_shield }
-
-	weight_modifier = {}
-
-	ai_weight = {}
-
-	potential = {
-		has_tradition = tr_psionics_finish
-	}
-
-}
 tech_attachment_telekenetic_devastator = {
 	cost = @tier4cost1
 	area = society
 	tier = 4
-	category = {psionics}
-	prerequisites = { "tech_attachment_psi_warrior" }
+	category = {
+		psionics
+	}
+	prerequisites = {
+		"tech_attachment_psi_warrior"
+		"tech_telepathy"
+	}
 	weight = @tier4weight3
 	#is_rare = yes
-
 	gateway = army_attachment
-
-	modifier = { custom_tooltip = army_attachment_tech_custom_tooltip_telekenetic_devastator }
-
-	weight_modifier = {}
-
-	ai_weight = {}
-
+	modifier = {
+		custom_tooltip = army_attachment_tech_custom_tooltip_telekenetic_devastator
+	}
+	weight_modifier = {
+	}
+	ai_weight = {
+	}
 	potential = {
 		has_tradition = tr_psionics_finish
 	}
-
 }
 
 # TIER 5 REINFORCEMENT
@@ -1089,135 +1288,155 @@ tech_attachment_class_a_psi = {
 	cost = @tier5cost1
 	area = society
 	tier = 5
-	category = {psionics}
-	prerequisites = { "tech_attachment_telekenetic_devastator" }
+	category = {
+		psionics
+	}
+	prerequisites = {
+		"tech_precognition_interface"
+		"tech_attachment_telekenetic_devastator"
+	}
 	weight = @tier5weight3
 	is_rare = yes
-
 	gateway = army_attachment
-
-	modifier = { custom_tooltip = army_attachment_tech_custom_tooltip_class_a_psi }
-
-	weight_modifier = {}
-
-	ai_weight = {}
-
+	modifier = {
+		custom_tooltip = army_attachment_tech_custom_tooltip_class_a_psi
+	}
+	weight_modifier = {
+	}
+	ai_weight = {
+	}
 	potential = {
 		has_tradition = tr_psionics_finish
 	}
-
 }
+
 tech_attachment_void_walker = {
 	cost = @tier5cost1
 	area = society
 	tier = 5
-	category = {biology}
-	prerequisites = { "tech_attachment_gene_shock_warrior" }
+	category = {
+		biology
+	}
+	prerequisites = {
+		"tech_attachment_gene_shock_warrior"
+	}
 	weight = @tier5weight3
 	is_rare = yes
-
 	gateway = army_attachment
-
-	modifier = { custom_tooltip = army_attachment_tech_custom_tooltip_void_walker }
-
-	weight_modifier = {}
-
-	ai_weight = {}
-
+	modifier = {
+		custom_tooltip = army_attachment_tech_custom_tooltip_void_walker
+	}
+	weight_modifier = {
+	}
+	ai_weight = {
+	}
 	potential = {
 		has_tradition = tr_genetics_finish
 	}
 }
+
 tech_attachment_cyborg_infiltration = {
 	cost = @tier5cost1
 	area = engineering
 	tier = 5
-	category = {materials}
-	prerequisites = { "tech_attachment_terrain_augmentation"}
+	category = {
+		materials
+	}
+	prerequisites = {
+		"tech_attachment_terrain_augmentation"
+	}
 	weight = @tier5weight3
 	is_rare = yes
-
 	gateway = army_attachment
-
-	modifier = { custom_tooltip = army_attachment_tech_custom_tooltip_cybord_infiltration }
-
-	weight_modifier = {}
-
-	ai_weight = {}
-
+	modifier = {
+		custom_tooltip = army_attachment_tech_custom_tooltip_cybord_infiltration
+	}
+	weight_modifier = {
+	}
+	ai_weight = {
+	}
 	potential = {
 		OR = {
 			has_ascension_perk = ap_the_flesh_is_weak
 			has_ascension_perk = ap_organo_machine_interfacing
 		}
 	}
-
 }
 
 ###########
 # VEHICLE
 ###########
-
 # TIER 1 VEHICLE
 tech_attachment_mobile_shield = {
 	cost = @tier1cost1
 	area = physics
 	tier = 1
-	category = {field_manipulation}
-	prerequisites = { "tech_shields_2" }
+	category = {
+		field_manipulation
+	}
+	prerequisites = {
+		"tech_shields_2"
+	}
 	weight = @tier1weight1
 	#is_rare = yes
-
 	gateway = army_attachment
-
-	modifier = { custom_tooltip = army_attachment_tech_custom_tooltip_mobile_shield }
-
-	weight_modifier = {}
-
-	ai_weight = {}
-
-	potential = {}
-
+	modifier = {
+		custom_tooltip = army_attachment_tech_custom_tooltip_mobile_shield
+	}
+	weight_modifier = {
+	}
+	ai_weight = {
+	}
+	potential = {
+	}
 }
+
 tech_attachment_assault_dropship = {
 	cost = @tier1cost1
 	area = society
 	tier = 1
-	category = {new_worlds}
-	prerequisites = { "tech_colonization_1" }
+	category = {
+		new_worlds
+	}
+	prerequisites = {
+		"tech_colonization_1"
+	}
 	weight = @tier1weight1
 	#is_rare = yes
-
 	gateway = army_attachment
-
-	modifier = { custom_tooltip = army_attachment_tech_custom_tooltip_assault_dropship }
-
-	weight_modifier = {}
-
-	ai_weight = {}
-
-	potential = {}
-
+	modifier = {
+		custom_tooltip = army_attachment_tech_custom_tooltip_assault_dropship
+	}
+	weight_modifier = {
+	}
+	ai_weight = {
+	}
+	potential = {
+	}
 }
+
 tech_attachment_hunter_killer_drone = {
 	cost = @tier1cost1
 	area = physics
 	tier = 1
-	category = {computing}
-	prerequisites = { "tech_administrative_ai" }
+	category = {
+		computing
+	}
+	prerequisites = {
+		"tech_administrative_ai"
+	}
 	weight = @tier1weight1
 	#is_rare = yes
-
 	gateway = army_attachment
-
-	modifier = { custom_tooltip = army_attachment_tech_custom_tooltip_hunter_killer_drone }
-
-	weight_modifier = {}
-
-	ai_weight = {}
-
-	potential = {}
-
+	modifier = {
+		custom_tooltip = army_attachment_tech_custom_tooltip_hunter_killer_drone
+	}
+	weight_modifier = {
+	}
+	ai_weight = {
+	}
+	potential = {
+	}
 }
 
 # TIER 2 VEHICLE
@@ -1225,43 +1444,49 @@ tech_attachment_battle_strider = {
 	cost = @tier2cost1
 	area = engineering
 	tier = 2
-	category = {industry}
-	prerequisites = { "tech_attachment_mobile_shield" }
+	category = {
+		industry
+	}
+	prerequisites = {
+		"tech_attachment_mobile_shield"
+	}
 	weight = @tier2weight1
 	#is_rare = yes
-
 	gateway = army_attachment
-
-	modifier = { custom_tooltip = army_attachment_tech_custom_tooltip_battle_strider }
-
-	weight_modifier = {}
-
-	ai_weight = {}
-
-	potential = {}
-
+	modifier = {
+		custom_tooltip = army_attachment_tech_custom_tooltip_battle_strider
+	}
+	weight_modifier = {
+	}
+	ai_weight = {
+	}
+	potential = {
+	}
 }
+
 tech_attachment_orbital_pod = {
 	cost = @tier2cost1
 	area = engineering
 	tier = 2
-	category = {voidcraft}
-	prerequisites = { "tech_attachment_assault_dropship" }
+	category = {
+		voidcraft
+	}
+	prerequisites = {
+		"tech_attachment_assault_dropship"
+	}
 	weight = @tier2weight1
 	#is_rare = yes
-
 	gateway = army_attachment
-
-	modifier = { custom_tooltip = army_attachment_tech_custom_tooltip_orbital_pod }
-
-	weight_modifier = {}
-
-	ai_weight = {}
-
+	modifier = {
+		custom_tooltip = army_attachment_tech_custom_tooltip_orbital_pod
+	}
+	weight_modifier = {
+	}
+	ai_weight = {
+	}
 	potential = {
 		has_tradition = tr_supremacy_finish
 	}
-
 }
 
 # TIER 3 VEHICLE
@@ -1269,41 +1494,48 @@ tech_attachment_plasma_jet = {
 	cost = @tier3cost1
 	area = engineering
 	tier = 3
-	category = {propulsion}
-	prerequisites = { "tech_thrusters_3" }
+	category = {
+		propulsion
+	}
+	prerequisites = {
+		"tech_thrusters_3"
+	}
 	weight = @tier3weight1
 	#is_rare = yes
-
 	gateway = army_attachment
-
-	modifier = { custom_tooltip = army_attachment_tech_custom_tooltip_plasma_jet }
-
-	weight_modifier = {}
-
-	ai_weight = {}
-
-	potential = {}
-
+	modifier = {
+		custom_tooltip = army_attachment_tech_custom_tooltip_plasma_jet
+	}
+	weight_modifier = {
+	}
+	ai_weight = {
+	}
+	potential = {
+	}
 }
+
 tech_attachment_hover_tank = {
 	cost = @tier3cost1
 	area = engineering
 	tier = 3
-	category = {propulsion}
-	prerequisites = { "tech_housing_2"}
+	category = {
+		propulsion
+	}
+	prerequisites = {
+		"tech_housing_2"
+	}
 	weight = @tier3weight3
 	#is_rare = yes
-
 	gateway = army_attachment
-
-	modifier = { custom_tooltip = army_attachment_tech_custom_tooltip_hover_tank }
-
-	weight_modifier = {}
-
-	ai_weight = {}
-
-	potential = {}
-
+	modifier = {
+		custom_tooltip = army_attachment_tech_custom_tooltip_hover_tank
+	}
+	weight_modifier = {
+	}
+	ai_weight = {
+	}
+	potential = {
+	}
 }
 
 # TIER 4 VEHICLE
@@ -1311,66 +1543,77 @@ tech_attachment_war_mech = {
 	cost = @tier4cost1
 	area = engineering
 	tier = 4
-	category = {materials}
-	prerequisites = { "tech_ship_armor_4" }
+	category = {
+		materials
+	}
+	prerequisites = {
+		"tech_ship_armor_4"
+	}
 	weight = @tier4weight3
 	#is_rare = yes
-
 	gateway = army_attachment
-
-	modifier = { custom_tooltip = army_attachment_tech_custom_tooltip_war_mech }
-
-	weight_modifier = {}
-
-	ai_weight = {}
-
-	potential = {}
-
+	modifier = {
+		custom_tooltip = army_attachment_tech_custom_tooltip_war_mech
+	}
+	weight_modifier = {
+	}
+	ai_weight = {
+	}
+	potential = {
+	}
 }
+
 tech_attachment_sonic_speeder = {
 	cost = @tier4cost1
 	area = physics
 	tier = 4
-	category = {computing}
-	prerequisites = { "tech_attachment_plasma_jet" "tech_thrusters_4"}
+	category = {
+		computing
+	}
+	prerequisites = {
+		"tech_attachment_plasma_jet"
+		"tech_thrusters_4"
+	}
 	weight = @tier4weight3
 	#is_rare = yes
-
 	gateway = army_attachment
-
-	modifier = { custom_tooltip = army_attachment_tech_custom_tooltip_sonic_speeder }
-
-	weight_modifier = {}
-
-	ai_weight = {}
-
-	potential = {}
-
+	modifier = {
+		custom_tooltip = army_attachment_tech_custom_tooltip_sonic_speeder
+	}
+	weight_modifier = {
+	}
+	ai_weight = {
+	}
+	potential = {
+	}
 }
+
 tech_attachment_terrain_augmentation = {
 	cost = @tier4cost1
 	area = engineering
 	tier = 4
-	category = {materials}
-	prerequisites = { "tech_attachment_cybernetic_replacement" }
+	category = {
+		materials
+	}
+	prerequisites = {
+		"tech_attachment_cybernetic_replacement"
+	}
 	weight = @tier4weight3
 	#is_rare = yes
-
 	gateway = army_attachment
-
-	modifier = { custom_tooltip = army_attachment_tech_custom_tooltip_terrain_augmentation }
-
-	weight_modifier = {}
-
-	ai_weight = {}
-
+	modifier = {
+		custom_tooltip = army_attachment_tech_custom_tooltip_terrain_augmentation
+	}
+	weight_modifier = {
+	}
+	ai_weight = {
+	}
 	potential = {
 		OR = {
 			has_ascension_perk = ap_the_flesh_is_weak
 			has_ascension_perk = ap_organo_machine_interfacing
 		}
 	}
-
 }
 
 # TIER 5 VEHICLE
@@ -1378,24 +1621,24 @@ tech_attachment_armageddon_mech = {
 	cost = @tier5cost1
 	area = engineering
 	tier = 5
-	category = {voidcraft}
-	prerequisites = { "tech_attachment_war_mech" "tech_ship_armor_5" }
+	category = {
+		voidcraft
+	}
+	prerequisites = {
+		"tech_attachment_war_mech"
+		"tech_ship_armor_5"
+	}
 	weight = @tier5weight3
 	is_rare = yes
-
 	gateway = army_attachment
-
-	modifier = { custom_tooltip = army_attachment_tech_custom_tooltip_armageddon_mech }
-
-	weight_modifier = {}
-
-	ai_weight = {}
-
+	modifier = {
+		custom_tooltip = army_attachment_tech_custom_tooltip_armageddon_mech
+	}
+	weight_modifier = {
+	}
+	ai_weight = {
+	}
 	potential = {
 		has_tradition = tr_supremacy_finish
 	}
-
 }
-
-
-
