@@ -1,0 +1,786 @@
+##############
+## DEFENSES ##
+##############
+## TIER 1
+support_trait_coilgun_batteries = {
+	veteran_class_locked_trait = yes
+	inline_script = {
+		script = trait/icon
+		CLASS = commander
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 1
+	}
+	icon = "gfx/interface/icons/army_attachments/attachment_shield.dds"
+	leader_class = {
+		commander
+	}
+	opposites = {
+		#support_trait_coilgun_batteries
+		support_trait_neocrete_bunkers
+		#support_trait_port_deflectors
+		support_trait_laser_grids
+		#support_trait_auto_ciws
+		support_trait_durasteel_bastions
+		#support_trait_ion_projectors
+		support_trait_xray_tower
+		#support_trait_heavy_aa
+		support_trait_living_redoubts
+		#support_trait_mob_zroshields
+		support_trait_beam_array
+	}
+	army_modifier = {
+		army_damage_mult = -0.05
+		#army_morale_damage_mult = 0.0
+		#army_collateral_damage_mult = 0.0
+		army_health = 0.1
+		#army_morale = 0.0
+		#army_disengage_chance_mult = 0.0
+		#armies_upkeep_mult = -0.0
+	}
+	leader_potential_add = {
+		OR = {
+			AND = {
+				has_paragon_dlc = yes
+				has_trait = subclass_commander_general
+			}
+			AND = {
+				has_paragon_dlc = no
+				has_skill > 3
+				OR = {
+					has_trait = leader_trait_butcher
+					has_trait = leader_trait_butcher_2
+					has_trait = leader_trait_restrained
+					has_trait = leader_trait_restrained_2
+				}
+			}
+		}
+	}
+	selectable_weight = {
+		weight = @wp_army_attachement_trait_weight
+	}
+	prerequisites = {
+		tech_support_coilgun_batteries
+	}
+}
+
+support_trait_neocrete_bunkers = {
+	veteran_class_locked_trait = yes
+	inline_script = {
+		script = trait/icon
+		CLASS = commander
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 1
+	}
+	icon = "gfx/interface/icons/army_attachments/attachment_shield.dds"
+	leader_class = {
+		commander
+	}
+	opposites = {
+		support_trait_coilgun_batteries
+		#support_trait_neocrete_bunkers
+		support_trait_port_deflectors
+		#support_trait_laser_grids
+		support_trait_auto_ciws
+		#support_trait_durasteel_bastions
+		support_trait_ion_projectors
+		#support_trait_xray_tower
+		support_trait_heavy_aa
+		#support_trait_living_redoubts
+		support_trait_mob_zroshields
+		#support_trait_beam_array
+	}
+	army_modifier = {
+		army_damage_mult = -0.05
+		#army_morale_damage_mult = 0.0
+		#army_collateral_damage_mult = 0.0
+		army_health = 0.15
+		#army_morale = 0.0
+		army_disengage_chance_mult = -0.1
+		#armies_upkeep_mult = -0.0
+	}
+	leader_potential_add = {
+		OR = {
+			AND = {
+				has_paragon_dlc = yes
+				has_trait = subclass_commander_general
+			}
+			AND = {
+				has_paragon_dlc = no
+				has_skill > 3
+				OR = {
+					has_trait = leader_trait_butcher
+					has_trait = leader_trait_butcher_2
+					has_trait = leader_trait_restrained
+					has_trait = leader_trait_restrained_2
+				}
+			}
+		}
+	}
+	selectable_weight = {
+		weight = @wp_army_attachement_trait_weight
+	}
+	prerequisites = {
+		tech_support_neocrete_bunkers
+	}
+}
+
+support_trait_port_deflectors = {
+	veteran_class_locked_trait = yes
+	inline_script = {
+		script = trait/icon
+		CLASS = commander
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 1
+	}
+	icon = "gfx/interface/icons/army_attachments/attachment_shield.dds"
+	leader_class = {
+		commander
+	}
+	opposites = {
+		#support_trait_coilgun_batteries
+		support_trait_neocrete_bunkers
+		#support_trait_port_deflectors
+		support_trait_laser_grids
+		#support_trait_auto_ciws
+		support_trait_durasteel_bastions
+		#support_trait_ion_projectors
+		support_trait_xray_tower
+		#support_trait_heavy_aa
+		support_trait_living_redoubts
+		#support_trait_mob_zroshields
+		support_trait_beam_array
+	}
+	army_modifier = {
+		army_damage_mult = -0.1
+		#army_morale_damage_mult = 0.0
+		#army_collateral_damage_mult = 0.0
+		army_health = 0.15
+		#army_morale = 0.0
+		#army_disengage_chance_mult = -0.0
+		#armies_upkeep_mult = -0.0
+	}
+	leader_potential_add = {
+		OR = {
+			AND = {
+				has_paragon_dlc = yes
+				has_trait = subclass_commander_general
+			}
+			AND = {
+				has_paragon_dlc = no
+				has_skill > 3
+				OR = {
+					has_trait = leader_trait_butcher
+					has_trait = leader_trait_butcher_2
+					has_trait = leader_trait_restrained
+					has_trait = leader_trait_restrained_2
+				}
+			}
+		}
+	}
+	selectable_weight = {
+		weight = @wp_army_attachement_trait_weight
+	}
+	prerequisites = {
+		tech_support_port_deflectors
+	}
+}
+
+support_trait_laser_grids = {
+	veteran_class_locked_trait = yes
+	inline_script = {
+		script = trait/icon
+		CLASS = commander
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 1
+	}
+	icon = "gfx/interface/icons/army_attachments/attachment_shield.dds"
+	leader_class = {
+		commander
+	}
+	opposites = {
+		support_trait_coilgun_batteries
+		#support_trait_neocrete_bunkers
+		support_trait_port_deflectors
+		#support_trait_laser_grids
+		support_trait_auto_ciws
+		#support_trait_durasteel_bastions
+		support_trait_ion_projectors
+		#support_trait_xray_tower
+		support_trait_heavy_aa
+		#support_trait_living_redoubts
+		support_trait_mob_zroshields
+		#support_trait_beam_array
+	}
+	army_modifier = {
+		#army_damage_mult = -0.0
+		#army_morale_damage_mult = 0.0
+		#army_collateral_damage_mult = 0.0
+		army_health = 0.1
+		#army_morale = 0.0
+		army_disengage_chance_mult = -0.1
+		#armies_upkeep_mult = -0.0
+	}
+	leader_potential_add = {
+		OR = {
+			AND = {
+				has_paragon_dlc = yes
+				has_trait = subclass_commander_general
+			}
+			AND = {
+				has_paragon_dlc = no
+				has_skill > 3
+				OR = {
+					has_trait = leader_trait_butcher
+					has_trait = leader_trait_butcher_2
+					has_trait = leader_trait_restrained
+					has_trait = leader_trait_restrained_2
+				}
+			}
+		}
+	}
+	selectable_weight = {
+		weight = @wp_army_attachement_trait_weight
+	}
+	prerequisites = {
+		tech_support_laser_grids
+	}
+}
+
+## TIER 2
+support_trait_auto_ciws = {
+	replace_traits = {
+		support_trait_coilgun_batteries
+	}
+	veteran_class_locked_trait = yes
+	inline_script = {
+		script = trait/icon
+		CLASS = commander
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 2
+	}
+	icon = "gfx/interface/icons/army_attachments/attachment_shield.dds"
+	leader_class = {
+		commander
+	}
+	opposites = {
+		#support_trait_coilgun_batteries
+		support_trait_neocrete_bunkers
+		#support_trait_port_deflectors
+		support_trait_laser_grids
+		#support_trait_auto_ciws
+		support_trait_durasteel_bastions
+		#support_trait_ion_projectors
+		support_trait_xray_tower
+		#support_trait_heavy_aa
+		support_trait_living_redoubts
+		#support_trait_mob_zroshields
+		support_trait_beam_array
+	}
+	army_modifier = {
+		army_damage_mult = -0.1
+		#army_morale_damage_mult = 0.0
+		#army_collateral_damage_mult = 0.0
+		army_health = 0.2
+		#army_morale = 0.0
+		#army_disengage_chance_mult = 0.0
+		#armies_upkeep_mult = -0.0
+	}
+	leader_potential_add = {
+		OR = {
+			AND = {
+				has_paragon_dlc = yes
+				has_trait = subclass_commander_general
+			}
+			AND = {
+				has_paragon_dlc = no
+				has_skill > 3
+				OR = {
+					has_trait = leader_trait_butcher
+					has_trait = leader_trait_butcher_2
+					has_trait = leader_trait_restrained
+					has_trait = leader_trait_restrained_2
+				}
+			}
+		}
+	}
+	selectable_weight = {
+		weight = @wp_army_attachement_trait_weight
+	}
+	prerequisites = {
+		tech_support_auto_ciws
+	}
+}
+
+support_trait_durasteel_bastions = {
+	replace_traits = {
+		support_trait_neocrete_bunkers
+	}
+	veteran_class_locked_trait = yes
+	inline_script = {
+		script = trait/icon
+		CLASS = commander
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 2
+	}
+	icon = "gfx/interface/icons/army_attachments/attachment_shield.dds"
+	leader_class = {
+		commander
+	}
+	opposites = {
+		support_trait_coilgun_batteries
+		#support_trait_neocrete_bunkers
+		support_trait_port_deflectors
+		#support_trait_laser_grids
+		support_trait_auto_ciws
+		#support_trait_durasteel_bastions
+		support_trait_ion_projectors
+		#support_trait_xray_tower
+		support_trait_heavy_aa
+		#support_trait_living_redoubts
+		support_trait_mob_zroshields
+		#support_trait_beam_array
+	}
+	army_modifier = {
+		army_damage_mult = -0.1
+		#army_morale_damage_mult = 0.0
+		#army_collateral_damage_mult = 0.0
+		army_health = 0.3
+		#army_morale = 0.0
+		army_disengage_chance_mult = -0.2
+		#armies_upkeep_mult = -0.0
+	}
+	leader_potential_add = {
+		OR = {
+			AND = {
+				has_paragon_dlc = yes
+				has_trait = subclass_commander_general
+			}
+			AND = {
+				has_paragon_dlc = no
+				has_skill > 3
+				OR = {
+					has_trait = leader_trait_butcher
+					has_trait = leader_trait_butcher_2
+					has_trait = leader_trait_restrained
+					has_trait = leader_trait_restrained_2
+				}
+			}
+		}
+	}
+	selectable_weight = {
+		weight = @wp_army_attachement_trait_weight
+	}
+	prerequisites = {
+		tech_support_durasteel_bastions
+	}
+}
+
+support_trait_ion_projectors = {
+	replace_traits = {
+		support_trait_port_deflectors
+	}
+	veteran_class_locked_trait = yes
+	inline_script = {
+		script = trait/icon
+		CLASS = commander
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 2
+	}
+	icon = "gfx/interface/icons/army_attachments/attachment_shield.dds"
+	leader_class = {
+		commander
+	}
+	opposites = {
+		#support_trait_coilgun_batteries
+		support_trait_neocrete_bunkers
+		#support_trait_port_deflectors
+		support_trait_laser_grids
+		#support_trait_auto_ciws
+		support_trait_durasteel_bastions
+		#support_trait_ion_projectors
+		support_trait_xray_tower
+		#support_trait_heavy_aa
+		support_trait_living_redoubts
+		#support_trait_mob_zroshields
+		support_trait_beam_array
+	}
+	army_modifier = {
+		army_damage_mult = -0.2
+		#army_morale_damage_mult = 0.0
+		#army_collateral_damage_mult = 0.0
+		army_health = 0.3
+		#army_morale = 0.0
+		#army_disengage_chance_mult = -0.0
+		#armies_upkeep_mult = -0.0
+	}
+	leader_potential_add = {
+		OR = {
+			AND = {
+				has_paragon_dlc = yes
+				has_trait = subclass_commander_general
+			}
+			AND = {
+				has_paragon_dlc = no
+				has_skill > 3
+				OR = {
+					has_trait = leader_trait_butcher
+					has_trait = leader_trait_butcher_2
+					has_trait = leader_trait_restrained
+					has_trait = leader_trait_restrained_2
+				}
+			}
+		}
+	}
+	selectable_weight = {
+		weight = @wp_army_attachement_trait_weight
+	}
+	prerequisites = {
+		tech_support_ion_projectors
+	}
+}
+
+support_trait_xray_tower = {
+	replace_traits = {
+		support_trait_laser_grids
+	}
+	veteran_class_locked_trait = yes
+	inline_script = {
+		script = trait/icon
+		CLASS = commander
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 2
+	}
+	icon = "gfx/interface/icons/army_attachments/attachment_shield.dds"
+	leader_class = {
+		commander
+	}
+	opposites = {
+		support_trait_coilgun_batteries
+		#support_trait_neocrete_bunkers
+		support_trait_port_deflectors
+		#support_trait_laser_grids
+		support_trait_auto_ciws
+		#support_trait_durasteel_bastions
+		support_trait_ion_projectors
+		#support_trait_xray_tower
+		support_trait_heavy_aa
+		#support_trait_living_redoubts
+		support_trait_mob_zroshields
+		#support_trait_beam_array
+	}
+	army_modifier = {
+		#army_damage_mult = -0.0
+		#army_morale_damage_mult = 0.0
+		#army_collateral_damage_mult = 0.0
+		army_health = 0.2
+		#army_morale = 0.0
+		army_disengage_chance_mult = -0.2
+		#armies_upkeep_mult = -0.0
+	}
+	leader_potential_add = {
+		OR = {
+			AND = {
+				has_paragon_dlc = yes
+				has_trait = subclass_commander_general
+			}
+			AND = {
+				has_paragon_dlc = no
+				has_skill > 3
+				OR = {
+					has_trait = leader_trait_butcher
+					has_trait = leader_trait_butcher_2
+					has_trait = leader_trait_restrained
+					has_trait = leader_trait_restrained_2
+				}
+			}
+		}
+	}
+	selectable_weight = {
+		weight = @wp_army_attachement_trait_weight
+	}
+	prerequisites = {
+		tech_support_xray_tower
+	}
+}
+
+## TIER 3
+support_trait_heavy_aa = {
+	replace_traits = {
+		support_trait_auto_ciws
+	}
+	veteran_class_locked_trait = yes
+	inline_script = {
+		script = trait/icon
+		CLASS = commander
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 3
+	}
+	icon = "gfx/interface/icons/army_attachments/attachment_shield.dds"
+	leader_class = {
+		commander
+	}
+	opposites = {
+		#support_trait_coilgun_batteries
+		support_trait_neocrete_bunkers
+		#support_trait_port_deflectors
+		support_trait_laser_grids
+		#support_trait_auto_ciws
+		support_trait_durasteel_bastions
+		#support_trait_ion_projectors
+		support_trait_xray_tower
+		#support_trait_heavy_aa
+		support_trait_living_redoubts
+		#support_trait_mob_zroshields
+		support_trait_beam_array
+	}
+	army_modifier = {
+		army_damage_mult = -0.1
+		#army_morale_damage_mult = 0.0
+		#army_collateral_damage_mult = 0.0
+		army_health = 0.4
+		#army_morale = 0.0
+		#army_disengage_chance_mult = 0.0
+		#armies_upkeep_mult = -0.0
+		armies_volatile_motes_upkeep_mult = 0.01
+	}
+	self_modifier = {
+		leader_commanders_volatile_motes_upkeep_add = 2
+	}
+	leader_potential_add = {
+		OR = {
+			AND = {
+				has_paragon_dlc = yes
+				has_trait = subclass_commander_general
+			}
+			AND = {
+				has_paragon_dlc = no
+				has_skill > 3
+				OR = {
+					has_trait = leader_trait_butcher
+					has_trait = leader_trait_butcher_2
+					has_trait = leader_trait_restrained
+					has_trait = leader_trait_restrained_2
+				}
+			}
+		}
+	}
+	selectable_weight = {
+		weight = @wp_army_attachement_trait_weight
+	}
+	prerequisites = {
+		tech_support_heavy_aa
+	}
+}
+
+support_trait_living_redoubts = {
+	replace_traits = {
+		support_trait_durasteel_bastions
+	}
+	veteran_class_locked_trait = yes
+	inline_script = {
+		script = trait/icon
+		CLASS = commander
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 3
+	}
+	icon = "gfx/interface/icons/army_attachments/attachment_shield.dds"
+	leader_class = {
+		commander
+	}
+	opposites = {
+		support_trait_coilgun_batteries
+		#support_trait_neocrete_bunkers
+		support_trait_port_deflectors
+		#support_trait_laser_grids
+		support_trait_auto_ciws
+		#support_trait_durasteel_bastions
+		support_trait_ion_projectors
+		#support_trait_xray_tower
+		support_trait_heavy_aa
+		#support_trait_living_redoubts
+		support_trait_mob_zroshields
+		#support_trait_beam_array
+	}
+	army_modifier = {
+		army_damage_mult = -0.1
+		#army_morale_damage_mult = 0.0
+		#army_collateral_damage_mult = 0.0
+		army_health = 0.6
+		#army_morale = 0.0
+		army_disengage_chance_mult = -0.2
+		#armies_upkeep_mult = -0.0
+	}
+	self_modifier = {
+		leader_commanders_sr_living_metal_upkeep_add = 0.5
+	}
+	leader_potential_add = {
+		OR = {
+			AND = {
+				has_paragon_dlc = yes
+				has_trait = subclass_commander_general
+			}
+			AND = {
+				has_paragon_dlc = no
+				has_skill > 3
+				OR = {
+					has_trait = leader_trait_butcher
+					has_trait = leader_trait_butcher_2
+					has_trait = leader_trait_restrained
+					has_trait = leader_trait_restrained_2
+				}
+			}
+		}
+	}
+	selectable_weight = {
+		weight = @wp_army_attachement_trait_weight
+	}
+	prerequisites = {
+		tech_support_living_redoubts
+	}
+}
+
+support_trait_mob_zroshields = {
+	replace_traits = {
+		support_trait_ion_projectors
+	}
+	veteran_class_locked_trait = yes
+	inline_script = {
+		script = trait/icon
+		CLASS = commander
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 3
+	}
+	icon = "gfx/interface/icons/army_attachments/attachment_shield.dds"
+	leader_class = {
+		commander
+	}
+	opposites = {
+		#support_trait_coilgun_batteries
+		support_trait_neocrete_bunkers
+		#support_trait_port_deflectors
+		support_trait_laser_grids
+		#support_trait_auto_ciws
+		support_trait_durasteel_bastions
+		#support_trait_ion_projectors
+		support_trait_xray_tower
+		#support_trait_heavy_aa
+		support_trait_living_redoubts
+		#support_trait_mob_zroshields
+		support_trait_beam_array
+	}
+	army_modifier = {
+		army_damage_mult = -0.2
+		#army_morale_damage_mult = 0.0
+		#army_collateral_damage_mult = 0.0
+		army_health = 0.6
+		#army_morale = 0.0
+		#army_disengage_chance_mult = -0.0
+		#armies_upkeep_mult = -0.0
+	}
+	self_modifier = {
+		leader_commanders_sr_zro_upkeep_add = 0.5
+	}
+	leader_potential_add = {
+		OR = {
+			AND = {
+				has_paragon_dlc = yes
+				has_trait = subclass_commander_general
+			}
+			AND = {
+				has_paragon_dlc = no
+				has_skill > 3
+				OR = {
+					has_trait = leader_trait_butcher
+					has_trait = leader_trait_butcher_2
+					has_trait = leader_trait_restrained
+					has_trait = leader_trait_restrained_2
+				}
+			}
+		}
+	}
+	selectable_weight = {
+		weight = @wp_army_attachement_trait_weight
+	}
+	prerequisites = {
+		tech_support_mob_zroshields
+	}
+}
+
+support_trait_beam_array = {
+	replace_traits = {
+		support_trait_xray_tower
+	}
+	veteran_class_locked_trait = yes
+	inline_script = {
+		script = trait/icon
+		CLASS = commander
+		RARITY = veteran
+		COUNCIL = no
+		TIER = 3
+	}
+	icon = "gfx/interface/icons/army_attachments/attachment_shield.dds"
+	leader_class = {
+		commander
+	}
+	opposites = {
+		support_trait_coilgun_batteries
+		#support_trait_neocrete_bunkers
+		support_trait_port_deflectors
+		#support_trait_laser_grids
+		support_trait_auto_ciws
+		#support_trait_durasteel_bastions
+		support_trait_ion_projectors
+		#support_trait_xray_tower
+		support_trait_heavy_aa
+		#support_trait_living_redoubts
+		support_trait_mob_zroshields
+		#support_trait_beam_array
+	}
+	army_modifier = {
+		#army_damage_mult = -0.0
+		#army_morale_damage_mult = 0.0
+		#army_collateral_damage_mult = 0.0
+		army_health = 0.4
+		#army_morale = 0.0
+		army_disengage_chance_mult = -0.2
+		#armies_upkeep_mult = -0.0
+	}
+	self_modifier = {
+		leader_commanders_rare_crystals_upkeep_add = 2
+	}
+	leader_potential_add = {
+		OR = {
+			AND = {
+				has_paragon_dlc = yes
+				has_trait = subclass_commander_general
+			}
+			AND = {
+				has_paragon_dlc = no
+				has_skill > 3
+				OR = {
+					has_trait = leader_trait_butcher
+					has_trait = leader_trait_butcher_2
+					has_trait = leader_trait_restrained
+					has_trait = leader_trait_restrained_2
+				}
+			}
+		}
+	}
+	selectable_weight = {
+		weight = @wp_army_attachement_trait_weight
+	}
+	prerequisites = {
+		tech_support_beam_array
+	}
+}

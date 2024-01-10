@@ -1,0 +1,57 @@
+﻿l_english:
+####Misc
+  gateway_army_attachment:0 "Researching this technology will lead to further developments in Army Attachments. Attachments are general traits that significantly strengthen our ground forces."
+  army_attachment_flag:0 "Army Attachment"
+  army_attachment_flag:1 "Attachments are general traits that significantly strengthen our ground forces."
+
+#Defenses
+  # Tier 1
+  tech_support_coilgun_batteries:0 "$support_trait_coilgun_batteries$"
+  tech_support_coilgun_batteries_desc:1 "Companies of minituarized coilguns mounted on mobile platforms and designed to counter rockets, artillery, or other aerospace-borne threats, at the cost of slightly reduced overall firepower."
+  army_support_tech_custom_tooltip_coilgun_batteries:0 "§HUnlocks Support Type:§! Defenses\nArmy Health §G+10%§!\nArmy Damage §R-5%§!\n"
+
+  tech_support_neocrete_bunkers:0 "$support_trait_neocrete_bunkers$"
+  tech_support_neocrete_bunkers_desc:1 "Continuous walls formed by quickly assembled barricades comprised of simple, crenelated neocrete armored sections. They provide great defensive capability against small arms, but may slow down a rapid advance."
+  army_support_tech_custom_tooltip_neocrete_bunkers:0 "§HUnlocks Support Type:§! Defenses\nArmy Health §G+10%§!\nArmy Damage §R-5%§!\n"
+
+  tech_support_port_deflectors:0 "$support_trait_port_deflectors$"
+  tech_support_port_deflectors_desc:1 "Vehicle-mounted deflector shields capable of providing protection to ground forces from a myriad of threats. Unfortunately it requires a dedicated manpower to maintain and operate, moderately reducing overall unit firepower."
+  army_support_tech_custom_tooltip_port_deflectors:0 "§HUnlocks Support Type:§! Defenses\nArmy Health §G+10%§!\nArmy Damage §R-5%§!\n"
+
+  tech_support_laser_grids:0 "$support_trait_laser_grids$"
+  tech_support_laser_grids_desc:1 "Interconnected grids of laser turret emplacements, used to shoot down airborne hostiles as well as ward off ground assaults, however they require dedicated static power supplies and logistic systems."
+  army_support_tech_custom_tooltip_laser_grids:0 "§HUnlocks Support Type:§! Defenses\nArmy Health §G+10%§!\nArmy Damage §R-5%§!\n"
+
+  # Tier 2
+  tech_support_auto_ciws:0 "$support_trait_auto_ciws$"
+  tech_support_auto_ciws_desc:1 "Mobile platforms equipped with rapid-fire, medium-caliber ballistic weapons designed to safeguard an advancing army against nearly all aerial threats. This, however, comes at the expense of a diminished overall firepower."
+  army_support_tech_custom_tooltip_auto_ciws:0 "§HUnlocks Support Type:§! Defenses\nArmy Health §G+10%§!\nArmy Damage §R-5%§!\n"
+
+  tech_support_durasteel_bastions:0 "$support_trait_durasteel_bastions$"
+  tech_support_durasteel_bastions_desc:1 "Formidable structures constructed with multiple tiers of durasteel, these imposing edifices form expansive networks that can cover entire fronts. Designed to endure heavy ordnance, these structures are nearly impervious to most weapons, but their robustness hinders the swift advancement of any entrenched army."
+  army_support_tech_custom_tooltip_durasteel_bastions:0 "§HUnlocks Support Type:§! Defenses\nArmy Health §G+10%§!\nArmy Damage §R-5%§!\n"
+
+  tech_support_ion_projectors:0 "$support_trait_ion_projectors$"
+  tech_support_ion_projectors_desc:1 "Miniaturized planetary shield generators, installed on a variety of large mobile platforms, capable of projecting over an entire frontline when necessary before swiftly relocating. The operation of these projectors demands dedicated security teams, supplies, and operator crews, leading to a reduction in available manpower at the frontline."
+  army_support_tech_custom_tooltip_ion_projectors:0 "§HUnlocks Support Type:§! Defenses\nArmy Health §G+10%§!\nArmy Damage §R-5%§!\n"
+
+  tech_support_xray_tower:0 "$support_trait_xray_tower$"
+  tech_support_xray_tower_desc:1 "Enormous energy towers with the capacity to project powerful X-ray lasers over extensive distances, serving as formidable defenses for entire armies, cities, or frontlines against various threats from afar. The need for extensive power delivery systems, however, makes them a challenge to relocate easily."
+  army_support_tech_custom_tooltip_xray_tower:0 "§HUnlocks Support Type:§! Defenses\nArmy Health §G+10%§!\nArmy Damage §R-5%§!\n"
+
+  # Tier 3
+  tech_support_heavy_aa:0 "$support_trait_heavy_aa$"
+  tech_support_heavy_aa_desc:1 "Sprawling interconnected networks of mobile artillery brigades armed with diverse anti-aircraft weaponry form a formidable defense, capable of denying air superiority across an entire continent. However, the optimal operation of these batteries requires a significant investment in manpower, logistics, and maintenance crews."
+  army_support_tech_custom_tooltip_heavy_aa:0 "§HUnlocks Support Type:§! Defenses\nArmy Health §G+10%§!\nArmy Damage §R-5%§!\n"
+
+  tech_support_living_redoubts:0 "$support_trait_living_redoubts$"
+  tech_support_living_redoubts_desc:1 "Majestic fortifications the size of entire cities, constructed mainly from living metal, endowing these structures with the ability to adjust seamlessly to various terrains and adversaries. Any  objective defended by these formidable fortresses is sure to make even the most brazen enemy commanders reconsider their decision to launch an assault."
+  army_support_tech_custom_tooltip_living_redoubts:0 "§HUnlocks Support Type:§! Defenses\nArmy Health §G+10%§!\nArmy Damage §R-5%§!\n"
+
+  tech_support_mob_zroshields:0 "$support_trait_mob_zroshields$"
+  tech_support_mob_zroshields_desc:1 "Incorporated into a variety of mobile platforms and vehicles, these near-invulnerable city-spanning energy shields are sustained by the enigmatic power of zro. Resilient against all but the most destructive heavy ordnance, these shields necessitate a team of expert scientists, personnel, and dedicated security teams to ensure their proper functioning."
+  army_support_tech_custom_tooltip_mob_zroshields:0 "§HUnlocks Support Type:§! Defenses\nArmy Health §G+10%§!\nArmy Damage §R-5%§!\n"
+
+  tech_support_beam_array:0 "$support_trait_beam_array$"
+  tech_support_beam_array_desc:1 "Clusters of particle accelerators with the ability to function independently or converge into a unified particle beam, matching the might of a Titan's. These arrays project colossal energy beams capable of atomizing even the most formidable assaults. However, their operation demands nearly an entire continent's power supply, and their intricate placement hinders swift redeployment."
+  army_support_tech_custom_tooltip_beam_array:0 "§HUnlocks Support Type:§! Defenses\nArmy Health §G+10%§!\nArmy Damage §R-5%§!\n"

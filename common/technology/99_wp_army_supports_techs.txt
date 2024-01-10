@@ -1,0 +1,325 @@
+##########################
+## ARMY SUPPORTS
+## BY NASH, based on WP
+##########################
+###########
+# DEFENSES
+###########
+# TIER 1 DEFENSES
+tech_support_coilgun_batteries = {
+	cost = @tier1cost1
+	area = engineering
+	tier = 1
+	category = {
+		propulsion
+	}
+	prerequisites = {
+		"tech_mass_drivers_2"
+	}
+	weight = @tier1weight3
+	gateway = army_attachment
+	modifier = {
+		custom_tooltip = army_support_tech_custom_tooltip_coilgun_batteries
+	}
+	weight_modifier = {
+		#Bulwark should have higher weight
+	}
+	ai_weight = {
+		#Bulwark should have higher weight
+	}
+	potential = {
+		#has_tradition = tr_unyielding_finish
+	}
+}
+
+tech_support_neocrete_bunkers = {
+	cost = @tier1cost1
+	area = engineering
+	tier = 1
+	category = {
+		materials
+	}
+	prerequisites = {
+		"tech_ship_armor_2"
+	}
+	weight = @tier1weight3
+	gateway = army_attachment
+	modifier = {
+	}
+	weight_modifier = {
+		#Bulwark should have higher weight
+	}
+	ai_weight = {
+		#Bulwark should have higher weight
+	}
+	potential = {
+		#has_tradition = tr_unyielding_finish
+	}
+}
+
+tech_support_port_deflectors = {
+	cost = @tier1cost2
+	area = physics
+	tier = 1
+	category = {
+		field_manipulation
+	}
+	prerequisites = {
+		"tech_shields_2"
+	}
+	weight = @tier1weight3
+	gateway = army_attachment
+	modifier = {
+	}
+	weight_modifier = {
+		#Bulwark should have higher weight
+	}
+	ai_weight = {
+		#Bulwark should have higher weight
+	}
+	potential = {
+		#has_tradition = tr_unyielding_finish
+	}
+}
+
+tech_support_laser_grids = {
+	cost = @tier1cost1
+	area = physics
+	tier = 1
+	category = {
+		particles
+	}
+	prerequisites = {
+		"tech_lasers_2"
+	}
+	weight = @tier1weight3
+	gateway = army_attachment
+	modifier = {
+	}
+	weight_modifier = {
+		#Bulwark should have higher weight
+	}
+	ai_weight = {
+		#Bulwark should have higher weight
+	}
+	potential = {
+		#has_tradition = tr_unyielding_finish
+	}
+}
+
+# TIER 2 DEFENSES
+tech_support_auto_ciws = {
+	cost = @tier2cost1
+	area = engineering
+	tier = 2
+	category = {
+		propulsion
+	}
+	prerequisites = {
+		"tech_support_coilgun_batteries"
+		"tech_autocannons_1"
+	}
+	weight = @tier2weight3
+	gateway = army_attachment
+	modifier = {
+		custom_tooltip = army_support_tech_custom_tooltip_auto_ciws
+	}
+	weight_modifier = {
+		#Bulwark should have higher weight
+	}
+	ai_weight = {
+		#Bulwark should have higher weight
+	}
+	potential = {
+		#has_tradition = tr_unyielding_finish
+	}
+}
+
+tech_support_durasteel_bastions = {
+	cost = @tier3cost1
+	area = engineering
+	tier = 3
+	category = {
+		materials
+	}
+	prerequisites = {
+		"tech_ship_armor_4"
+		"tech_support_neocrete_bunkers"
+	}
+	weight = @tier3weight3
+	gateway = army_attachment
+	modifier = {
+	}
+	weight_modifier = {
+		#Bulwark should have higher weight
+	}
+	ai_weight = {
+		#Bulwark should have higher weight
+	}
+	potential = {
+		#has_tradition = tr_unyielding_finish
+	}
+}
+
+tech_support_ion_projectors = {
+	cost = @tier2cost2
+	area = physics
+	tier = 2
+	category = {
+		field_manipulation
+	}
+	prerequisites = {
+		"tech_shields_3"
+		"tech_support_port_deflectors"
+	}
+	weight = @tier2weight3
+	gateway = army_attachment
+	modifier = {
+	}
+	weight_modifier = {
+		#Bulwark should have higher weight
+	}
+	ai_weight = {
+		#Bulwark should have higher weight
+	}
+	potential = {
+		#has_tradition = tr_unyielding_finish
+	}
+}
+
+tech_support_xray_tower = {
+	cost = @tier3cost1
+	area = physics
+	tier = 3
+	category = {
+		particles
+	}
+	prerequisites = {
+		"tech_lasers_4"
+		"tech_support_laser_grids"
+	}
+	weight = @tier3weight1
+	gateway = army_attachment
+	modifier = {
+	}
+	weight_modifier = {
+		#Bulwark should have higher weight
+	}
+	ai_weight = {
+		#Bulwark should have higher weight
+	}
+	potential = {
+		#has_tradition = tr_unyielding_finish
+	}
+}
+
+# TIER 3 DEFENSES
+tech_support_heavy_aa = {
+	cost = @tier4cost1
+	area = engineering
+	tier = 4
+	category = {
+		propulsion
+	}
+	prerequisites = {
+		"tech_flak_batteries_3"
+		"tech_swarmer_missiles_2"
+		"tech_mine_volatile_motes"
+		"tech_support_auto_ciws"
+	}
+	weight = @tier4weight3
+	gateway = army_attachment
+	modifier = {
+		custom_tooltip = army_support_tech_custom_tooltip_heavy_aa
+	}
+	weight_modifier = {
+		#Bulwark should have higher weight
+	}
+	ai_weight = {
+		#Bulwark should have higher weight
+	}
+	potential = {
+		#has_tradition = tr_unyielding_finish
+	}
+}
+
+tech_support_living_redoubts = {
+	cost = @tier4cost1
+	area = engineering
+	tier = 4
+	category = {
+		materials
+	}
+	prerequisites = {
+		"tech_ship_armor_5"
+		"tech_mine_living_metal"
+		"tech_support_durasteel_bastions"
+	}
+	weight = @tier4weight3
+	gateway = army_attachment
+	modifier = {
+	}
+	weight_modifier = {
+		#Bulwark should have higher weight
+	}
+	ai_weight = {
+		#Bulwark should have higher weight
+	}
+	potential = {
+		#has_tradition = tr_unyielding_finish
+	}
+}
+
+tech_support_mob_zroshields = {
+	cost = @tier4cost2
+	area = physics
+	tier = 4
+	category = {
+		field_manipulation
+	}
+	prerequisites = {
+		"tech_support_ion_projectors"
+		"tech_mine_zro"
+		"tech_shields_4"
+	}
+	weight = @tier4weight3
+	gateway = army_attachment
+	modifier = {
+	}
+	weight_modifier = {
+		#Bulwark should have higher weight
+	}
+	ai_weight = {
+		#Bulwark should have higher weight
+	}
+	potential = {
+		#has_tradition = tr_unyielding_finish
+	}
+}
+
+tech_support_beam_array = {
+	cost = @tier4cost1
+	area = physics
+	tier = 4
+	category = {
+		particles
+	}
+	prerequisites = {
+		"tech_support_xray_tower"
+		"tech_mine_rare_crystals"
+		"tech_energy_lance_1"
+	}
+	weight = @tier4weight3
+	gateway = army_attachment
+	modifier = {
+	}
+	weight_modifier = {
+		#Bulwark should have higher weight
+	}
+	ai_weight = {
+		#Bulwark should have higher weight
+	}
+	potential = {
+		#has_tradition = tr_unyielding_finish
+	}
+}

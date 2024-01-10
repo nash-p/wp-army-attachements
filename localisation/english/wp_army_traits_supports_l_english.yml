@@ -1,0 +1,40 @@
+﻿l_english:
+#Defenses
+  # Tier 1
+  support_trait_coilgun_batteries:0 "Defenses: Coilgun Batteries"
+  support_trait_coilgun_batteries_desc:1 "Tier 1 Mobile Defense Support\nThis General is fond of using mobile air defense batteries.\n\n$tech_support_coilgun_batteries_desc$"
+
+  support_trait_neocrete_bunkers:0 "Defenses: Neocrete Bunkers"
+  support_trait_neocrete_bunkers_desc:1 "Tier 1 Static Defense Support\nThis General is fond of deploying static defenses along his frontlines.\n\n$tech_support_neocrete_bunkers_desc$"
+
+  support_trait_port_deflectors:0 "Defenses: Portable Deflectors"
+  support_trait_port_deflectors_desc:1 "Tier 1 Mobile Defense Support\nThis General favors using mobile defense shields.\n\n$tech_support_port_deflectors_desc$"
+
+  support_trait_laser_grids:0 "Defenses: Laser Grids"
+  support_trait_laser_grids_desc:1 "Tier 1 Static Defense Support\nThis General is experienced in the use of energy weapon emplacements.\n\n$tech_support_laser_grids_desc$"
+
+  # Tier 2
+  support_trait_auto_ciws:0 "Defenses: Autocannon CIWS"
+  support_trait_auto_ciws_desc:1 "Tier 1 Mobile Defense Support\nThis General is makes significant use of mobile air defense batteries.\n\n$tech_support_auto_ciws_desc$"
+
+  support_trait_durasteel_bastions:0 "Defenses: Durasteel Bastions"
+  support_trait_durasteel_bastions_desc:1 "Tier 1 Static Defense Support\nThis General is apt at deploying static defenses.\n\n$tech_support_durasteel_bastions_desc$"
+
+  support_trait_ion_projectors:0 "Defenses: Ion Projectors"
+  support_trait_ion_projectors_desc:1 "Tier 1 Mobile Defense Support\nThis General is well versed in using mobile shields.\n\n$tech_support_ion_projectors_desc$"
+
+  support_trait_xray_tower:0 "Defenses: X-Ray Laser Towers"
+  support_trait_xray_tower_desc:1 "Tier 1 Static Defense Support\nThis General is adept in the use of energy weapon emplacements.\n\n$tech_support_xray_tower_desc$"
+
+  # Tier 3
+  support_trait_heavy_aa:0 "Defenses: Heavy Anti-Air Batteries"
+  support_trait_heavy_aa_desc:1 "Tier 1 Mobile Defense Support\nThis General makes heavy use of mobile air defense batteries.\n\n$tech_support_heavy_aa_desc$"
+
+  support_trait_living_redoubts:0 "Defenses: Living Metal Redoubts"
+  support_trait_living_redoubts_desc:1 "Tier 1 Static Defense Support\nThis General is a tactical genius in the deployement of frontline fortifications.\n\n$tech_support_living_redoubts_desc$"
+
+  support_trait_mob_zroshields:0 "Defenses: Mobile Zroshields"
+  support_trait_mob_zroshields_desc:1 "Tier 1 Mobile Defense Support\nThis General is an expert when it comes to mobile shields.\n\n$tech_support_mob_zroshields_desc$"
+
+  support_trait_beam_array:0 "Defenses: Particle Beam Arrays"
+  support_trait_beam_array_desc:1 "Tier 1 Static Defense Support\nThis General is a master in the use of energy weapon emplacements.\n\n$tech_support_beam_array_desc$"
