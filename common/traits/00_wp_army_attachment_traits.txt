@@ -43,8 +43,22 @@ attachment_trait_jet_pack = {
 		attachment_trait_mini_nuke
 	}
 	leader_potential_add = {
-		has_paragon_dlc = yes
-		has_trait = subclass_commander_general
+		OR = {
+			AND = {
+				has_paragon_dlc = yes
+				has_trait = subclass_commander_general
+			}
+			AND = {
+				has_paragon_dlc = no
+				has_skill > 3
+				OR = {
+					has_trait = leader_trait_butcher
+					has_trait = leader_trait_butcher_2
+					has_trait = leader_trait_restrained
+					has_trait = leader_trait_restrained_2
+				}
+			}
+		}
 	}
 	selectable_weight = {
 		weight = @wp_army_attachement_trait_weight
@@ -75,8 +89,22 @@ attachment_trait_power_armour = {
 		armies_upkeep_mult = 0.05
 	}
 	leader_potential_add = {
-		has_paragon_dlc = yes
-		has_trait = subclass_commander_general
+		OR = {
+			AND = {
+				has_paragon_dlc = yes
+				has_trait = subclass_commander_general
+			}
+			AND = {
+				has_paragon_dlc = no
+				has_skill > 3
+				OR = {
+					has_trait = leader_trait_butcher
+					has_trait = leader_trait_butcher_2
+					has_trait = leader_trait_restrained
+					has_trait = leader_trait_restrained_2
+				}
+			}
+		}
 	}
 	leader_class = {
 		commander
@@ -127,8 +155,22 @@ attachment_trait_chemical_stimulant = {
 		#armies_upkeep_mult = -0.0
 	}
 	leader_potential_add = {
-		has_paragon_dlc = yes
-		has_trait = subclass_commander_general
+		OR = {
+			AND = {
+				has_paragon_dlc = yes
+				has_trait = subclass_commander_general
+			}
+			AND = {
+				has_paragon_dlc = no
+				has_skill > 3
+				OR = {
+					has_trait = leader_trait_butcher
+					has_trait = leader_trait_butcher_2
+					has_trait = leader_trait_restrained
+					has_trait = leader_trait_restrained_2
+				}
+			}
+		}
 	}
 	leader_class = {
 		commander
@@ -180,8 +222,22 @@ attachment_trait_combat_software_1 = {
 		#armies_upkeep_mult = -0.0
 	}
 	leader_potential_add = {
-		has_paragon_dlc = yes
-		has_trait = subclass_commander_general
+		OR = {
+			AND = {
+				has_paragon_dlc = yes
+				has_trait = subclass_commander_general
+			}
+			AND = {
+				has_paragon_dlc = no
+				has_skill > 3
+				OR = {
+					has_trait = leader_trait_butcher
+					has_trait = leader_trait_butcher_2
+					has_trait = leader_trait_restrained
+					has_trait = leader_trait_restrained_2
+				}
+			}
+		}
 	}
 	leader_class = {
 		commander
@@ -232,8 +288,22 @@ attachment_trait_flame_thrower = {
 		#armies_upkeep_mult = -0.0
 	}
 	leader_potential_add = {
-		has_paragon_dlc = yes
-		has_trait = subclass_commander_general
+		OR = {
+			AND = {
+				has_paragon_dlc = yes
+				has_trait = subclass_commander_general
+			}
+			AND = {
+				has_paragon_dlc = no
+				has_skill > 3
+				OR = {
+					has_trait = leader_trait_butcher
+					has_trait = leader_trait_butcher_2
+					has_trait = leader_trait_restrained
+					has_trait = leader_trait_restrained_2
+				}
+			}
+		}
 	}
 	leader_class = {
 		commander
@@ -284,8 +354,22 @@ attachment_trait_shield_unit = {
 		#armies_upkeep_mult = -0.0
 	}
 	leader_potential_add = {
-		has_paragon_dlc = yes
-		has_trait = subclass_commander_general
+		OR = {
+			AND = {
+				has_paragon_dlc = yes
+				has_trait = subclass_commander_general
+			}
+			AND = {
+				has_paragon_dlc = no
+				has_skill > 3
+				OR = {
+					has_trait = leader_trait_butcher
+					has_trait = leader_trait_butcher_2
+					has_trait = leader_trait_restrained
+					has_trait = leader_trait_restrained_2
+				}
+			}
+		}
 	}
 	leader_class = {
 		commander
@@ -337,8 +421,22 @@ attachment_trait_slave_collar = {
 		#armies_upkeep_mult = -0.0
 	}
 	leader_potential_add = {
-		has_paragon_dlc = yes
-		has_trait = subclass_commander_general
+		OR = {
+			AND = {
+				has_paragon_dlc = yes
+				has_trait = subclass_commander_general
+			}
+			AND = {
+				has_paragon_dlc = no
+				has_skill > 3
+				OR = {
+					has_trait = leader_trait_butcher
+					has_trait = leader_trait_butcher_2
+					has_trait = leader_trait_restrained
+					has_trait = leader_trait_restrained_2
+				}
+			}
+		}
 	}
 	leader_class = {
 		commander
@@ -392,8 +490,22 @@ attachment_trait_nerve_armour = {
 		#armies_upkeep_mult = -0.0
 	}
 	leader_potential_add = {
-		has_paragon_dlc = yes
-		has_trait = subclass_commander_general
+		OR = {
+			AND = {
+				has_paragon_dlc = yes
+				has_trait = subclass_commander_general
+			}
+			AND = {
+				has_paragon_dlc = no
+				has_skill > 3
+				OR = {
+					has_trait = leader_trait_butcher
+					has_trait = leader_trait_butcher_2
+					has_trait = leader_trait_restrained
+					has_trait = leader_trait_restrained_2
+				}
+			}
+		}
 	}
 	leader_class = {
 		commander
@@ -447,8 +559,22 @@ attachment_trait_cybernetic_replacement = {
 		#armies_upkeep_mult = -0.0
 	}
 	leader_potential_add = {
-		has_paragon_dlc = yes
-		has_trait = subclass_commander_general
+		OR = {
+			AND = {
+				has_paragon_dlc = yes
+				has_trait = subclass_commander_general
+			}
+			AND = {
+				has_paragon_dlc = no
+				has_skill > 3
+				OR = {
+					has_trait = leader_trait_butcher
+					has_trait = leader_trait_butcher_2
+					has_trait = leader_trait_restrained
+					has_trait = leader_trait_restrained_2
+				}
+			}
+		}
 	}
 	leader_class = {
 		commander
@@ -503,8 +629,22 @@ attachment_trait_combat_software_2 = {
 		#armies_upkeep_mult = -0.0
 	}
 	leader_potential_add = {
-		has_paragon_dlc = yes
-		has_trait = subclass_commander_general
+		OR = {
+			AND = {
+				has_paragon_dlc = yes
+				has_trait = subclass_commander_general
+			}
+			AND = {
+				has_paragon_dlc = no
+				has_skill > 3
+				OR = {
+					has_trait = leader_trait_butcher
+					has_trait = leader_trait_butcher_2
+					has_trait = leader_trait_restrained
+					has_trait = leader_trait_restrained_2
+				}
+			}
+		}
 	}
 	leader_class = {
 		commander
@@ -555,8 +695,22 @@ attachment_trait_inversion_grenade = {
 		#armies_upkeep_mult = -0.0
 	}
 	leader_potential_add = {
-		has_paragon_dlc = yes
-		has_trait = subclass_commander_general
+		OR = {
+			AND = {
+				has_paragon_dlc = yes
+				has_trait = subclass_commander_general
+			}
+			AND = {
+				has_paragon_dlc = no
+				has_skill > 3
+				OR = {
+					has_trait = leader_trait_butcher
+					has_trait = leader_trait_butcher_2
+					has_trait = leader_trait_restrained
+					has_trait = leader_trait_restrained_2
+				}
+			}
+		}
 	}
 	leader_class = {
 		commander
@@ -610,8 +764,22 @@ attachment_trait_chemical_thrower = {
 		#armies_upkeep_mult = -0.0
 	}
 	leader_potential_add = {
-		has_paragon_dlc = yes
-		has_trait = subclass_commander_general
+		OR = {
+			AND = {
+				has_paragon_dlc = yes
+				has_trait = subclass_commander_general
+			}
+			AND = {
+				has_paragon_dlc = no
+				has_skill > 3
+				OR = {
+					has_trait = leader_trait_butcher
+					has_trait = leader_trait_butcher_2
+					has_trait = leader_trait_restrained
+					has_trait = leader_trait_restrained_2
+				}
+			}
+		}
 	}
 	leader_class = {
 		commander
@@ -663,8 +831,22 @@ attachment_trait_dark_matter_blade = {
 		#armies_upkeep_mult = -0.0
 	}
 	leader_potential_add = {
-		has_paragon_dlc = yes
-		has_trait = subclass_commander_general
+		OR = {
+			AND = {
+				has_paragon_dlc = yes
+				has_trait = subclass_commander_general
+			}
+			AND = {
+				has_paragon_dlc = no
+				has_skill > 3
+				OR = {
+					has_trait = leader_trait_butcher
+					has_trait = leader_trait_butcher_2
+					has_trait = leader_trait_restrained
+					has_trait = leader_trait_restrained_2
+				}
+			}
+		}
 	}
 	leader_class = {
 		commander
@@ -718,8 +900,22 @@ attachment_trait_living_metal_armour = {
 		armies_upkeep_mult = 0.2
 	}
 	leader_potential_add = {
-		has_paragon_dlc = yes
-		has_trait = subclass_commander_general
+		OR = {
+			AND = {
+				has_paragon_dlc = yes
+				has_trait = subclass_commander_general
+			}
+			AND = {
+				has_paragon_dlc = no
+				has_skill > 3
+				OR = {
+					has_trait = leader_trait_butcher
+					has_trait = leader_trait_butcher_2
+					has_trait = leader_trait_restrained
+					has_trait = leader_trait_restrained_2
+				}
+			}
+		}
 	}
 	leader_class = {
 		commander
@@ -773,8 +969,22 @@ attachment_trait_mini_nuke = {
 		armies_upkeep_mult = 0.2
 	}
 	leader_potential_add = {
-		has_paragon_dlc = yes
-		has_trait = subclass_commander_general
+		OR = {
+			AND = {
+				has_paragon_dlc = yes
+				has_trait = subclass_commander_general
+			}
+			AND = {
+				has_paragon_dlc = no
+				has_skill > 3
+				OR = {
+					has_trait = leader_trait_butcher
+					has_trait = leader_trait_butcher_2
+					has_trait = leader_trait_restrained
+					has_trait = leader_trait_restrained_2
+				}
+			}
+		}
 	}
 	leader_class = {
 		commander
@@ -843,8 +1053,22 @@ attachment_trait_air_defence = {
 		#armies_upkeep_mult = -0.0
 	}
 	leader_potential_add = {
-		has_paragon_dlc = yes
-		has_trait = subclass_commander_general
+		OR = {
+			AND = {
+				has_paragon_dlc = yes
+				has_trait = subclass_commander_general
+			}
+			AND = {
+				has_paragon_dlc = no
+				has_skill > 3
+				OR = {
+					has_trait = leader_trait_butcher
+					has_trait = leader_trait_butcher_2
+					has_trait = leader_trait_restrained
+					has_trait = leader_trait_restrained_2
+				}
+			}
+		}
 	}
 	selectable_weight = {
 		weight = @wp_army_attachement_trait_weight
@@ -890,8 +1114,22 @@ attachment_trait_neo_concrete = {
 		#armies_upkeep_mult = -0.0
 	}
 	leader_potential_add = {
-		has_paragon_dlc = yes
-		has_trait = subclass_commander_general
+		OR = {
+			AND = {
+				has_paragon_dlc = yes
+				has_trait = subclass_commander_general
+			}
+			AND = {
+				has_paragon_dlc = no
+				has_skill > 3
+				OR = {
+					has_trait = leader_trait_butcher
+					has_trait = leader_trait_butcher_2
+					has_trait = leader_trait_restrained
+					has_trait = leader_trait_restrained_2
+				}
+			}
+		}
 	}
 	selectable_weight = {
 		weight = @wp_army_attachement_trait_weight
@@ -937,8 +1175,22 @@ attachment_trait_mine_field = {
 		armies_upkeep_mult = 0.1
 	}
 	leader_potential_add = {
-		has_paragon_dlc = yes
-		has_trait = subclass_commander_general
+		OR = {
+			AND = {
+				has_paragon_dlc = yes
+				has_trait = subclass_commander_general
+			}
+			AND = {
+				has_paragon_dlc = no
+				has_skill > 3
+				OR = {
+					has_trait = leader_trait_butcher
+					has_trait = leader_trait_butcher_2
+					has_trait = leader_trait_restrained
+					has_trait = leader_trait_restrained_2
+				}
+			}
+		}
 	}
 	selectable_weight = {
 		weight = @wp_army_attachement_trait_weight
@@ -986,8 +1238,22 @@ attachment_trait_missile_pylon = {
 		#armies_upkeep_mult = -0.0
 	}
 	leader_potential_add = {
-		has_paragon_dlc = yes
-		has_trait = subclass_commander_general
+		OR = {
+			AND = {
+				has_paragon_dlc = yes
+				has_trait = subclass_commander_general
+			}
+			AND = {
+				has_paragon_dlc = no
+				has_skill > 3
+				OR = {
+					has_trait = leader_trait_butcher
+					has_trait = leader_trait_butcher_2
+					has_trait = leader_trait_restrained
+					has_trait = leader_trait_restrained_2
+				}
+			}
+		}
 	}
 	selectable_weight = {
 		weight = @wp_army_attachement_trait_weight
@@ -1033,8 +1299,22 @@ attachment_trait_tesla_coil = {
 		armies_upkeep_mult = 0.1
 	}
 	leader_potential_add = {
-		has_paragon_dlc = yes
-		has_trait = subclass_commander_general
+		OR = {
+			AND = {
+				has_paragon_dlc = yes
+				has_trait = subclass_commander_general
+			}
+			AND = {
+				has_paragon_dlc = no
+				has_skill > 3
+				OR = {
+					has_trait = leader_trait_butcher
+					has_trait = leader_trait_butcher_2
+					has_trait = leader_trait_restrained
+					has_trait = leader_trait_restrained_2
+				}
+			}
+		}
 	}
 	selectable_weight = {
 		weight = @wp_army_attachement_trait_weight
@@ -1082,8 +1362,22 @@ attachment_trait_holo_doc = {
 		armies_upkeep_mult = -0.1
 	}
 	leader_potential_add = {
-		has_paragon_dlc = yes
-		has_trait = subclass_commander_general
+		OR = {
+			AND = {
+				has_paragon_dlc = yes
+				has_trait = subclass_commander_general
+			}
+			AND = {
+				has_paragon_dlc = no
+				has_skill > 3
+				OR = {
+					has_trait = leader_trait_butcher
+					has_trait = leader_trait_butcher_2
+					has_trait = leader_trait_restrained
+					has_trait = leader_trait_restrained_2
+				}
+			}
+		}
 	}
 	selectable_weight = {
 		weight = @wp_army_attachement_trait_weight
@@ -1128,8 +1422,22 @@ attachment_trait_tremor_generator = {
 		#armies_upkeep_mult = -0.0
 	}
 	leader_potential_add = {
-		has_paragon_dlc = yes
-		has_trait = subclass_commander_general
+		OR = {
+			AND = {
+				has_paragon_dlc = yes
+				has_trait = subclass_commander_general
+			}
+			AND = {
+				has_paragon_dlc = no
+				has_skill > 3
+				OR = {
+					has_trait = leader_trait_butcher
+					has_trait = leader_trait_butcher_2
+					has_trait = leader_trait_restrained
+					has_trait = leader_trait_restrained_2
+				}
+			}
+		}
 	}
 	selectable_weight = {
 		weight = @wp_army_attachement_trait_weight
@@ -1175,8 +1483,22 @@ attachment_trait_cloaking_generator = {
 		#armies_upkeep_mult = -0.0
 	}
 	leader_potential_add = {
-		has_paragon_dlc = yes
-		has_trait = subclass_commander_general
+		OR = {
+			AND = {
+				has_paragon_dlc = yes
+				has_trait = subclass_commander_general
+			}
+			AND = {
+				has_paragon_dlc = no
+				has_skill > 3
+				OR = {
+					has_trait = leader_trait_butcher
+					has_trait = leader_trait_butcher_2
+					has_trait = leader_trait_restrained
+					has_trait = leader_trait_restrained_2
+				}
+			}
+		}
 	}
 	selectable_weight = {
 		weight = @wp_army_attachement_trait_weight
@@ -1224,8 +1546,22 @@ attachment_trait_storm_generator = {
 		#armies_upkeep_mult = -0.0
 	}
 	leader_potential_add = {
-		has_paragon_dlc = yes
-		has_trait = subclass_commander_general
+		OR = {
+			AND = {
+				has_paragon_dlc = yes
+				has_trait = subclass_commander_general
+			}
+			AND = {
+				has_paragon_dlc = no
+				has_skill > 3
+				OR = {
+					has_trait = leader_trait_butcher
+					has_trait = leader_trait_butcher_2
+					has_trait = leader_trait_restrained
+					has_trait = leader_trait_restrained_2
+				}
+			}
+		}
 	}
 	selectable_weight = {
 		weight = @wp_army_attachement_trait_weight
@@ -1273,8 +1609,22 @@ attachment_trait_warp_platform = {
 		armies_upkeep_mult = -0.2
 	}
 	leader_potential_add = {
-		has_paragon_dlc = yes
-		has_trait = subclass_commander_general
+		OR = {
+			AND = {
+				has_paragon_dlc = yes
+				has_trait = subclass_commander_general
+			}
+			AND = {
+				has_paragon_dlc = no
+				has_skill > 3
+				OR = {
+					has_trait = leader_trait_butcher
+					has_trait = leader_trait_butcher_2
+					has_trait = leader_trait_restrained
+					has_trait = leader_trait_restrained_2
+				}
+			}
+		}
 	}
 	selectable_weight = {
 		weight = @wp_army_attachement_trait_weight
@@ -1321,8 +1671,22 @@ attachment_trait_war_canine = {
 		#armies_upkeep_mult = -0.0
 	}
 	leader_potential_add = {
-		has_paragon_dlc = yes
-		has_trait = subclass_commander_general
+		OR = {
+			AND = {
+				has_paragon_dlc = yes
+				has_trait = subclass_commander_general
+			}
+			AND = {
+				has_paragon_dlc = no
+				has_skill > 3
+				OR = {
+					has_trait = leader_trait_butcher
+					has_trait = leader_trait_butcher_2
+					has_trait = leader_trait_restrained
+					has_trait = leader_trait_restrained_2
+				}
+			}
+		}
 	}
 	selectable_weight = {
 		weight = @wp_army_attachement_trait_weight
@@ -1365,8 +1729,22 @@ attachment_trait_raptor_flock = {
 		#armies_upkeep_mult = -0.0
 	}
 	leader_potential_add = {
-		has_paragon_dlc = yes
-		has_trait = subclass_commander_general
+		OR = {
+			AND = {
+				has_paragon_dlc = yes
+				has_trait = subclass_commander_general
+			}
+			AND = {
+				has_paragon_dlc = no
+				has_skill > 3
+				OR = {
+					has_trait = leader_trait_butcher
+					has_trait = leader_trait_butcher_2
+					has_trait = leader_trait_restrained
+					has_trait = leader_trait_restrained_2
+				}
+			}
+		}
 	}
 	selectable_weight = {
 		weight = @wp_army_attachement_trait_weight
@@ -1410,8 +1788,22 @@ attachment_trait_battle_worm = {
 		#armies_upkeep_mult = -0.0
 	}
 	leader_potential_add = {
-		has_paragon_dlc = yes
-		has_trait = subclass_commander_general
+		OR = {
+			AND = {
+				has_paragon_dlc = yes
+				has_trait = subclass_commander_general
+			}
+			AND = {
+				has_paragon_dlc = no
+				has_skill > 3
+				OR = {
+					has_trait = leader_trait_butcher
+					has_trait = leader_trait_butcher_2
+					has_trait = leader_trait_restrained
+					has_trait = leader_trait_restrained_2
+				}
+			}
+		}
 	}
 	selectable_weight = {
 		weight = @wp_army_attachement_trait_weight
@@ -1458,8 +1850,22 @@ attachment_trait_mutant_horde = {
 		armies_upkeep_mult = -0.1
 	}
 	leader_potential_add = {
-		has_paragon_dlc = yes
-		has_trait = subclass_commander_general
+		OR = {
+			AND = {
+				has_paragon_dlc = yes
+				has_trait = subclass_commander_general
+			}
+			AND = {
+				has_paragon_dlc = no
+				has_skill > 3
+				OR = {
+					has_trait = leader_trait_butcher
+					has_trait = leader_trait_butcher_2
+					has_trait = leader_trait_restrained
+					has_trait = leader_trait_restrained_2
+				}
+			}
+		}
 	}
 	selectable_weight = {
 		weight = @wp_army_attachement_trait_weight
@@ -1506,8 +1912,22 @@ attachment_trait_therapod = {
 		#armies_upkeep_mult = -0.0
 	}
 	leader_potential_add = {
-		has_paragon_dlc = yes
-		has_trait = subclass_commander_general
+		OR = {
+			AND = {
+				has_paragon_dlc = yes
+				has_trait = subclass_commander_general
+			}
+			AND = {
+				has_paragon_dlc = no
+				has_skill > 3
+				OR = {
+					has_trait = leader_trait_butcher
+					has_trait = leader_trait_butcher_2
+					has_trait = leader_trait_restrained
+					has_trait = leader_trait_restrained_2
+				}
+			}
+		}
 	}
 	selectable_weight = {
 		weight = @wp_army_attachement_trait_weight
@@ -1551,8 +1971,22 @@ attachment_trait_parasite_swarm = {
 		#armies_upkeep_mult = -0.0
 	}
 	leader_potential_add = {
-		has_paragon_dlc = yes
-		has_trait = subclass_commander_general
+		OR = {
+			AND = {
+				has_paragon_dlc = yes
+				has_trait = subclass_commander_general
+			}
+			AND = {
+				has_paragon_dlc = no
+				has_skill > 3
+				OR = {
+					has_trait = leader_trait_butcher
+					has_trait = leader_trait_butcher_2
+					has_trait = leader_trait_restrained
+					has_trait = leader_trait_restrained_2
+				}
+			}
+		}
 	}
 	selectable_weight = {
 		weight = @wp_army_attachement_trait_weight
@@ -1598,8 +2032,22 @@ attachment_trait_xeno_cavalry = {
 		armies_upkeep_mult = 0.3
 	}
 	leader_potential_add = {
-		has_paragon_dlc = yes
-		has_trait = subclass_commander_general
+		OR = {
+			AND = {
+				has_paragon_dlc = yes
+				has_trait = subclass_commander_general
+			}
+			AND = {
+				has_paragon_dlc = no
+				has_skill > 3
+				OR = {
+					has_trait = leader_trait_butcher
+					has_trait = leader_trait_butcher_2
+					has_trait = leader_trait_restrained
+					has_trait = leader_trait_restrained_2
+				}
+			}
+		}
 	}
 	selectable_weight = {
 		weight = @wp_army_attachement_trait_weight
@@ -1642,8 +2090,22 @@ attachment_trait_brood_coordinator = {
 		#armies_upkeep_mult = -0.0
 	}
 	leader_potential_add = {
-		has_paragon_dlc = yes
-		has_trait = subclass_commander_general
+		OR = {
+			AND = {
+				has_paragon_dlc = yes
+				has_trait = subclass_commander_general
+			}
+			AND = {
+				has_paragon_dlc = no
+				has_skill > 3
+				OR = {
+					has_trait = leader_trait_butcher
+					has_trait = leader_trait_butcher_2
+					has_trait = leader_trait_restrained
+					has_trait = leader_trait_restrained_2
+				}
+			}
+		}
 	}
 	selectable_weight = {
 		weight = @wp_army_attachement_trait_weight
@@ -1697,8 +2159,22 @@ attachment_trait_military_police = {
 		#armies_upkeep_mult = -0.0
 	}
 	leader_potential_add = {
-		has_paragon_dlc = yes
-		has_trait = subclass_commander_general
+		OR = {
+			AND = {
+				has_paragon_dlc = yes
+				has_trait = subclass_commander_general
+			}
+			AND = {
+				has_paragon_dlc = no
+				has_skill > 3
+				OR = {
+					has_trait = leader_trait_butcher
+					has_trait = leader_trait_butcher_2
+					has_trait = leader_trait_restrained
+					has_trait = leader_trait_restrained_2
+				}
+			}
+		}
 	}
 	selectable_weight = {
 		weight = @wp_army_attachement_trait_weight
@@ -1748,8 +2224,22 @@ attachment_trait_clone_commando = {
 		armies_upkeep_mult = -0.5
 	}
 	leader_potential_add = {
-		has_paragon_dlc = yes
-		has_trait = subclass_commander_general
+		OR = {
+			AND = {
+				has_paragon_dlc = yes
+				has_trait = subclass_commander_general
+			}
+			AND = {
+				has_paragon_dlc = no
+				has_skill > 3
+				OR = {
+					has_trait = leader_trait_butcher
+					has_trait = leader_trait_butcher_2
+					has_trait = leader_trait_restrained
+					has_trait = leader_trait_restrained_2
+				}
+			}
+		}
 	}
 	selectable_weight = {
 		weight = @wp_army_attachement_trait_weight
@@ -1800,8 +2290,22 @@ attachment_trait_hypnotized_clone = {
 		armies_upkeep_mult = -0.1
 	}
 	leader_potential_add = {
-		has_paragon_dlc = yes
-		has_trait = subclass_commander_general
+		OR = {
+			AND = {
+				has_paragon_dlc = yes
+				has_trait = subclass_commander_general
+			}
+			AND = {
+				has_paragon_dlc = no
+				has_skill > 3
+				OR = {
+					has_trait = leader_trait_butcher
+					has_trait = leader_trait_butcher_2
+					has_trait = leader_trait_restrained
+					has_trait = leader_trait_restrained_2
+				}
+			}
+		}
 	}
 	selectable_weight = {
 		weight = @wp_army_attachement_trait_weight
@@ -1851,8 +2355,22 @@ attachment_trait_slave_raider = {
 		armies_upkeep_mult = -0.2
 	}
 	leader_potential_add = {
-		has_paragon_dlc = yes
-		has_trait = subclass_commander_general
+		OR = {
+			AND = {
+				has_paragon_dlc = yes
+				has_trait = subclass_commander_general
+			}
+			AND = {
+				has_paragon_dlc = no
+				has_skill > 3
+				OR = {
+					has_trait = leader_trait_butcher
+					has_trait = leader_trait_butcher_2
+					has_trait = leader_trait_restrained
+					has_trait = leader_trait_restrained_2
+				}
+			}
+		}
 	}
 	selectable_weight = {
 		weight = @wp_army_attachement_trait_weight
@@ -1905,8 +2423,22 @@ attachment_trait_special_forces = {
 		#armies_upkeep_mult = -0.0
 	}
 	leader_potential_add = {
-		has_paragon_dlc = yes
-		has_trait = subclass_commander_general
+		OR = {
+			AND = {
+				has_paragon_dlc = yes
+				has_trait = subclass_commander_general
+			}
+			AND = {
+				has_paragon_dlc = no
+				has_skill > 3
+				OR = {
+					has_trait = leader_trait_butcher
+					has_trait = leader_trait_butcher_2
+					has_trait = leader_trait_restrained
+					has_trait = leader_trait_restrained_2
+				}
+			}
+		}
 	}
 	selectable_weight = {
 		weight = @wp_army_attachement_trait_weight
@@ -1956,8 +2488,22 @@ attachment_trait_psi_shield = {
 		#armies_upkeep_mult = -0.0
 	}
 	leader_potential_add = {
-		has_paragon_dlc = yes
-		has_trait = subclass_commander_general
+		OR = {
+			AND = {
+				has_paragon_dlc = yes
+				has_trait = subclass_commander_general
+			}
+			AND = {
+				has_paragon_dlc = no
+				has_skill > 3
+				OR = {
+					has_trait = leader_trait_butcher
+					has_trait = leader_trait_butcher_2
+					has_trait = leader_trait_restrained
+					has_trait = leader_trait_restrained_2
+				}
+			}
+		}
 	}
 	selectable_weight = {
 		weight = @wp_army_attachement_trait_weight
@@ -2011,8 +2557,22 @@ attachment_trait_clone_suicide = {
 		armies_upkeep_mult = -0.1
 	}
 	leader_potential_add = {
-		has_paragon_dlc = yes
-		has_trait = subclass_commander_general
+		OR = {
+			AND = {
+				has_paragon_dlc = yes
+				has_trait = subclass_commander_general
+			}
+			AND = {
+				has_paragon_dlc = no
+				has_skill > 3
+				OR = {
+					has_trait = leader_trait_butcher
+					has_trait = leader_trait_butcher_2
+					has_trait = leader_trait_restrained
+					has_trait = leader_trait_restrained_2
+				}
+			}
+		}
 	}
 	selectable_weight = {
 		weight = @wp_army_attachement_trait_weight
@@ -2065,8 +2625,22 @@ attachment_trait_commissar_squad = {
 		#armies_upkeep_mult = -0.0
 	}
 	leader_potential_add = {
-		has_paragon_dlc = yes
-		has_trait = subclass_commander_general
+		OR = {
+			AND = {
+				has_paragon_dlc = yes
+				has_trait = subclass_commander_general
+			}
+			AND = {
+				has_paragon_dlc = no
+				has_skill > 3
+				OR = {
+					has_trait = leader_trait_butcher
+					has_trait = leader_trait_butcher_2
+					has_trait = leader_trait_restrained
+					has_trait = leader_trait_restrained_2
+				}
+			}
+		}
 	}
 	selectable_weight = {
 		weight = @wp_army_attachement_trait_weight
@@ -2119,8 +2693,22 @@ attachment_trait_psi_warrior = {
 		#armies_upkeep_mult = -0.0
 	}
 	leader_potential_add = {
-		has_paragon_dlc = yes
-		has_trait = subclass_commander_general
+		OR = {
+			AND = {
+				has_paragon_dlc = yes
+				has_trait = subclass_commander_general
+			}
+			AND = {
+				has_paragon_dlc = no
+				has_skill > 3
+				OR = {
+					has_trait = leader_trait_butcher
+					has_trait = leader_trait_butcher_2
+					has_trait = leader_trait_restrained
+					has_trait = leader_trait_restrained_2
+				}
+			}
+		}
 	}
 	selectable_weight = {
 		weight = @wp_army_attachement_trait_weight
@@ -2171,8 +2759,22 @@ attachment_trait_gene_shock = {
 		#armies_upkeep_mult = -0.0
 	}
 	leader_potential_add = {
-		has_paragon_dlc = yes
-		has_trait = subclass_commander_general
+		OR = {
+			AND = {
+				has_paragon_dlc = yes
+				has_trait = subclass_commander_general
+			}
+			AND = {
+				has_paragon_dlc = no
+				has_skill > 3
+				OR = {
+					has_trait = leader_trait_butcher
+					has_trait = leader_trait_butcher_2
+					has_trait = leader_trait_restrained
+					has_trait = leader_trait_restrained_2
+				}
+			}
+		}
 	}
 	selectable_weight = {
 		weight = @wp_army_attachement_trait_weight
@@ -2225,8 +2827,22 @@ attachment_trait_shadow_assassin = {
 		#armies_upkeep_mult = -0.0
 	}
 	leader_potential_add = {
-		has_paragon_dlc = yes
-		has_trait = subclass_commander_general
+		OR = {
+			AND = {
+				has_paragon_dlc = yes
+				has_trait = subclass_commander_general
+			}
+			AND = {
+				has_paragon_dlc = no
+				has_skill > 3
+				OR = {
+					has_trait = leader_trait_butcher
+					has_trait = leader_trait_butcher_2
+					has_trait = leader_trait_restrained
+					has_trait = leader_trait_restrained_2
+				}
+			}
+		}
 	}
 	selectable_weight = {
 		weight = @wp_army_attachement_trait_weight
@@ -2279,8 +2895,22 @@ attachment_trait_telekenetic_devastator = {
 		#armies_upkeep_mult = -0.0
 	}
 	leader_potential_add = {
-		has_paragon_dlc = yes
-		has_trait = subclass_commander_general
+		OR = {
+			AND = {
+				has_paragon_dlc = yes
+				has_trait = subclass_commander_general
+			}
+			AND = {
+				has_paragon_dlc = no
+				has_skill > 3
+				OR = {
+					has_trait = leader_trait_butcher
+					has_trait = leader_trait_butcher_2
+					has_trait = leader_trait_restrained
+					has_trait = leader_trait_restrained_2
+				}
+			}
+		}
 	}
 	selectable_weight = {
 		weight = @wp_army_attachement_trait_weight
@@ -2334,8 +2964,22 @@ attachment_trait_class_a_psi = {
 		#armies_upkeep_mult = -0.0
 	}
 	leader_potential_add = {
-		has_paragon_dlc = yes
-		has_trait = subclass_commander_general
+		OR = {
+			AND = {
+				has_paragon_dlc = yes
+				has_trait = subclass_commander_general
+			}
+			AND = {
+				has_paragon_dlc = no
+				has_skill > 3
+				OR = {
+					has_trait = leader_trait_butcher
+					has_trait = leader_trait_butcher_2
+					has_trait = leader_trait_restrained
+					has_trait = leader_trait_restrained_2
+				}
+			}
+		}
 	}
 	selectable_weight = {
 		weight = @wp_army_attachement_trait_weight
@@ -2388,8 +3032,22 @@ attachment_trait_void_walker = {
 		#armies_upkeep_mult = -0.0
 	}
 	leader_potential_add = {
-		has_paragon_dlc = yes
-		has_trait = subclass_commander_general
+		OR = {
+			AND = {
+				has_paragon_dlc = yes
+				has_trait = subclass_commander_general
+			}
+			AND = {
+				has_paragon_dlc = no
+				has_skill > 3
+				OR = {
+					has_trait = leader_trait_butcher
+					has_trait = leader_trait_butcher_2
+					has_trait = leader_trait_restrained
+					has_trait = leader_trait_restrained_2
+				}
+			}
+		}
 	}
 	selectable_weight = {
 		weight = @wp_army_attachement_trait_weight
@@ -2439,8 +3097,22 @@ attachment_trait_cyborg_infiltration = {
 		#armies_upkeep_mult = -0.0
 	}
 	leader_potential_add = {
-		has_paragon_dlc = yes
-		has_trait = subclass_commander_general
+		OR = {
+			AND = {
+				has_paragon_dlc = yes
+				has_trait = subclass_commander_general
+			}
+			AND = {
+				has_paragon_dlc = no
+				has_skill > 3
+				OR = {
+					has_trait = leader_trait_butcher
+					has_trait = leader_trait_butcher_2
+					has_trait = leader_trait_restrained
+					has_trait = leader_trait_restrained_2
+				}
+			}
+		}
 	}
 	selectable_weight = {
 		weight = @wp_army_attachement_trait_weight
@@ -2490,8 +3162,22 @@ attachment_trait_mobile_shield = {
 		armies_upkeep_mult = 0.1
 	}
 	leader_potential_add = {
-		has_paragon_dlc = yes
-		has_trait = subclass_commander_general
+		OR = {
+			AND = {
+				has_paragon_dlc = yes
+				has_trait = subclass_commander_general
+			}
+			AND = {
+				has_paragon_dlc = no
+				has_skill > 3
+				OR = {
+					has_trait = leader_trait_butcher
+					has_trait = leader_trait_butcher_2
+					has_trait = leader_trait_restrained
+					has_trait = leader_trait_restrained_2
+				}
+			}
+		}
 	}
 	selectable_weight = {
 		weight = @wp_army_attachement_trait_weight
@@ -2537,8 +3223,22 @@ attachment_trait_dropship = {
 		armies_upkeep_mult = -0.05
 	}
 	leader_potential_add = {
-		has_paragon_dlc = yes
-		has_trait = subclass_commander_general
+		OR = {
+			AND = {
+				has_paragon_dlc = yes
+				has_trait = subclass_commander_general
+			}
+			AND = {
+				has_paragon_dlc = no
+				has_skill > 3
+				OR = {
+					has_trait = leader_trait_butcher
+					has_trait = leader_trait_butcher_2
+					has_trait = leader_trait_restrained
+					has_trait = leader_trait_restrained_2
+				}
+			}
+		}
 	}
 	selectable_weight = {
 		weight = @wp_army_attachement_trait_weight
@@ -2584,8 +3284,22 @@ attachment_trait_drone_swarm = {
 		armies_upkeep_mult = 0.1
 	}
 	leader_potential_add = {
-		has_paragon_dlc = yes
-		has_trait = subclass_commander_general
+		OR = {
+			AND = {
+				has_paragon_dlc = yes
+				has_trait = subclass_commander_general
+			}
+			AND = {
+				has_paragon_dlc = no
+				has_skill > 3
+				OR = {
+					has_trait = leader_trait_butcher
+					has_trait = leader_trait_butcher_2
+					has_trait = leader_trait_restrained
+					has_trait = leader_trait_restrained_2
+				}
+			}
+		}
 	}
 	selectable_weight = {
 		weight = @wp_army_attachement_trait_weight
@@ -2632,8 +3346,22 @@ attachment_trait_battle_strider = {
 		armies_upkeep_mult = 0.2
 	}
 	leader_potential_add = {
-		has_paragon_dlc = yes
-		has_trait = subclass_commander_general
+		OR = {
+			AND = {
+				has_paragon_dlc = yes
+				has_trait = subclass_commander_general
+			}
+			AND = {
+				has_paragon_dlc = no
+				has_skill > 3
+				OR = {
+					has_trait = leader_trait_butcher
+					has_trait = leader_trait_butcher_2
+					has_trait = leader_trait_restrained
+					has_trait = leader_trait_restrained_2
+				}
+			}
+		}
 	}
 	selectable_weight = {
 		weight = @wp_army_attachement_trait_weight
@@ -2679,8 +3407,22 @@ attachment_trait_drop_pod = {
 		armies_upkeep_mult = -0.15
 	}
 	leader_potential_add = {
-		has_paragon_dlc = yes
-		has_trait = subclass_commander_general
+		OR = {
+			AND = {
+				has_paragon_dlc = yes
+				has_trait = subclass_commander_general
+			}
+			AND = {
+				has_paragon_dlc = no
+				has_skill > 3
+				OR = {
+					has_trait = leader_trait_butcher
+					has_trait = leader_trait_butcher_2
+					has_trait = leader_trait_restrained
+					has_trait = leader_trait_restrained_2
+				}
+			}
+		}
 	}
 	selectable_weight = {
 		weight = @wp_army_attachement_trait_weight
@@ -2727,8 +3469,22 @@ attachment_trait_plasma_plane = {
 		armies_upkeep_mult = -0.15
 	}
 	leader_potential_add = {
-		has_paragon_dlc = yes
-		has_trait = subclass_commander_general
+		OR = {
+			AND = {
+				has_paragon_dlc = yes
+				has_trait = subclass_commander_general
+			}
+			AND = {
+				has_paragon_dlc = no
+				has_skill > 3
+				OR = {
+					has_trait = leader_trait_butcher
+					has_trait = leader_trait_butcher_2
+					has_trait = leader_trait_restrained
+					has_trait = leader_trait_restrained_2
+				}
+			}
+		}
 	}
 	selectable_weight = {
 		weight = @wp_army_attachement_trait_weight
@@ -2774,8 +3530,22 @@ attachment_trait_hover_tank = {
 		armies_upkeep_mult = 0.2
 	}
 	leader_potential_add = {
-		has_paragon_dlc = yes
-		has_trait = subclass_commander_general
+		OR = {
+			AND = {
+				has_paragon_dlc = yes
+				has_trait = subclass_commander_general
+			}
+			AND = {
+				has_paragon_dlc = no
+				has_skill > 3
+				OR = {
+					has_trait = leader_trait_butcher
+					has_trait = leader_trait_butcher_2
+					has_trait = leader_trait_restrained
+					has_trait = leader_trait_restrained_2
+				}
+			}
+		}
 	}
 	selectable_weight = {
 		weight = @wp_army_attachement_trait_weight
@@ -2825,8 +3595,22 @@ attachment_trait_war_mech = {
 		armies_upkeep_mult = 0.25
 	}
 	leader_potential_add = {
-		has_paragon_dlc = yes
-		has_trait = subclass_commander_general
+		OR = {
+			AND = {
+				has_paragon_dlc = yes
+				has_trait = subclass_commander_general
+			}
+			AND = {
+				has_paragon_dlc = no
+				has_skill > 3
+				OR = {
+					has_trait = leader_trait_butcher
+					has_trait = leader_trait_butcher_2
+					has_trait = leader_trait_restrained
+					has_trait = leader_trait_restrained_2
+				}
+			}
+		}
 	}
 	selectable_weight = {
 		weight = @wp_army_attachement_trait_weight
@@ -2875,8 +3659,22 @@ attachment_trait_sonic_speeder = {
 		armies_upkeep_mult = -0.2
 	}
 	leader_potential_add = {
-		has_paragon_dlc = yes
-		has_trait = subclass_commander_general
+		OR = {
+			AND = {
+				has_paragon_dlc = yes
+				has_trait = subclass_commander_general
+			}
+			AND = {
+				has_paragon_dlc = no
+				has_skill > 3
+				OR = {
+					has_trait = leader_trait_butcher
+					has_trait = leader_trait_butcher_2
+					has_trait = leader_trait_restrained
+					has_trait = leader_trait_restrained_2
+				}
+			}
+		}
 	}
 	selectable_weight = {
 		weight = @wp_army_attachement_trait_weight
@@ -2925,8 +3723,22 @@ attachment_trait_all_terrain = {
 		armies_upkeep_mult = 0.1
 	}
 	leader_potential_add = {
-		has_paragon_dlc = yes
-		has_trait = subclass_commander_general
+		OR = {
+			AND = {
+				has_paragon_dlc = yes
+				has_trait = subclass_commander_general
+			}
+			AND = {
+				has_paragon_dlc = no
+				has_skill > 3
+				OR = {
+					has_trait = leader_trait_butcher
+					has_trait = leader_trait_butcher_2
+					has_trait = leader_trait_restrained
+					has_trait = leader_trait_restrained_2
+				}
+			}
+		}
 	}
 	selectable_weight = {
 		weight = @wp_army_attachement_trait_weight
@@ -2976,8 +3788,22 @@ attachment_trait_armageddon_mech = {
 		#armies_upkeep_mult = 0.30
 	}
 	leader_potential_add = {
-		has_paragon_dlc = yes
-		has_trait = subclass_commander_general
+		OR = {
+			AND = {
+				has_paragon_dlc = yes
+				has_trait = subclass_commander_general
+			}
+			AND = {
+				has_paragon_dlc = no
+				has_skill > 3
+				OR = {
+					has_trait = leader_trait_butcher
+					has_trait = leader_trait_butcher_2
+					has_trait = leader_trait_restrained
+					has_trait = leader_trait_restrained_2
+				}
+			}
+		}
 	}
 	selectable_weight = {
 		weight = @wp_army_attachement_trait_weight
