@@ -11,7 +11,7 @@ support_trait_coilgun_batteries = {
 		COUNCIL = no
 		TIER = 1
 	}
-	icon = "gfx/interface/icons/army_attachments/attachment_shield.dds"
+	icon = "gfx/interface/icons/traits/leader_trait_icons/mobile_defense_kinetic.dds"
 	leader_class = {
 		commander
 	}
@@ -73,7 +73,7 @@ support_trait_neocrete_bunkers = {
 		COUNCIL = no
 		TIER = 1
 	}
-	icon = "gfx/interface/icons/army_attachments/attachment_shield.dds"
+	icon = "gfx/interface/icons/traits/leader_trait_icons/static_defense_kinetic.dds"
 	leader_class = {
 		commander
 	}
@@ -135,7 +135,7 @@ support_trait_port_deflectors = {
 		COUNCIL = no
 		TIER = 1
 	}
-	icon = "gfx/interface/icons/army_attachments/attachment_shield.dds"
+	icon = "gfx/interface/icons/traits/leader_trait_icons/mobile_defense_energy.dds"
 	leader_class = {
 		commander
 	}
@@ -197,7 +197,7 @@ support_trait_laser_grids = {
 		COUNCIL = no
 		TIER = 1
 	}
-	icon = "gfx/interface/icons/army_attachments/attachment_shield.dds"
+	icon = "gfx/interface/icons/traits/leader_trait_icons/static_defense_energy.dds"
 	leader_class = {
 		commander
 	}
@@ -263,7 +263,7 @@ support_trait_auto_ciws = {
 		COUNCIL = no
 		TIER = 2
 	}
-	icon = "gfx/interface/icons/army_attachments/attachment_shield.dds"
+	icon = "gfx/interface/icons/traits/leader_trait_icons/mobile_defense_kinetic.dds"
 	leader_class = {
 		commander
 	}
@@ -328,7 +328,7 @@ support_trait_durasteel_bastions = {
 		COUNCIL = no
 		TIER = 2
 	}
-	icon = "gfx/interface/icons/army_attachments/attachment_shield.dds"
+	icon = "gfx/interface/icons/traits/leader_trait_icons/static_defense_kinetic.dds"
 	leader_class = {
 		commander
 	}
@@ -393,7 +393,7 @@ support_trait_ion_projectors = {
 		COUNCIL = no
 		TIER = 2
 	}
-	icon = "gfx/interface/icons/army_attachments/attachment_shield.dds"
+	icon = "gfx/interface/icons/traits/leader_trait_icons/mobile_defense_energy.dds"
 	leader_class = {
 		commander
 	}
@@ -458,7 +458,7 @@ support_trait_xray_tower = {
 		COUNCIL = no
 		TIER = 2
 	}
-	icon = "gfx/interface/icons/army_attachments/attachment_shield.dds"
+	icon = "gfx/interface/icons/traits/leader_trait_icons/static_defense_energy.dds"
 	leader_class = {
 		commander
 	}
@@ -524,7 +524,7 @@ support_trait_heavy_aa = {
 		COUNCIL = no
 		TIER = 3
 	}
-	icon = "gfx/interface/icons/army_attachments/attachment_shield.dds"
+	icon = "gfx/interface/icons/traits/leader_trait_icons/mobile_defense_kinetic.dds"
 	leader_class = {
 		commander
 	}
@@ -593,7 +593,7 @@ support_trait_living_redoubts = {
 		COUNCIL = no
 		TIER = 3
 	}
-	icon = "gfx/interface/icons/army_attachments/attachment_shield.dds"
+	icon = "gfx/interface/icons/traits/leader_trait_icons/static_defense_kinetic.dds"
 	leader_class = {
 		commander
 	}
@@ -661,7 +661,7 @@ support_trait_mob_zroshields = {
 		COUNCIL = no
 		TIER = 3
 	}
-	icon = "gfx/interface/icons/army_attachments/attachment_shield.dds"
+	icon = "gfx/interface/icons/traits/leader_trait_icons/mobile_defense_energy.dds"
 	leader_class = {
 		commander
 	}
@@ -729,7 +729,7 @@ support_trait_beam_array = {
 		COUNCIL = no
 		TIER = 3
 	}
-	icon = "gfx/interface/icons/army_attachments/attachment_shield.dds"
+	icon = "gfx/interface/icons/traits/leader_trait_icons/static_defense_energy.dds"
 	leader_class = {
 		commander
 	}
