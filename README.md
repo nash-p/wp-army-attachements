@@ -6,4 +6,4 @@
 There are other changes not listed here, 
 all in all I have tried to keep things in line with the original author's 'ethos'.
 
-All rights, ownership, and credits belong to the original mod author **WhiskeyPotato**
+All rights, ownership, and credits belong to the original mod author **WoodenPotatoes**
