@@ -1,3 +1,6 @@
 # Base weight for attachement traits
-@wp_army_attachement_trait_weight = 200
-# EOF Comment
+@wp_army_supports_trait_weight = 200
+# Bonuses/Debuffs for armies when attacking planets
+@wp_army_supports_hab_bonus_min = 0.8
+@wp_army_supports_hab_debuff_min = 0.6
+### EOF Comment ###

@@ -57,7 +57,7 @@ support_trait_coilgun_batteries = {
 		}
 	}
 	selectable_weight = {
-		weight = @wp_army_attachement_trait_weight
+		weight = @wp_army_supports_trait_weight
 	}
 	prerequisites = {
 		tech_support_coilgun_batteries
@@ -119,7 +119,7 @@ support_trait_neocrete_bunkers = {
 		}
 	}
 	selectable_weight = {
-		weight = @wp_army_attachement_trait_weight
+		weight = @wp_army_supports_trait_weight
 	}
 	prerequisites = {
 		tech_support_neocrete_bunkers
@@ -181,7 +181,7 @@ support_trait_port_deflectors = {
 		}
 	}
 	selectable_weight = {
-		weight = @wp_army_attachement_trait_weight
+		weight = @wp_army_supports_trait_weight
 	}
 	prerequisites = {
 		tech_support_port_deflectors
@@ -243,7 +243,7 @@ support_trait_laser_grids = {
 		}
 	}
 	selectable_weight = {
-		weight = @wp_army_attachement_trait_weight
+		weight = @wp_army_supports_trait_weight
 	}
 	prerequisites = {
 		tech_support_laser_grids
@@ -309,7 +309,7 @@ support_trait_auto_ciws = {
 		}
 	}
 	selectable_weight = {
-		weight = @wp_army_attachement_trait_weight
+		weight = @wp_army_supports_trait_weight
 	}
 	prerequisites = {
 		tech_support_auto_ciws
@@ -374,7 +374,7 @@ support_trait_durasteel_bastions = {
 		}
 	}
 	selectable_weight = {
-		weight = @wp_army_attachement_trait_weight
+		weight = @wp_army_supports_trait_weight
 	}
 	prerequisites = {
 		tech_support_durasteel_bastions
@@ -439,7 +439,7 @@ support_trait_ion_projectors = {
 		}
 	}
 	selectable_weight = {
-		weight = @wp_army_attachement_trait_weight
+		weight = @wp_army_supports_trait_weight
 	}
 	prerequisites = {
 		tech_support_ion_projectors
@@ -504,7 +504,7 @@ support_trait_xray_tower = {
 		}
 	}
 	selectable_weight = {
-		weight = @wp_army_attachement_trait_weight
+		weight = @wp_army_supports_trait_weight
 	}
 	prerequisites = {
 		tech_support_xray_tower
@@ -574,7 +574,7 @@ support_trait_heavy_aa = {
 		}
 	}
 	selectable_weight = {
-		weight = @wp_army_attachement_trait_weight
+		weight = @wp_army_supports_trait_weight
 	}
 	prerequisites = {
 		tech_support_heavy_aa
@@ -642,7 +642,7 @@ support_trait_living_redoubts = {
 		}
 	}
 	selectable_weight = {
-		weight = @wp_army_attachement_trait_weight
+		weight = @wp_army_supports_trait_weight
 	}
 	prerequisites = {
 		tech_support_living_redoubts
@@ -710,7 +710,7 @@ support_trait_mob_zroshields = {
 		}
 	}
 	selectable_weight = {
-		weight = @wp_army_attachement_trait_weight
+		weight = @wp_army_supports_trait_weight
 	}
 	prerequisites = {
 		tech_support_mob_zroshields
@@ -778,7 +778,7 @@ support_trait_beam_array = {
 		}
 	}
 	selectable_weight = {
-		weight = @wp_army_attachement_trait_weight
+		weight = @wp_army_supports_trait_weight
 	}
 	prerequisites = {
 		tech_support_beam_array
