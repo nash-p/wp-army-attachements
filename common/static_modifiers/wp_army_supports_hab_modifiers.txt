@@ -1,0 +1,11 @@
+# Applies to armies when they are on a planet which has >80% hab for their species
+wp_army_hab_bonus = {
+	army_health = 0.1
+	army_morale = 0.1
+}
+
+# Same as above but if hab <40%
+wp_army_hab_malus = {
+	army_health = -0.1
+	army_morale = -0.1
+}

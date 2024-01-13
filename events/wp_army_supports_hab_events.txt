@@ -1,0 +1,63 @@
+namespace = wp_supports_army_hab
+planet_event = {
+	id = wp_supports_army_hab.2
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		log = "WP_SUPPORTS.LOG: Started EVENT:wp_supports_army_hab.2"
+		set_variable = {
+			which = num_atk_army_planet_var
+			value = 0
+		}
+		# Counts the number of attacking armies on a planet, that have a species and not robots
+		every_planet_army = {
+			limit = {
+				exists = leader
+				exists = species
+				species = {
+					is_robotic = no
+				}
+			}
+			leader = {
+				save_event_target_as = attacking_general
+			}
+			root = {
+				change_variable = {
+					which = num_atk_army_planet_var
+					value = 1
+				}
+			}
+		}
+		# Creates a var to check if up to half the attackers army has met the hab requirements
+		set_variable = {
+			which = half_num_atk_army_planet_var
+			value = num_atk_army_planet_var
+		}
+		divide_variable = {
+			which = half_num_atk_army_planet_var
+			value = 2
+		}
+		if = {
+			limit = {
+				count_planet_army = {
+					count = half_num_atk_army_planet_var
+					limit = {
+						habitability = {
+							who = this
+							value > 0
+						}
+					}
+				}
+			}
+			random_planet_army = {
+				limit = {
+					exists = leader
+				}
+				leader = {
+					add_trait = support_trait_hab_bonus
+					log = "WP_SUPPORTS.LOG: Added modifier wp_army_hab_bonus"
+				}
+			}
+		}
+	}
+}
