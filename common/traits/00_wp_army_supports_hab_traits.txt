@@ -1,0 +1,21 @@
+support_trait_hab_bonus = {
+	inline_script = {
+		script = trait/icon
+		CLASS = leader
+		ICON = "GFX_leader_trait_synthetic"
+		RARITY = common
+		COUNCIL = no
+		TIER = none
+	}
+	army_modifier = {
+		wp_army_hab_bonus = 100
+	}
+	leader_class = {
+		commander
+	}
+	initial = no
+	randomized = no
+	notify_on_gained = no
+	selectable_weight = 0
+	ai_weight = 0
+}
