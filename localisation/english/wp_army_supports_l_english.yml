@@ -4,3 +4,14 @@
   wp_army_hab_bonus_desc:0 "$support_trait_hab_bonus$"
   wp_army_hab_malus:0 "Terrain Disadavantage Malus"
   wp_army_hab_malus_desc:0 "$support_trait_hab_malus$"
+
+# Misc traits
+  support_trait_hab_bonus:0 "Terrain Advantage"
+  support_trait_hab_bonus_desc:0 "This general's armies are familiar with fighting on this planet's biomes."
+  support_trait_hab_malus:0 "Terrain Disadvantage"
+  support_trait_hab_malus_desc:0 "This general's armies are unfamiliar with the biomes of this world and are struggling to adapt."
+
+#Misc Techs
+  gateway_army_attachment:0 "Researching this technology will lead to further developments in Army Attachments. Attachments are general traits that significantly strengthen our ground forces."
+  army_attachment_flag:0 "Army Attachment"
+  army_attachment_flag:1 "Attachments are general traits that significantly strengthen our ground forces."

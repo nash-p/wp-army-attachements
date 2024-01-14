@@ -1,0 +1,39 @@
+####################
+## SPECIAL FORCES ##
+####################
+## TIER 1
+support_trait_shock_clones = {
+	veteran_class_locked_trait = yes
+	inline_script = {
+		script = trait/icon
+		CLASS = commander
+		RARITY = common
+		COUNCIL = no
+		TIER = 1
+	}
+	icon = "gfx/interface/icons/traits/leader_trait_icons/mobile_defense_kinetic.dds"
+	leader_class = {
+		commander
+	}
+	opposites = {
+		#support_trait_shock_clones
+	}
+	army_modifier = {
+		army_damage_mult = -0.05
+		#army_morale_damage_mult = 0.0
+		#army_collateral_damage_mult = 0.0
+		army_health = 0.1
+		#army_morale = 0.0
+		#army_disengage_chance_mult = 0.0
+		#armies_upkeep_mult = -0.0
+	}
+	leader_potential_add = {
+		wp_is_general = yes
+	}
+	selectable_weight = {
+		weight = @wp_army_supports_trait_weight
+	}
+	prerequisites = {
+		tech_support_coilgun_batteries
+	}
+}
