@@ -1,0 +1,6 @@
+﻿l_english:
+# Modifiers
+  wp_army_hab_bonus:0 "Terrain Advantage Bonus"
+  wp_army_hab_bonus_desc:0 "$support_trait_hab_bonus$"
+  wp_army_hab_malus:0 "Terrain Disadavantage Malus"
+  wp_army_hab_malus_desc:0 "$support_trait_hab_malus$"
