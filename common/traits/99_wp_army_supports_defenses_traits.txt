@@ -7,7 +7,7 @@ support_trait_coilgun_batteries = {
 	inline_script = {
 		script = trait/icon
 		CLASS = commander
-		RARITY = veteran
+		RARITY = common
 		COUNCIL = no
 		TIER = 1
 	}
@@ -15,20 +15,7 @@ support_trait_coilgun_batteries = {
 	leader_class = {
 		commander
 	}
-	opposites = {
-		#support_trait_coilgun_batteries
-		support_trait_neocrete_bunkers
-		#support_trait_port_deflectors
-		support_trait_laser_grids
-		#support_trait_auto_ciws
-		support_trait_durasteel_bastions
-		#support_trait_ion_projectors
-		support_trait_xray_tower
-		#support_trait_heavy_aa
-		support_trait_living_redoubts
-		#support_trait_mob_zroshields
-		support_trait_beam_array
-	}
+	inline_script = "traits/wp_mobile_defense_oppposites"
 	army_modifier = {
 		army_damage_mult = -0.05
 		#army_morale_damage_mult = 0.0
@@ -54,7 +41,7 @@ support_trait_neocrete_bunkers = {
 	inline_script = {
 		script = trait/icon
 		CLASS = commander
-		RARITY = veteran
+		RARITY = common
 		COUNCIL = no
 		TIER = 1
 	}
@@ -62,20 +49,7 @@ support_trait_neocrete_bunkers = {
 	leader_class = {
 		commander
 	}
-	opposites = {
-		support_trait_coilgun_batteries
-		#support_trait_neocrete_bunkers
-		support_trait_port_deflectors
-		#support_trait_laser_grids
-		support_trait_auto_ciws
-		#support_trait_durasteel_bastions
-		support_trait_ion_projectors
-		#support_trait_xray_tower
-		support_trait_heavy_aa
-		#support_trait_living_redoubts
-		support_trait_mob_zroshields
-		#support_trait_beam_array
-	}
+	inline_scipt = "traits/wp_static_defense_oppposites"	
 	army_modifier = {
 		army_damage_mult = -0.05
 		#army_morale_damage_mult = 0.0
@@ -101,7 +75,7 @@ support_trait_port_deflectors = {
 	inline_script = {
 		script = trait/icon
 		CLASS = commander
-		RARITY = veteran
+		RARITY = common
 		COUNCIL = no
 		TIER = 1
 	}
@@ -109,20 +83,7 @@ support_trait_port_deflectors = {
 	leader_class = {
 		commander
 	}
-	opposites = {
-		#support_trait_coilgun_batteries
-		support_trait_neocrete_bunkers
-		#support_trait_port_deflectors
-		support_trait_laser_grids
-		#support_trait_auto_ciws
-		support_trait_durasteel_bastions
-		#support_trait_ion_projectors
-		support_trait_xray_tower
-		#support_trait_heavy_aa
-		support_trait_living_redoubts
-		#support_trait_mob_zroshields
-		support_trait_beam_array
-	}
+	inline_script = "traits/wp_mobile_defense_oppposites"
 	army_modifier = {
 		army_damage_mult = -0.1
 		#army_morale_damage_mult = 0.0
@@ -148,7 +109,7 @@ support_trait_laser_grids = {
 	inline_script = {
 		script = trait/icon
 		CLASS = commander
-		RARITY = veteran
+		RARITY = common
 		COUNCIL = no
 		TIER = 1
 	}
@@ -156,20 +117,7 @@ support_trait_laser_grids = {
 	leader_class = {
 		commander
 	}
-	opposites = {
-		support_trait_coilgun_batteries
-		#support_trait_neocrete_bunkers
-		support_trait_port_deflectors
-		#support_trait_laser_grids
-		support_trait_auto_ciws
-		#support_trait_durasteel_bastions
-		support_trait_ion_projectors
-		#support_trait_xray_tower
-		support_trait_heavy_aa
-		#support_trait_living_redoubts
-		support_trait_mob_zroshields
-		#support_trait_beam_array
-	}
+inline_scipt = "traits/wp_static_defense_oppposites"
 	army_modifier = {
 		#army_damage_mult = -0.0
 		#army_morale_damage_mult = 0.0
@@ -199,7 +147,7 @@ support_trait_auto_ciws = {
 	inline_script = {
 		script = trait/icon
 		CLASS = commander
-		RARITY = veteran
+		RARITY = common
 		COUNCIL = no
 		TIER = 2
 	}
@@ -207,20 +155,7 @@ support_trait_auto_ciws = {
 	leader_class = {
 		commander
 	}
-	opposites = {
-		#support_trait_coilgun_batteries
-		support_trait_neocrete_bunkers
-		#support_trait_port_deflectors
-		support_trait_laser_grids
-		#support_trait_auto_ciws
-		support_trait_durasteel_bastions
-		#support_trait_ion_projectors
-		support_trait_xray_tower
-		#support_trait_heavy_aa
-		support_trait_living_redoubts
-		#support_trait_mob_zroshields
-		support_trait_beam_array
-	}
+	inline_script = "traits/wp_mobile_defense_oppposites"
 	army_modifier = {
 		army_damage_mult = -0.1
 		#army_morale_damage_mult = 0.0
@@ -249,7 +184,7 @@ support_trait_durasteel_bastions = {
 	inline_script = {
 		script = trait/icon
 		CLASS = commander
-		RARITY = veteran
+		RARITY = common
 		COUNCIL = no
 		TIER = 2
 	}
@@ -257,20 +192,7 @@ support_trait_durasteel_bastions = {
 	leader_class = {
 		commander
 	}
-	opposites = {
-		support_trait_coilgun_batteries
-		#support_trait_neocrete_bunkers
-		support_trait_port_deflectors
-		#support_trait_laser_grids
-		support_trait_auto_ciws
-		#support_trait_durasteel_bastions
-		support_trait_ion_projectors
-		#support_trait_xray_tower
-		support_trait_heavy_aa
-		#support_trait_living_redoubts
-		support_trait_mob_zroshields
-		#support_trait_beam_array
-	}
+inline_scipt = "traits/wp_static_defense_oppposites"
 	army_modifier = {
 		army_damage_mult = -0.1
 		#army_morale_damage_mult = 0.0
@@ -299,7 +221,7 @@ support_trait_ion_projectors = {
 	inline_script = {
 		script = trait/icon
 		CLASS = commander
-		RARITY = veteran
+		RARITY = common
 		COUNCIL = no
 		TIER = 2
 	}
@@ -307,20 +229,7 @@ support_trait_ion_projectors = {
 	leader_class = {
 		commander
 	}
-	opposites = {
-		#support_trait_coilgun_batteries
-		support_trait_neocrete_bunkers
-		#support_trait_port_deflectors
-		support_trait_laser_grids
-		#support_trait_auto_ciws
-		support_trait_durasteel_bastions
-		#support_trait_ion_projectors
-		support_trait_xray_tower
-		#support_trait_heavy_aa
-		support_trait_living_redoubts
-		#support_trait_mob_zroshields
-		support_trait_beam_array
-	}
+	inline_script = "traits/wp_mobile_defense_oppposites"
 	army_modifier = {
 		army_damage_mult = -0.2
 		#army_morale_damage_mult = 0.0
@@ -349,7 +258,7 @@ support_trait_xray_tower = {
 	inline_script = {
 		script = trait/icon
 		CLASS = commander
-		RARITY = veteran
+		RARITY = common
 		COUNCIL = no
 		TIER = 2
 	}
@@ -357,20 +266,7 @@ support_trait_xray_tower = {
 	leader_class = {
 		commander
 	}
-	opposites = {
-		support_trait_coilgun_batteries
-		#support_trait_neocrete_bunkers
-		support_trait_port_deflectors
-		#support_trait_laser_grids
-		support_trait_auto_ciws
-		#support_trait_durasteel_bastions
-		support_trait_ion_projectors
-		#support_trait_xray_tower
-		support_trait_heavy_aa
-		#support_trait_living_redoubts
-		support_trait_mob_zroshields
-		#support_trait_beam_array
-	}
+inline_scipt = "traits/wp_static_defense_oppposites"
 	army_modifier = {
 		#army_damage_mult = -0.0
 		#army_morale_damage_mult = 0.0
@@ -400,7 +296,7 @@ support_trait_heavy_aa = {
 	inline_script = {
 		script = trait/icon
 		CLASS = commander
-		RARITY = veteran
+		RARITY = common
 		COUNCIL = no
 		TIER = 3
 	}
@@ -408,20 +304,7 @@ support_trait_heavy_aa = {
 	leader_class = {
 		commander
 	}
-	opposites = {
-		#support_trait_coilgun_batteries
-		support_trait_neocrete_bunkers
-		#support_trait_port_deflectors
-		support_trait_laser_grids
-		#support_trait_auto_ciws
-		support_trait_durasteel_bastions
-		#support_trait_ion_projectors
-		support_trait_xray_tower
-		#support_trait_heavy_aa
-		support_trait_living_redoubts
-		#support_trait_mob_zroshields
-		support_trait_beam_array
-	}
+	inline_script = "traits/wp_mobile_defense_oppposites"
 	army_modifier = {
 		army_damage_mult = -0.1
 		#army_morale_damage_mult = 0.0
@@ -454,7 +337,7 @@ support_trait_living_redoubts = {
 	inline_script = {
 		script = trait/icon
 		CLASS = commander
-		RARITY = veteran
+		RARITY = common
 		COUNCIL = no
 		TIER = 3
 	}
@@ -462,20 +345,7 @@ support_trait_living_redoubts = {
 	leader_class = {
 		commander
 	}
-	opposites = {
-		support_trait_coilgun_batteries
-		#support_trait_neocrete_bunkers
-		support_trait_port_deflectors
-		#support_trait_laser_grids
-		support_trait_auto_ciws
-		#support_trait_durasteel_bastions
-		support_trait_ion_projectors
-		#support_trait_xray_tower
-		support_trait_heavy_aa
-		#support_trait_living_redoubts
-		support_trait_mob_zroshields
-		#support_trait_beam_array
-	}
+inline_scipt = "traits/wp_static_defense_oppposites"
 	army_modifier = {
 		army_damage_mult = -0.1
 		#army_morale_damage_mult = 0.0
@@ -507,7 +377,7 @@ support_trait_mob_zroshields = {
 	inline_script = {
 		script = trait/icon
 		CLASS = commander
-		RARITY = veteran
+		RARITY = common
 		COUNCIL = no
 		TIER = 3
 	}
@@ -515,20 +385,7 @@ support_trait_mob_zroshields = {
 	leader_class = {
 		commander
 	}
-	opposites = {
-		#support_trait_coilgun_batteries
-		support_trait_neocrete_bunkers
-		#support_trait_port_deflectors
-		support_trait_laser_grids
-		#support_trait_auto_ciws
-		support_trait_durasteel_bastions
-		#support_trait_ion_projectors
-		support_trait_xray_tower
-		#support_trait_heavy_aa
-		support_trait_living_redoubts
-		#support_trait_mob_zroshields
-		support_trait_beam_array
-	}
+	inline_script = "traits/wp_mobile_defense_oppposites"
 	army_modifier = {
 		army_damage_mult = -0.2
 		#army_morale_damage_mult = 0.0
@@ -560,7 +417,7 @@ support_trait_beam_array = {
 	inline_script = {
 		script = trait/icon
 		CLASS = commander
-		RARITY = veteran
+		RARITY = common
 		COUNCIL = no
 		TIER = 3
 	}
@@ -568,20 +425,7 @@ support_trait_beam_array = {
 	leader_class = {
 		commander
 	}
-	opposites = {
-		support_trait_coilgun_batteries
-		#support_trait_neocrete_bunkers
-		support_trait_port_deflectors
-		#support_trait_laser_grids
-		support_trait_auto_ciws
-		#support_trait_durasteel_bastions
-		support_trait_ion_projectors
-		#support_trait_xray_tower
-		support_trait_heavy_aa
-		#support_trait_living_redoubts
-		support_trait_mob_zroshields
-		#support_trait_beam_array
-	}
+inline_scipt = "traits/wp_static_defense_oppposites"
 	army_modifier = {
 		#army_damage_mult = -0.0
 		#army_morale_damage_mult = 0.0

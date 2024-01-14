@@ -1,0 +1,14 @@
+opposites = {
+	support_trait_coilgun_batteries
+	#support_trait_neocrete_bunkers
+	support_trait_port_deflectors
+	#support_trait_laser_grids
+	support_trait_auto_ciws
+	#support_trait_durasteel_bastions
+	support_trait_ion_projectors
+	#support_trait_xray_tower
+	support_trait_heavy_aa
+	#support_trait_living_redoubts
+	support_trait_mob_zroshields
+	#support_trait_beam_array
+}
