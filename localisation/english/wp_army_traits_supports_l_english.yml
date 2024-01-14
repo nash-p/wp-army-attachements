@@ -1,4 +1,10 @@
 ﻿l_english:
+# Misc
+  support_trait_hab_bonus:0 "Terrain Advantage"
+  support_trait_hab_bonus_desc:0 "This general's armies are familiar with fighting on this planet's biomes."
+  support_trait_hab_malus:0 "Terrain Disadvantage"
+  support_trait_hab_malus_desc:0 "This general's armies are unfamiliar with the biomes of this world and are struggling to adapt."
+
 #Defenses
   # Tier 1
   support_trait_coilgun_batteries:0 "Defenses: Coilgun Batteries"
