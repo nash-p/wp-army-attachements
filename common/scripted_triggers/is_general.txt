@@ -1,0 +1,20 @@
+# Checks if the leader is a general based on traits or Paragons DLC subclass
+
+wp_is_general = {
+	OR = {
+		AND = {
+			has_paragon_dlc = yes
+			has_trait = subclass_commander_general
+		}
+		AND = {
+			has_paragon_dlc = no
+			has_skill > 3
+			OR = {
+				has_trait = leader_trait_butcher
+				has_trait = leader_trait_butcher_2
+				has_trait = leader_trait_restrained
+				has_trait = leader_trait_restrained_2
+			}
+		}
+	}
+}
