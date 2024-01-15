@@ -19,7 +19,7 @@ Summary of intended changes:
 
 Changelog:
     - Infrastructure changed to Defenses, reworked all traits here
-    - Added special forces group of traits, 1 for each ascension (except Synths) with 3 tiers each
+    - Reinforcements changed to special forces group of traits, 1 for each ascension (except Synths) with 3 tiers each
 
 
 # NEW TRAIT CHAINS/UPGRADES
@@ -48,13 +48,6 @@ Changelog:
 ### BEASTS
     - Canines > Mut Horde > Xenocav [GENE]
     - Worms > Therapods
-
-### REINFORCEMENTS
-    - MP > Commissars
-    - Hypno > Suicide
-    - Commando > Specops > Shadow Ass
-    - Gene shock > Void Walkers [GENE]
-    - !NEW! Psi shield > Psi warrior > TK > Class A [PSI]
 
 ### VEHICLES
     - Dropships > Drop pods
