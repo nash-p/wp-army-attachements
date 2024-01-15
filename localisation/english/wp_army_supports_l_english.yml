@@ -15,3 +15,8 @@
   gateway_army_attachment:0 "Researching this technology will lead to further developments in Army Attachments. Attachments are general traits that significantly strengthen our ground forces."
   army_attachment_flag:0 "Army Attachment"
   army_attachment_flag:1 "Attachments are general traits that significantly strengthen our ground forces."
+
+#Modifiers
+  wp_traits_specops_gene_mod:0 ""
+  wp_traits_specops_cyber_mod:0 ""
+  wp_traits_specops_psi_mod:0 ""

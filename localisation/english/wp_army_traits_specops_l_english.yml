@@ -1,0 +1,31 @@
+﻿l_english:
+#Genetic
+  support_trait_shock_clones:0 "$tech_support_shock_clones$"
+  support_trait_shock_clones_desc:0 "Tier 1 Genetic Special Forces\n This general is known to use clone shocktroopers\n\n$tech_support_shock_clones_desc$"
+
+  support_trait_clone_commandos:0 "$tech_support_clone_commandos$"
+  support_trait_clone_commandos_desc:0 "Tier 2 Genetic Special Forces\n This general employs several companies of clone commandos\n\n$tech_support_clone_commandos_desc$"
+
+  support_trait_gene_elite:0 "$tech_support_clone_commandos$"
+  support_trait_gene_elite_desc:0 "Tier 3 Genetic Special Forces\n This general's forces are spearheaded by an elite regiment of genewarriors\n\n$tech_support_gene_elite_desc$"
+
+#Cybernetic
+  support_trait_aug_stalkers:0 "$tech_support_aug_stalker$"
+  support_trait_aug_stalkers_desc:0 "Tier 1 Cybernetic Special Forces\n This general makes use of augmented sappers\n\n$tech_support_aug_stalkers_desc$"
+
+  support_trait_terminators:0 "$tech_support_terminators$"
+  support_trait_terminators_desc:0 "Tier 2 Cybernetic Special Forces\n This general has garnered a reputation for using cyborg stalkers\n\n$tech_support_terminators_desc$"
+
+  support_trait_bionic_assassins:0 "$tech_support_bionic_assassins$"
+  support_trait_bionic_assassins_desc:0 "Tier 3 Cybernetic Special Forces\n This general is infamous for his deadly bionic assassins\n\n$tech_support_bionic_assassins_desc$"
+
+#Psionic
+  support_trait_hyperscouts:0 "$tech_support_hyperscouts$"
+  support_trait_hyperscouts_desc:0 "Tier 1 Psionic Special Forces\n This general uses esper scouts on the battlefield\n\n$tech_support_hyperscouts_desc$"
+
+  support_trait_psi_rangers:0 "$tech_support_psi_rangers$"
+  support_trait_psi_rangers_desc:0 "Tier 2 Psionic Special Forces\n This general has integrated psionic scouts at every level of his army\n\n$tech_support_psi_rangers_desc$"
+
+  support_trait_precon:0 "$tech_support_precon$"
+  support_trait_precon_desc:0 "Tier 3 Psionic Special Forces\n This general commands a corps of highly trained precognitive recon teams \n\n$tech_support_precon_desc$"
+

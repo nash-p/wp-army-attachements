@@ -1,0 +1,30 @@
+﻿l_english:
+#Genetic
+  tech_support_shock_clones:0 " Special Forces: Shocktrooper Clones"
+  tech_support_shock_clones_desc:0 "Companies of highly trained and readily replaceable shock troopers, superior in both equipment and training to their stock counterparts. These genetically engineered heavy assault formations are specifically created to spearhead dangerous attacks on heavily fortified enemy positions. Regrettably, their expendable status leaves them susceptible to significant casualties."
+
+  tech_support_clone_commandos:0 "Special Forces: Clone Commandos"
+  tech_support_clone_commandos_desc:0 "Elite clone units designed for lightning raids against the enemy. Beyond enhanced equipment and training, these clones have undergone diverse augmentations to bolster their combat capabilities. Assigned to the most hazardous missions, these clones not only contend with the risk of combat fatalities but also grapple with the prevalent psychosis affecting all clones. Despite this, their success rate is amongst the best of all special forces units."
+
+  tech_support_gene_elite:0 "Special Forces: Genewarrior Elites"
+  tech_support_gene_elite_desc:0 "Unlike their less advanced counterparts, these vat-grown, gene-enhanced supersoldiers are not expendable. These transhuman warriors are living weapons meticulously crafted from the finest genetic material and further enhanced by superior training and equipment to be the ultimate biological warriors. Though their destructive capabilities are unparalleled, and their resilience is unmatched, the prevalent ultraviolent psychotic breakdowns are a hazard to both friend and foe."
+
+#Cybernetic
+  tech_support_aug_stalker:0 "Special Forces: Augmented Saboteurs"
+  tech_support_aug_stalkers_desc:0 "Cyber-enhanced combat engineers equipped with cutting-edge implants specifically designed to enhance their capabilities in infiltrating enemy lines, dismantling enemy fortifications, destroying materiel, and breaching defended positions. Although effective, maintainence is costly."
+
+  tech_support_terminators:0 "Special Forces: Cyborg Stalkers"
+  tech_support_terminators_desc:0 "These extensively cyborgized infiltrators are furnished with a diverse range of augmentations meticulously crafted to enhance their proficiency in sabotage missions within enemy territory. Leveraging unparalleled stealth abilities, they possess the capability to dismantle an entire enemy command post, obliterate supply storages, or execute precision strikes against high-value targets."
+
+  tech_support_bionic_assassins:0 "Special Forces: Bionic Assassins"
+  tech_support_bionic_assassins_desc:0 "Hyperlethal squads of bionic assassins, armed with only the most advanced stealth and tracking augmentations. No target eludes these cybernetic killers, who specialize in executing decapitation strikes with exceptional proficiency. Their actions leave only fear and terror in the wake, sowing chaos amongst their disorganized enemies' ranks."
+
+#Psionic
+  tech_support_hyperscouts:0 "Special Forces: Hypersense Scouts"
+  tech_support_hyperscouts_desc:0 "Platoons of psionically awakened scouts, seamlessly operate within the ranks of every tactical unit in their army. These proficient scouting teams are blessed with limited hypersensory perception, enabling them to keenly sense enemy movements, intents and remotely observe enemy locations, providing a strategic edge on the battlefield."
+
+  tech_support_psi_rangers:0 "Special Forces: Psi-Rangers"
+  tech_support_psi_rangers_desc:0 "Proficient in clairvoyance, these long-range scouts utilize psychic abilities for precise detection, prediction, and analysis of enemy movements. Their skills not only ensure their commanders stay two steps ahead, but erodes the enemies confidence in their own. The mere presence of these psychically gifted scouts nullifies conventional encryption and operational security methods, amplifying the disruptive influence of their strategic advantage."
+
+  tech_support_precon:0 "Special Forces: Preconnaissance"
+  tech_support_precon_desc:0 "Masters of precognition, these advanced recon teams utilize their preternatural gifts to foresee enemy plans and actions even before they are conceived. At every juncture, enemy commanders encounter thwarted attacks, and troops find themselves under artillery fire the moment they set foot on the battlefield. As long as these precon teams are operational, even the most confident enemy commanders becomes paranoid, their every move shadowed by the unsettling anticipation of devastating counteraction."

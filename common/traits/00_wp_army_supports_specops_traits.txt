@@ -1,7 +1,7 @@
 ####################
 ## SPECIAL FORCES ##
 ####################
-## TIER 1
+## GENETIC
 support_trait_shock_clones = {
 	veteran_class_locked_trait = yes
 	inline_script = {
@@ -11,21 +11,13 @@ support_trait_shock_clones = {
 		COUNCIL = no
 		TIER = 1
 	}
-	icon = "gfx/interface/icons/traits/leader_trait_icons/mobile_defense_kinetic.dds"
+	icon = "gfx/interface/icons/traits/leader_trait_icons/trait_specops_genetic.dds"
 	leader_class = {
 		commander
 	}
-	opposites = {
-		#support_trait_shock_clones
-	}
+	inline_script = "traits/wp_specops_genetic_opposites"
 	army_modifier = {
-		army_damage_mult = -0.05
-		#army_morale_damage_mult = 0.0
-		#army_collateral_damage_mult = 0.0
-		army_health = 0.1
-		#army_morale = 0.0
-		#army_disengage_chance_mult = 0.0
-		#armies_upkeep_mult = -0.0
+		wp_traits_specops_gene_mod = 1
 	}
 	leader_potential_add = {
 		wp_is_general = yes
@@ -34,6 +26,232 @@ support_trait_shock_clones = {
 		weight = @wp_army_supports_trait_weight
 	}
 	prerequisites = {
-		tech_support_coilgun_batteries
+		tech_support_shock_clones
+	}
+}
+
+support_trait_clone_commandos = {
+	veteran_class_locked_trait = yes
+	inline_script = {
+		script = trait/icon
+		CLASS = commander
+		RARITY = common
+		COUNCIL = no
+		TIER = 1
+	}
+	icon = "gfx/interface/icons/traits/leader_trait_icons/trait_specops_genetic.dds"
+	leader_class = {
+		commander
+	}
+	inline_script = "traits/wp_specops_genetic_opposites"
+	army_modifier = {
+		wp_traits_specops_gene_mod = 2
+	}
+	leader_potential_add = {
+		wp_is_general = yes
+	}
+	selectable_weight = {
+		weight = @wp_army_supports_trait_weight
+	}
+	prerequisites = {
+		tech_support_clone_commandos
+	}
+}
+
+support_trait_gene_elite = {
+	veteran_class_locked_trait = yes
+	inline_script = {
+		script = trait/icon
+		CLASS = commander
+		RARITY = common
+		COUNCIL = no
+		TIER = 1
+	}
+	icon = "gfx/interface/icons/traits/leader_trait_icons/trait_specops_genetic.dds"
+	leader_class = {
+		commander
+	}
+	inline_script = "traits/wp_specops_genetic_opposites"
+	army_modifier = {
+		wp_traits_specops_gene_mod = 3
+	}
+	leader_potential_add = {
+		wp_is_general = yes
+	}
+	selectable_weight = {
+		weight = @wp_army_supports_trait_weight
+	}
+	prerequisites = {
+		tech_support_gene_elite
+	}
+}
+
+## CYBERNETIC
+support_trait_aug_stalkers = {
+	veteran_class_locked_trait = yes
+	inline_script = {
+		script = trait/icon
+		CLASS = commander
+		RARITY = common
+		COUNCIL = no
+		TIER = 1
+	}
+	icon = "gfx/interface/icons/traits/leader_trait_icons/trait_specops_cybernetic.dds"
+	leader_class = {
+		commander
+	}
+	inline_script = "traits/wp_specops_cyber_opposites"
+	army_modifier = {
+		wp_traits_specops_cyber_mod = 1
+	}
+	leader_potential_add = {
+		wp_is_general = yes
+	}
+	selectable_weight = {
+		weight = @wp_army_supports_trait_weight
+	}
+	prerequisites = {
+		tech_support_aug_stalkers
+	}
+}
+
+support_trait_terminators = {
+	veteran_class_locked_trait = yes
+	inline_script = {
+		script = trait/icon
+		CLASS = commander
+		RARITY = common
+		COUNCIL = no
+		TIER = 1
+	}
+	icon = "gfx/interface/icons/traits/leader_trait_icons/trait_specops_cybernetic.dds"
+	leader_class = {
+		commander
+	}
+	inline_script = "traits/wp_specops_cyber_opposites"
+	army_modifier = {
+		wp_traits_specops_cyber_mod = 2
+	}
+	leader_potential_add = {
+		wp_is_general = yes
+	}
+	selectable_weight = {
+		weight = @wp_army_supports_trait_weight
+	}
+	prerequisites = {
+		tech_support_terminators
+	}
+}
+
+support_trait_bionic_assassins = {
+	veteran_class_locked_trait = yes
+	inline_script = {
+		script = trait/icon
+		CLASS = commander
+		RARITY = common
+		COUNCIL = no
+		TIER = 1
+	}
+	icon = "gfx/interface/icons/traits/leader_trait_icons/trait_specops_cybernetic.dds"
+	leader_class = {
+		commander
+	}
+	inline_script = "traits/wp_specops_cyber_opposites"
+	army_modifier = {
+		wp_traits_specops_cyber_mod = 3
+	}
+	leader_potential_add = {
+		wp_is_general = yes
+	}
+	selectable_weight = {
+		weight = @wp_army_supports_trait_weight
+	}
+	prerequisites = {
+		tech_support_bionic_assassins
+	}
+}
+
+## PSIONIC
+support_trait_hyperscouts = {
+	veteran_class_locked_trait = yes
+	inline_script = {
+		script = trait/icon
+		CLASS = commander
+		RARITY = common
+		COUNCIL = no
+		TIER = 1
+	}
+	icon = "gfx/interface/icons/traits/leader_trait_icons/trait_specops_psionic.dds"
+	leader_class = {
+		commander
+	}
+	inline_script = "traits/wp_specops_psi_opposites"
+	army_modifier = {
+		wp_traits_specops_psi_mod = 1
+	}
+	leader_potential_add = {
+		wp_is_general = yes
+	}
+	selectable_weight = {
+		weight = @wp_army_supports_trait_weight
+	}
+	prerequisites = {
+		tech_support_hyperscouts
+	}
+}
+
+support_trait_psi_rangers = {
+	veteran_class_locked_trait = yes
+	inline_script = {
+		script = trait/icon
+		CLASS = commander
+		RARITY = common
+		COUNCIL = no
+		TIER = 1
+	}
+	icon = "gfx/interface/icons/traits/leader_trait_icons/trait_specops_psionic.dds"
+	leader_class = {
+		commander
+	}
+	inline_script = "traits/wp_specops_psi_opposites"
+	army_modifier = {
+		wp_traits_specops_psi_mod = 2
+	}
+	leader_potential_add = {
+		wp_is_general = yes
+	}
+	selectable_weight = {
+		weight = @wp_army_supports_trait_weight
+	}
+	prerequisites = {
+		tech_support_psi_rangers
+	}
+}
+
+support_trait_precon = {
+	veteran_class_locked_trait = yes
+	inline_script = {
+		script = trait/icon
+		CLASS = commander
+		RARITY = common
+		COUNCIL = no
+		TIER = 1
+	}
+	icon = "gfx/interface/icons/traits/leader_trait_icons/trait_specops_psionic.dds"
+	leader_class = {
+		commander
+	}
+	inline_script = "traits/wp_specops_psi_opposites"
+	army_modifier = {
+		wp_traits_specops_psi_mod = 3
+	}
+	leader_potential_add = {
+		wp_is_general = yes
+	}
+	selectable_weight = {
+		weight = @wp_army_supports_trait_weight
+	}
+	prerequisites = {
+		tech_support_precon
 	}
 }

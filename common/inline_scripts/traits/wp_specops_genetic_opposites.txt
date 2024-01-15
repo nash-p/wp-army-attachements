@@ -1,0 +1,3 @@
+opposites = {
+	#support_trait_shock_clones
+}

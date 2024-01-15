@@ -19,27 +19,25 @@ Summary of intended changes:
 
 Changelog:
     - Infrastructure changed to Defenses, reworked all traits here
+    - Added special forces group of traits, 1 for each ascension (except Synths) with 3 tiers each
 
 
 # NEW TRAIT CHAINS/UPGRADES
 
-### Design Principles:
-    -- Create a table of x number of rows (=> 3), corresponding to each 'tree/line'
-    -- y number of rows (=> 3), composed of all the possible army_modifiers -1
-    -- each cell on the same row must have a unique number ranging -2 - +2
-    -- there must be 1 column where all cell values are either all positive or all negative
-
-## DEFENSES [4 Lines]
+## DEFENSES [12 Total]
 (Can pick either two static or two mobile, no mixing)
     - Coilgun Batteries > Autocannon CIWS > Heavy AA Batteries         [Normal disengage, increase health, reduce damage, alloy upkeep(+motes)]
     - Neocrete Bunkers > Durasteel Bastions > Living Metal Redoubts    [Reduced disengage, greatly increase health, slightly reduced damage, mineral upkeep(+living metal)]
 
     - Portable Defelctors > Ion Projectors > Mobile Zroshield Units    [Normal disengage, greatly increase health, moderately reduced damage, energy upkeep(+zro)]
-    - Laser Grids > Low Orbit X-Rays > Particle Beam Arrays            [Reduced disengage, increase health, normal damage, energy upkeep(+crystals)]
+    - Laser Grids > X-Rays Towers > Particle Beam Arrays               [Reduced disengage, increase health, normal damage, energy upkeep(+crystals)]
 
 ## SPECIAL FORCES [9 Total]
-(Can pick only one)
-    -armies_alloys_upkeep_add
+(Can pick only one) 
+    - [GENETIC] Shocktrooper Clones > Clone Commandos > Genewarrior Elites
+    - [CYBER] Augmented Sappers > Cyborg Stalkers > Bionic Assassins
+    - [PSI] Hyper Scouts > Psi Rangers > Precon 
+    - All deal bonus morale damage, some more than others
 
 
 ### EQUIPMENT

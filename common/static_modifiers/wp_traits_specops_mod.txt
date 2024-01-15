@@ -1,0 +1,29 @@
+wp_traits_specops_gene_mod = {
+	army_damage_mult = 0.1
+	#army_morale_damage_mult = 0.0
+	#army_collateral_damage_mult = 0.0
+	#army_health = 0.1
+	army_morale = 0.2
+	#army_disengage_chance_mult = 0.0
+	armies_upkeep_mult = 0.2
+}
+
+wp_traits_specops_cyber_mod = {
+	#army_damage_mult = -0.05
+	#army_morale_damage_mult = 0.0
+	#army_collateral_damage_mult = 0.0
+	#army_health = 0.1
+	army_morale = 0.2
+	#army_disengage_chance_mult = 0.0
+	armies_upkeep_mult = 0.1
+}
+
+wp_traits_specops_psi_mod = {
+	#army_damage_mult = 0.0
+	#army_morale_damage_mult = 0.0
+	#army_collateral_damage_mult = 0.0
+	#army_health = 0.1
+	army_morale = 0.1
+	#army_disengage_chance_mult = 0.0
+	#armies_upkeep_mult = -0.0
+}

@@ -1,0 +1,195 @@
+##########################
+## ARMY SUPPORTS
+## BY nash
+##########################
+###########
+# SPECOPS
+###########
+## GENETIC ##
+tech_support_shock_clones = {
+	cost = @tier2cost2
+	area = society
+	tier = 2
+	category = {
+		biology
+	}
+	prerequisites = {
+		"tech_gene_banks"		# Clone Armies
+	}
+	weight = @tier2weight2
+	gateway = army_attachment
+	weight_modifier = {
+	}
+	ai_weight = {
+	}
+	potential = {
+	}
+}
+
+tech_support_clone_commandos = {
+	cost = @tier3cost2
+	area = society
+	tier = 3
+	category = {
+		biology
+	}
+	prerequisites = {
+		"tech_support_shock_clones"
+		"tech_gene_tailoring"
+	}
+	weight = @tier2weight3
+	gateway = army_attachment
+	weight_modifier = {
+	}
+	ai_weight = {
+	}
+	potential = {
+	}
+}
+
+tech_support_gene_elite = {
+	cost = @tier4cost1
+	area = society
+	tier = 4
+	category = {
+		biology
+	}
+	prerequisites = {
+		"tech_support_clone_commandos"
+		"tech_gene_seed_purification"		# gene warriors
+	}
+	weight = @tier3weight3
+	gateway = army_attachment
+	weight_modifier = {
+	}
+	ai_weight = {
+	}
+	potential = {
+	}
+}
+
+## CYBERNETIC ##
+tech_support_aug_stalkers = {
+	cost = @tier3cost1
+	area = engineering
+	tier = 2
+	category = {
+		industry
+	}
+	prerequisites = {
+		"tech_integrated_cybernetics"
+	}
+	weight = @tier2weight2
+	gateway = army_attachment
+	weight_modifier = {
+	}
+	ai_weight = {
+	}
+	potential = {
+	}
+}
+
+tech_support_terminators = {
+	cost = @tier3cost2
+	area = engineering
+	tier = 3
+	category = {
+		materials
+	}
+	prerequisites = {
+		"tech_support_aug_stalkers"
+		"tech_alloys_2"
+	}
+	weight = @tier2weight3
+	gateway = army_attachment
+	weight_modifier = {
+	}
+	ai_weight = {
+	}
+	potential = {
+	}
+}
+
+tech_support_bionic_assassins = {
+	cost = @tier4cost2
+	area = engineering
+	tier = 4
+	category = {
+		industry
+	}
+	prerequisites = {
+		"tech_support_terminators"
+		"tech_robot_assembly_complex"
+	}
+	weight = @tier3weight3
+	gateway = army_attachment
+	weight_modifier = {
+	}
+	ai_weight = {
+	}
+	potential = {
+	}
+}
+
+## PSIONIC ##
+tech_support_hyperscouts = {
+	cost = @tier3cost2
+	area = society
+	tier = 3
+	category = {
+		psionics
+	}
+	prerequisites = {
+		"tech_psionic_theory"
+	}
+	weight = @tier2weight3
+	gateway = army_attachment
+	weight_modifier = {
+	}
+	ai_weight = {
+	}
+	potential = {
+	}
+}
+
+tech_support_psi_rangers = {
+	cost = @tier4cost1
+	area = society
+	tier = 3
+	category = {
+		psionics
+	}
+	prerequisites = {
+		"tech_support_hyperscouts"
+		"tech_telepathy"
+	}
+	weight = @tier3weight2
+	gateway = army_attachment
+	weight_modifier = {
+	}
+	ai_weight = {
+	}
+	potential = {
+	}
+}
+
+tech_support_precon = {
+	cost = @tier4cost3
+	area = society
+	tier = 4
+	category = {
+		psionics
+	}
+	prerequisites = {
+		"tech_support_psi_rangers"
+		"tech_precognition_interface"
+	}
+	weight = @tier4cost1
+	gateway = army_attachment
+	weight_modifier = {
+	}
+	ai_weight = {
+	}
+	potential = {
+	}
+}
