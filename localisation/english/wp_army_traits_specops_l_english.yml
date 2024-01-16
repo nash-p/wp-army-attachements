@@ -10,7 +10,7 @@
   support_trait_gene_elite_desc:0 "Tier 3 Genetic Special Forces\n This general's forces are spearheaded by an elite regiment of genewarriors\n\n$tech_support_gene_elite_desc$"
 
 #Cybernetic
-  support_trait_aug_stalkers:0 "$tech_support_aug_stalker$"
+  support_trait_aug_stalkers:0 "$tech_support_aug_stalkers$"
   support_trait_aug_stalkers_desc:0 "Tier 1 Cybernetic Special Forces\n This general makes use of augmented sappers\n\n$tech_support_aug_stalkers_desc$"
 
   support_trait_terminators:0 "$tech_support_terminators$"

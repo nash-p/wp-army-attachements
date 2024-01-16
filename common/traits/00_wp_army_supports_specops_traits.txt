@@ -31,6 +31,9 @@ support_trait_shock_clones = {
 }
 
 support_trait_clone_commandos = {
+	replace_traits = {
+		support_trait_shock_clones
+	}
 	veteran_class_locked_trait = yes
 	inline_script = {
 		script = trait/icon
@@ -59,6 +62,9 @@ support_trait_clone_commandos = {
 }
 
 support_trait_gene_elite = {
+	replace_traits = {
+		support_trait_shock_clones
+	}
 	veteran_class_locked_trait = yes
 	inline_script = {
 		script = trait/icon
@@ -116,6 +122,9 @@ support_trait_aug_stalkers = {
 }
 
 support_trait_terminators = {
+	replace_traits = {
+		support_trait_aug_stalkers
+	}
 	veteran_class_locked_trait = yes
 	inline_script = {
 		script = trait/icon
@@ -144,6 +153,9 @@ support_trait_terminators = {
 }
 
 support_trait_bionic_assassins = {
+	replace_traits = {
+		support_trait_terminators
+	}
 	veteran_class_locked_trait = yes
 	inline_script = {
 		script = trait/icon
@@ -201,6 +213,9 @@ support_trait_hyperscouts = {
 }
 
 support_trait_psi_rangers = {
+	replace_traits = {
+		support_trait_hyperscouts
+	}
 	veteran_class_locked_trait = yes
 	inline_script = {
 		script = trait/icon
@@ -229,6 +244,9 @@ support_trait_psi_rangers = {
 }
 
 support_trait_precon = {
+	replace_traits = {
+		support_trait_psi_rangers
+	}
 	veteran_class_locked_trait = yes
 	inline_script = {
 		script = trait/icon

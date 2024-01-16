@@ -1,3 +1,11 @@
 opposites = {
 	#support_trait_shock_clones
+	#support_trait_clone_commandos
+	#support_trait_gene_elite
+	support_trait_aug_stalkers
+	support_trait_terminators
+	support_trait_bionic_assassins
+	support_trait_hyperscouts
+	support_trait_psi_rangers
+	support_trait_precon
 }
