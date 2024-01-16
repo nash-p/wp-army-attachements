@@ -6,7 +6,7 @@
   support_trait_clone_commandos:0 "$tech_support_clone_commandos$"
   support_trait_clone_commandos_desc:0 "Tier 2 Genetic Special Forces\n This general employs several companies of clone commandos\n\n$tech_support_clone_commandos_desc$"
 
-  support_trait_gene_elite:0 "$tech_support_clone_commandos$"
+  support_trait_gene_elite:0 "$tech_support_gene_elite$"
   support_trait_gene_elite_desc:0 "Tier 3 Genetic Special Forces\n This general's forces are spearheaded by an elite regiment of genewarriors\n\n$tech_support_gene_elite_desc$"
 
 #Cybernetic

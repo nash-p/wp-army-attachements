@@ -37,7 +37,7 @@ support_trait_clone_commandos = {
 		CLASS = commander
 		RARITY = common
 		COUNCIL = no
-		TIER = 1
+		TIER = 2
 	}
 	icon = "gfx/interface/icons/traits/leader_trait_icons/trait_specops_genetic.dds"
 	leader_class = {
@@ -65,7 +65,7 @@ support_trait_gene_elite = {
 		CLASS = commander
 		RARITY = common
 		COUNCIL = no
-		TIER = 1
+		TIER = 3
 	}
 	icon = "gfx/interface/icons/traits/leader_trait_icons/trait_specops_genetic.dds"
 	leader_class = {
@@ -122,7 +122,7 @@ support_trait_terminators = {
 		CLASS = commander
 		RARITY = common
 		COUNCIL = no
-		TIER = 1
+		TIER = 2
 	}
 	icon = "gfx/interface/icons/traits/leader_trait_icons/trait_specops_cybernetic.dds"
 	leader_class = {
@@ -150,7 +150,7 @@ support_trait_bionic_assassins = {
 		CLASS = commander
 		RARITY = common
 		COUNCIL = no
-		TIER = 1
+		TIER = 3
 	}
 	icon = "gfx/interface/icons/traits/leader_trait_icons/trait_specops_cybernetic.dds"
 	leader_class = {
@@ -207,7 +207,7 @@ support_trait_psi_rangers = {
 		CLASS = commander
 		RARITY = common
 		COUNCIL = no
-		TIER = 1
+		TIER = 2
 	}
 	icon = "gfx/interface/icons/traits/leader_trait_icons/trait_specops_psionic.dds"
 	leader_class = {
@@ -235,7 +235,7 @@ support_trait_precon = {
 		CLASS = commander
 		RARITY = common
 		COUNCIL = no
-		TIER = 1
+		TIER = 3
 	}
 	icon = "gfx/interface/icons/traits/leader_trait_icons/trait_specops_psionic.dds"
 	leader_class = {

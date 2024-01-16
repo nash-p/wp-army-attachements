@@ -10,7 +10,7 @@
   tech_support_gene_elite_desc:0 "Unlike their less advanced counterparts, these vat-grown, gene-enhanced supersoldiers are not expendable. These transhuman warriors are living weapons meticulously crafted from the finest genetic material and further enhanced by superior training and equipment to be the ultimate biological warriors. Though their destructive capabilities are unparalleled, and their resilience is unmatched, the prevalent ultraviolent psychotic breakdowns are a hazard to both friend and foe."
 
 #Cybernetic
-  tech_support_aug_stalker:0 "Special Forces: Augmented Saboteurs"
+  tech_support_aug_stalkers:0 "Special Forces: Augmented Saboteurs"
   tech_support_aug_stalkers_desc:0 "Cyber-enhanced combat engineers equipped with cutting-edge implants specifically designed to enhance their capabilities in infiltrating enemy lines, dismantling enemy fortifications, destroying materiel, and breaching defended positions. Although effective, maintainence is costly."
 
   tech_support_terminators:0 "Special Forces: Cyborg Stalkers"

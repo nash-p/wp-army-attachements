@@ -39,6 +39,15 @@ Changelog:
     - [PSI] Hyper Scouts > Psi Rangers > Precon 
     - All deal bonus morale damage, some more than others
 
+### VEHICLES []
+    - Dropships > Drop pods
+    - Strider > Mech > Armageddon
+    - Hover tank > ATV
+    - TODO: ATV > Tank
+    - Plasma plane > Speeder
+    - TODO: Speeder > Plane
+
+
 
 ### EQUIPMENT
     - Power armor > Nerve Armor > Living Armor
