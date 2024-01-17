@@ -1,5 +1,17 @@
 namespace = wp_supports_army_hab
-# Applies a buff/debuff to a general if >0.5 of his armies have good/bad habitability on planet
+planet_event = {
+	id = wp_supports_army_hab.1
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		planet_event = {
+			id = wp_supports_army_hab.2
+			days = 1
+		}
+	}
+}
+
+# Applies a buff/debuff to a general if >@wp_army_supports_hab_army_percentage (0.5) of his armies have good/bad habitability on planet
 planet_event = {
 	id = wp_supports_army_hab.2
 	is_triggered_only = yes
@@ -19,9 +31,6 @@ planet_event = {
 					is_robotic = no
 				}
 			}
-			leader = {
-				save_event_target_as = attacking_general
-			}
 			root = {
 				change_variable = {
 					which = num_atk_army_planet_var
@@ -29,7 +38,7 @@ planet_event = {
 				}
 			}
 		}
-		# Creates a var to check if up to half the attackers army has met the hab requirements
+		# Creates a var to check if up to x the attackers army has met the hab requirements
 		set_variable = {
 			which = half_num_atk_army_planet_var
 			value = num_atk_army_planet_var
@@ -43,17 +52,28 @@ planet_event = {
 				count_ground_combat_attacker = {
 					count = half_num_atk_army_planet_var
 					limit = {
-						habitability = {
-							who = this
-							value > @wp_army_supports_hab_bonus_min
+						exists = species
+						species = {
+							is_robotic = no
+						}
+						prev = {
+							habitability = {
+								who = prev.species
+								value < @wp_army_supports_hab_debuff_min
+							}
 						}
 					}
 				}
 			}
-			event_target:attacking_general = {
-				add_trait = support_trait_hab_bonus
-				set_leader_flag = wp_hab_attacking_general_flag
-				log = "WP_SUPPORTS.LOG: Added modifier trait wp_army_hab_bonus"
+			random_ground_combat_attacker = {
+				limit = {
+					exists = leader
+				}
+				leader = {
+					add_trait = support_trait_hab_bonus
+					set_leader_flag = wp_hab_attacking_general_flag
+					log = "WP_SUPPORTS.LOG: Added modifier trait wp_army_hab_bonus"
+				}
 			}
 		}
 		if = {
@@ -61,18 +81,41 @@ planet_event = {
 				count_ground_combat_attacker = {
 					count = half_num_atk_army_planet_var
 					limit = {
-						habitability = {
-							who = this
-							value < @wp_army_supports_hab_debuff_min
+						exists = species
+						species = {
+							is_robotic = no
+						}
+						prev = {
+							habitability = {
+								who = prev.species
+								value < @wp_army_supports_hab_debuff_min
+							}
 						}
 					}
 				}
 			}
-			event_target:attacking_general = {
-				add_trait = support_trait_hab_malus
-				set_leader_flag = wp_hab_attacking_general_flag
-				log = "WP_SUPPORTS.LOG: Added modifier trait wp_army_hab_malus"
+			random_ground_combat_attacker = {
+				limit = {
+					exists = leader
+				}
+				leader = {
+					add_trait = support_trait_hab_malus
+					set_leader_flag = wp_hab_attacking_general_flag
+					log = "WP_SUPPORTS.LOG: Added modifier trait support_trait_hab_malus"
+				}
 			}
+		}
+	}
+}
+
+country_event = {
+	id = wp_supports_army_hab.3
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		country_event = {
+			id = wp_supports_army_hab.4
+			days = 1
 		}
 	}
 }
@@ -80,19 +123,25 @@ planet_event = {
 # Iterates through every commander of a attacking country after the end of ground combat
 # Checks if the commander has the flag OR buff/debuff trait, removes both
 country_event = {
-	id = wp_supports_army_hab.3
+	id = wp_supports_army_hab.4
 	is_triggered_only = yes
 	hide_window = yes
 	immediate = {
+		log = "WP_SUPPORTS.LOG: Started EVENT:wp_supports_army_hab.4"
 		every_owned_leader = {
 			limit = {
 				leader_class = commander
-				# if he is on a planet, make sure he isn't in combat
+				# if he is on a planet, make sure he isn't in combat, otherwise nothing
 				OR = {
 					AND = {
 						exists = planet
 						planet = {
 							has_ground_combat = no
+						}
+					}
+					AND = {
+						NOT = {
+							exists = planet
 						}
 					}
 				}
@@ -106,6 +155,46 @@ country_event = {
 			remove_trait = support_trait_hab_bonus
 			remove_trait = support_trait_hab_malus
 			remove_leader_flag = wp_hab_attacking_general_flag
+		}
+	}
+}
+
+# Used for testing the above events, not meant to be in prod
+planet_event = {
+	id = wp_supports_army_hab.99
+	is_triggered_only = yes
+	hide_window = yes
+	pre_triggers = {
+		has_ground_combat = yes
+	}
+	immediate = {
+		log = "WP_SUPPORTS.LOG: Started EVENT:wp_supports_army_hab.4"
+		set_variable = {
+			which = num_army
+			value = 0
+		}
+		every_ground_combat_attacker = {
+			limit = {
+				exists = species
+			}
+			log = "WP_SUPPORTS.LOG: Found an ARMY:[this.GetName]"
+			prev = {
+				change_variable = {
+					which = num_army
+					value = 1
+				}
+			}
+		}
+		log = "WP_SUPPORTS.LOG: has counted [this.num_army] Armies"
+		random_ground_combat_attacker = {
+			limit = {
+				exists = leader
+			}
+			leader = {
+				add_trait = support_trait_hab_bonus
+				set_leader_flag = wp_hab_attacking_general_flag
+				log = "WP_SUPPORTS.LOG: Added modifier trait wp_army_hab_bonus"
+			}
 		}
 	}
 }

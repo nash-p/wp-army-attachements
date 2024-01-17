@@ -1,6 +1,6 @@
 on_ground_combat_started = {
 	events = {
-		wp_supports_army_hab.2
+		wp_supports_army_hab.1
 	}
 }
 
