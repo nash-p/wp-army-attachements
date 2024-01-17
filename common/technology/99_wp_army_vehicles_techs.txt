@@ -17,7 +17,7 @@ tech_support_tac_airlift = {
 		"tech_thrusters_2"
 	}
 	weight = @tier1weight3
-	gateway = army_attachment	
+	gateway = army_attachment
 	weight_modifier = {
 	}
 	ai_weight = {
@@ -34,7 +34,7 @@ tech_support_dropship = {
 		propulsion
 	}
 	prerequisites = {
-		"tech_support_dropship"
+		"tech_support_tac_airlift"
 		"tech_thrusters_4"
 	}
 	weight = @tier3weight3
@@ -91,7 +91,7 @@ tech_support_landcruiser = {
 
 ## ORBITAL ##
 tech_support_supply_pod = {
-	cost = @tier2cost4
+	cost = @tier3cost1
 	area = society
 	tier = 2
 	category = {
@@ -101,7 +101,7 @@ tech_support_supply_pod = {
 		"tech_engineering_2"
 	}
 	weight = @tier2weight2
-	gateway = army_attachment	
+	gateway = army_attachment
 	weight_modifier = {
 	}
 	ai_weight = {

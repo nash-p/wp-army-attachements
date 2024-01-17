@@ -25,3 +25,6 @@
   wp_traits_static_defense_kinetic_mod:0 ""
   wp_traits_mobile_defense_energy_mod:0 ""
   wp_traits_static_defense_energy_mod:0 ""
+  wp_traits_vehicles_air_mod:0 ""
+  wp_traits_vehicles_ground_mod:0 ""
+  wp_traits_vehicles_orbital_mod:0 ""
