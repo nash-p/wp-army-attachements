@@ -19,9 +19,6 @@ planet_event = {
 					is_robotic = no
 				}
 			}
-			leader = {
-				save_event_target_as = attacking_general
-			}
 			root = {
 				change_variable = {
 					which = num_atk_army_planet_var
@@ -43,17 +40,28 @@ planet_event = {
 				count_ground_combat_attacker = {
 					count = half_num_atk_army_planet_var
 					limit = {
-						habitability = {
-							who = this
-							value > @wp_army_supports_hab_bonus_min
+						exists = species
+						species = {
+							is_robotic = no
+						}
+						prev = {
+							habitability = {
+								who = prev.species
+								value < @wp_army_supports_hab_debuff_min
+							}
 						}
 					}
 				}
 			}
-			event_target:attacking_general = {
-				add_trait = support_trait_hab_bonus
-				set_leader_flag = wp_hab_attacking_general_flag
-				log = "WP_SUPPORTS.LOG: Added modifier trait wp_army_hab_bonus"
+			random_ground_combat_attacker = {
+				limit = {
+					exists = leader
+				}
+				leader = {
+					add_trait = support_trait_hab_bonus
+					set_leader_flag = wp_hab_attacking_general_flag
+					log = "WP_SUPPORTS.LOG: Added modifier trait wp_army_hab_bonus"
+				}
 			}
 		}
 		if = {
@@ -61,17 +69,28 @@ planet_event = {
 				count_ground_combat_attacker = {
 					count = half_num_atk_army_planet_var
 					limit = {
-						habitability = {
-							who = this
-							value < @wp_army_supports_hab_debuff_min
+						exists = species
+						species = {
+							is_robotic = no
+						}
+						prev = {
+							habitability = {
+								who = prev.species
+								value < @wp_army_supports_hab_debuff_min
+							}
 						}
 					}
 				}
 			}
-			event_target:attacking_general = {
-				add_trait = support_trait_hab_malus
-				set_leader_flag = wp_hab_attacking_general_flag
-				log = "WP_SUPPORTS.LOG: Added modifier trait wp_army_hab_malus"
+			random_ground_combat_attacker = {
+				limit = {
+					exists = leader
+				}
+				leader = {
+					add_trait = support_trait_hab_bonus
+					set_leader_flag = wp_hab_attacking_general_flag
+					log = "WP_SUPPORTS.LOG: Added modifier trait wp_army_hab_bonus"
+				}
 			}
 		}
 	}
@@ -106,6 +125,26 @@ country_event = {
 			remove_trait = support_trait_hab_bonus
 			remove_trait = support_trait_hab_malus
 			remove_leader_flag = wp_hab_attacking_general_flag
+		}
+	}
+}
+
+planet_event = {
+	id = wp_supports_army_hab.4
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		log = "WP_SUPPORTS.LOG: Started EVENT:wp_supports_army_hab.4"
+		random_ground_combat_attacker = {
+			limit = {
+				exists = leader
+			}
+			log = "WP_SUPPORTS.LOG: Found something"
+			leader = {
+				add_trait = support_trait_hab_bonus
+				set_leader_flag = wp_hab_attacking_general_flag
+				log = "WP_SUPPORTS.LOG: Added modifier trait wp_army_hab_bonus"
+			}
 		}
 	}
 }
