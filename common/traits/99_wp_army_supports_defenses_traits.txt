@@ -109,7 +109,7 @@ support_trait_neocrete_bunkers = {
 	leader_class = {
 		commander
 	}
-	inline_scipt = "traits/wp_static_defense_oppposites"
+	inline_script = "traits/wp_static_defense_oppposites"
 	army_modifier = {
 		wp_traits_static_defense_kinetic_mod = 1
 	}
@@ -140,7 +140,7 @@ support_trait_living_redoubts = {
 	leader_class = {
 		commander
 	}
-	inline_scipt = "traits/wp_static_defense_oppposites"
+	inline_script = "traits/wp_static_defense_oppposites"
 	army_modifier = {
 		wp_traits_static_defense_kinetic_mod = 3
 	}
@@ -174,7 +174,7 @@ support_trait_durasteel_bastions = {
 	leader_class = {
 		commander
 	}
-	inline_scipt = "traits/wp_static_defense_oppposites"
+	inline_script = "traits/wp_static_defense_oppposites"
 	army_modifier = {
 		wp_traits_static_defense_kinetic_mod = 2
 	}
@@ -297,7 +297,7 @@ support_trait_laser_grids = {
 	leader_class = {
 		commander
 	}
-	inline_scipt = "traits/wp_static_defense_oppposites"
+	inline_script = "traits/wp_static_defense_oppposites"
 	army_modifier = {
 		wp_traits_static_defense_energy_mod = 1
 	}
@@ -328,7 +328,7 @@ support_trait_xray_tower = {
 	leader_class = {
 		commander
 	}
-	inline_scipt = "traits/wp_static_defense_oppposites"
+	inline_script = "traits/wp_static_defense_oppposites"
 	army_modifier = {
 		wp_traits_static_defense_energy_mod = 2
 	}
@@ -359,7 +359,7 @@ support_trait_beam_array = {
 	leader_class = {
 		commander
 	}
-	inline_scipt = "traits/wp_static_defense_oppposites"
+	inline_script = "traits/wp_static_defense_oppposites"
 	army_modifier = {
 		wp_traits_static_defense_energy_mod = 3
 	}

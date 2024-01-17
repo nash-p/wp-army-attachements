@@ -1,5 +1,4 @@
 # Checks if the leader is a general based on traits or Paragons DLC subclass
-
 wp_is_general = {
 	OR = {
 		AND = {

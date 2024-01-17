@@ -1,17 +1,17 @@
 wp_traits_mobile_defense_kinetic_mod = {
-	army_damage_mult = -0.05
+	army_damage_mult = -0.025
 	army_health = 0.15
 }
 
 wp_traits_static_defense_kinetic_mod = {
-	army_damage_mult = -0.05
-	army_health = 0.25
+	army_damage_mult = -0.025
+	army_health = 0.3
 	army_disengage_chance_mult = -0.25
 }
 
 wp_traits_mobile_defense_energy_mod = {
-	army_damage_mult = -0.1
-	army_health = 0.25
+	army_damage_mult = -0.05
+	army_health = 0.3
 }
 
 wp_traits_static_defense_energy_mod = {
