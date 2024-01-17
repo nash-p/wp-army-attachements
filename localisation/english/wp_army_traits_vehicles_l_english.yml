@@ -1,0 +1,25 @@
+﻿l_english:
+#Air
+  support_trait_tac_airlift:0 "$tech_support_tac_airlift$"
+  support_trait_tac_airlift_desc:0 "Tier 1 Air Vehicles\n$tech_support_tac_airlift_desc$"
+
+  support_trait_dropship:0 "$tech_support_dropship$"
+  support_trait_dropship_desc:0 "Tier 1 Air Vehicles\n$tech_support_dropship_desc$"
+
+#Ground
+  support_trait_mtv:0 "$tech_support_mtv$"
+  support_trait_mtv_desc:0 "Tier 1 Ground Vehicles\n$tech_support_mtv_desc$"
+
+  support_trait_landcruiser:0 "$tech_support_landcruiser$"
+  support_trait_landcruiser_desc:0 "Tier 2 Ground Vehicles\n$tech_support_landcruiser_desc$"
+
+#Orbital
+  support_trait_supply_pod:0 "$tech_support_supply_pod$"
+  support_trait_supply_pod_desc:0 "Tier 1 Orbital Vehicles\n$tech_support_supply_pod_desc$"
+
+  support_trait_odst:0 "$tech_support_odst$"
+  support_trait_odst_desc:0 "Tier 2 Orbital Vehicles\n$tech_support_odst_desc$"
+
+
+
+

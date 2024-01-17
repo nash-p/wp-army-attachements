@@ -1,0 +1,8 @@
+opposites = {
+	#support_trait_tac_airlift
+	#support_trait_dropship
+	support_trait_mtv
+	support_trait_landcruiser
+	support_trait_supply_pod
+	support_trait_odst
+}

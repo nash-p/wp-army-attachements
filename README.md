@@ -18,8 +18,9 @@ Summary of intended changes:
     - Some lore/description editing to be more... in tune
 
 Changelog:
-    - Infrastructure changed to Defenses, reworked all traits here
-    - Reinforcements changed to special forces group of traits, 1 for each ascension (except Synths) with 3 tiers each
+    - Infrastructure changed to Defenses, reworked all traits here, focused on HP      
+    - Reinforcements changed to special forces group of traits, 1 for each ascension (except Synths) with 3 tiers each, focused on morale damage
+    - Redid vehicles into 6 distinct traits focused on disengage chance
 
 
 # NEW TRAIT CHAINS/UPGRADES
@@ -39,14 +40,10 @@ Changelog:
     - [PSI] Hyper Scouts > Psi Rangers > Precon 
     - All deal bonus morale damage, some more than others
 
-### VEHICLES []
-    - Dropships > Drop pods
-    - Strider > Mech > Armageddon
-    - Hover tank > ATV
-    - TODO: ATV > Tank
-    - Plasma plane > Speeder
-    - TODO: Speeder > Plane
-
+### VEHICLES [6 Total]
+    - [AIR]: Tactical Airlift > Heavy Dropships
+    - [GROUND]: Mulit-Terrain Vehicles > Heavy Landcruisers 
+    - [ORBIT]: Ordnance pods > Drop pods
 
 
 ### EQUIPMENT

@@ -1,0 +1,21 @@
+﻿l_english:
+#Air
+  tech_support_tac_airlift:0 "Vehicles: Tactical Airlifters"
+  tech_support_tac_airlift_desc:0 "Numerous compact aircraft designed for transporting troops, supplies, and equipment to and from the battlefield. They can swiftly deploy troops near the frontline or execute quick tactical retreats as needed."
+
+  tech_support_dropship:0 "Vehicles: Heavy Dropships"
+  tech_support_dropship_desc:0 "Mighty armed gunships which straddle the boundary between airborne transport and spacecraft. These colossal aircraft can efficiently transport entire troop companies and equipment to any battlespace on a planet while simultaneously providing close air support or acting as an airborne command centre. Despite their effectiveness, these machines are still vulnerable to enemy anti-air defenses."
+
+#Ground
+  tech_support_mtv:0 "Vehicles: Multi-Terrain Vehicles"
+  tech_support_mtv_desc:0 "An array of land-based armored personnel transports, engineered for traversing vast distances across diverse biomes. These robustly armored machines are capable of efficiently and securely transporting occupants to virtually any frontline, rapidly deliver needed supplies or strategically outmaneuvere incoming foes, all while operating under intense gunfire."
+
+  tech_support_landcruiser:0 "Vehicles: Heavy Landcruisers"
+  tech_support_landcruiser_desc:0 "Enormous land supercarriers, fortified with layers of the sturdiest superalloys, designed to withstand the most potent of enemy ordnance. These mobile fortresses are capable of deploying entire battalions of troops right at an enemy's doorstep. Despite their undeniable strategic value, the operational cost of maintaining these colossal machines remains a persistent concern for logistics officers."
+
+#Orbital
+  tech_support_supply_pod:0 "Vehicles: Orbital Rearmament Capsules"
+  tech_support_supply_pod_desc:0 "Efficient orbital supply capsules, crafted for precise delivery of supplies and equipment to any location on a planet. These orbit-to-ground delivery systems offer can offer instant resupply to troops in combat or provide the necessary firepower and ordnance to defeat any obstacle."
+
+  tech_support_odst:0 "Vehicles: Orbital Drop Pods"
+  tech_support_odst_desc:0 "These single-use exoatmospheric insertion vehicles, launched from either terrestrial bases or orbiting carriers, can swiftly deliver an entire army to any point on a planet within minutes. With a smaller profile and rapid reentry, these vehicles are less vulnerable to enemy anti-air fire compared to traditional dropships. Witnessing these helljumpers make their fiery entry has the power to rally even the most demoralized army."

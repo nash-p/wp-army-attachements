@@ -1,0 +1,132 @@
+##########################
+## ARMY SUPPORTS
+## BY nash
+##########################
+###########
+# VEHICLES
+###########
+## AIR ##
+tech_support_tac_airlift = {
+	cost = @tier2cost2
+	area = society
+	tier = 2
+	category = {
+		propulsion
+	}
+	prerequisites = {
+		"tech_thrusters_2"
+	}
+	weight = @tier1weight3
+	gateway = army_attachment	
+	weight_modifier = {
+	}
+	ai_weight = {
+	}
+	potential = {
+	}
+}
+
+tech_support_dropship = {
+	cost = @tier4cost2
+	area = society
+	tier = 4
+	category = {
+		propulsion
+	}
+	prerequisites = {
+		"tech_support_dropship"
+		"tech_thrusters_4"
+	}
+	weight = @tier3weight3
+	gateway = army_attachment
+	weight_modifier = {
+	}
+	ai_weight = {
+	}
+	potential = {
+	}
+}
+
+## GROUND ##
+tech_support_mtv = {
+	cost = @tier2cost2
+	area = engineering
+	tier = 2
+	category = {
+		materials
+	}
+	prerequisites = {
+		"tech_advanced_metallurgy_1"
+	}
+	weight = @tier1weight3
+	gateway = army_attachment
+	weight_modifier = {
+	}
+	ai_weight = {
+	}
+	potential = {
+	}
+}
+
+tech_support_landcruiser = {
+	cost = @tier4cost2
+	area = engineering
+	tier = 4
+	category = {
+		materials
+	}
+	prerequisites = {
+		"tech_support_mtv"
+		"tech_advanced_metallurgy_2"
+	}
+	weight = @tier3weight3
+	gateway = army_attachment
+	weight_modifier = {
+	}
+	ai_weight = {
+	}
+	potential = {
+	}
+}
+
+## ORBITAL ##
+tech_support_supply_pod = {
+	cost = @tier2cost4
+	area = society
+	tier = 2
+	category = {
+		industry
+	}
+	prerequisites = {
+		"tech_engineering_2"
+	}
+	weight = @tier2weight2
+	gateway = army_attachment	
+	weight_modifier = {
+	}
+	ai_weight = {
+	}
+	potential = {
+	}
+}
+
+tech_support_odst = {
+	cost = @tier4cost3
+	area = society
+	tier = 4
+	category = {
+		industry
+	}
+	prerequisites = {
+		"tech_support_supply_pod"
+		"tech_engineering_3"
+	}
+	weight = @tier4weight1
+	gateway = army_attachment
+	weight_modifier = {
+	}
+	ai_weight = {
+	}
+	potential = {
+	}
+}

@@ -1,8 +1,8 @@
 ## Base weight for support traits
 @wp_army_supports_trait_weight = 200
 ## Bonuses/Debuffs for armies when attacking planets
-@wp_army_supports_hab_bonus_min = 0.8
+@wp_army_supports_hab_bonus_min = 0.2
 @wp_army_supports_hab_debuff_min = 0.5
 # Min Percentage of an army for which hab is > or < above values
-@wp_army_supports_hab_army_percentage = 0.5
+@wp_army_supports_hab_army_percentage = 0.1
 ### EOF Comment ###

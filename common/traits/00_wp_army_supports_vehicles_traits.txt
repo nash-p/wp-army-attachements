@@ -1,0 +1,184 @@
+##############
+## VEHICLES ##
+##############
+## AIR
+support_trait_tac_airlift = {
+	veteran_class_locked_trait = yes
+	inline_script = {
+		script = trait/icon
+		CLASS = commander
+		RARITY = common
+		COUNCIL = no
+		TIER = 1
+	}
+	icon = "gfx/interface/icons/traits/leader_trait_icons/support_trait_air.dds"
+	leader_class = {
+		commander
+	}
+	inline_script = "traits/wp_vehicles_air_opposites"
+	army_modifier = {
+		wp_traits_vehicles_air_mod = 1
+	}
+	leader_potential_add = {
+		wp_is_general = yes
+	}
+	selectable_weight = {
+		weight = @wp_army_supports_trait_weight
+	}
+	prerequisites = {
+		tech_support_tac_airlift
+	}
+}
+
+support_trait_dropship = {
+	replace_traits = {
+		support_trait_tac_airlift
+	}
+	veteran_class_locked_trait = yes
+	inline_script = {
+		script = trait/icon
+		CLASS = commander
+		RARITY = common
+		COUNCIL = no
+		TIER = 2
+	}
+	icon = "gfx/interface/icons/traits/leader_trait_icons/support_trait_air.dds"
+	leader_class = {
+		commander
+	}
+	inline_script = "traits/wp_vehicles_air_opposites"
+	army_modifier = {
+		wp_traits_vehicles_air_mod = 2
+	}
+	leader_potential_add = {
+		wp_is_general = yes
+	}
+	selectable_weight = {
+		weight = @wp_army_supports_trait_weight
+	}
+	prerequisites = {
+		tech_support_dropship
+	}
+}
+
+
+## GROUND
+support_trait_mtv = {
+	veteran_class_locked_trait = yes
+	inline_script = {
+		script = trait/icon
+		CLASS = commander
+		RARITY = common
+		COUNCIL = no
+		TIER = 1
+	}
+	icon = "gfx/interface/icons/traits/leader_trait_icons/support_trait_ground.dds"
+	leader_class = {
+		commander
+	}
+	inline_script = "traits/wp_vehicles_ground_opposites"
+	army_modifier = {
+		wp_traits_vehicles_ground_mod = 1
+	}
+	leader_potential_add = {
+		wp_is_general = yes
+	}
+	selectable_weight = {
+		weight = @wp_army_supports_trait_weight
+	}
+	prerequisites = {
+		tech_support_mtv
+	}
+}
+
+support_trait_landcruiser = {
+	replace_traits = {
+		support_trait_mtv
+	}
+	veteran_class_locked_trait = yes
+	inline_script = {
+		script = trait/icon
+		CLASS = commander
+		RARITY = common
+		COUNCIL = no
+		TIER = 2
+	}
+	icon = "gfx/interface/icons/traits/leader_trait_icons/support_trait_ground.dds"
+	leader_class = {
+		commander
+	}
+	inline_script = "traits/wp_vehicles_ground_opposites"
+	army_modifier = {
+		wp_traits_vehicles_ground_mod = 2
+	}
+	leader_potential_add = {
+		wp_is_general = yes
+	}
+	selectable_weight = {
+		weight = @wp_army_supports_trait_weight
+	}
+	prerequisites = {
+		tech_support_landcruiser
+	}
+}
+
+
+## ORBITAL
+support_trait_supply_pod = {
+	veteran_class_locked_trait = yes
+	inline_script = {
+		script = trait/icon
+		CLASS = commander
+		RARITY = common
+		COUNCIL = no
+		TIER = 1
+	}
+	icon = "gfx/interface/icons/traits/leader_trait_icons/support_trait_orbital.dds"
+	leader_class = {
+		commander
+	}
+	inline_script = "traits/wp_vehicles_orbital_opposites"
+	army_modifier = {
+		wp_traits_vehicles_orbital_mod = 1
+	}
+	leader_potential_add = {
+		wp_is_general = yes
+	}
+	selectable_weight = {
+		weight = @wp_army_supports_trait_weight
+	}
+	prerequisites = {
+		tech_support_supply_pod
+	}
+}
+
+support_trait_odst = {
+	replace_traits = {
+		support_trait_supply_pod
+	}
+	veteran_class_locked_trait = yes
+	inline_script = {
+		script = trait/icon
+		CLASS = commander
+		RARITY = common
+		COUNCIL = no
+		TIER = 2
+	}
+	icon = "gfx/interface/icons/traits/leader_trait_icons/support_trait_orbital.dds"
+	leader_class = {
+		commander
+	}
+	inline_script = "traits/wp_vehicles_orbital_opposites"
+	army_modifier = {
+		wp_traits_vehicles_orbital_mod = 2
+	}
+	leader_potential_add = {
+		wp_is_general = yes
+	}
+	selectable_weight = {
+		weight = @wp_army_supports_trait_weight
+	}
+	prerequisites = {
+		tech_support_odst
+	}
+}
