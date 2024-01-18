@@ -1,20 +1,19 @@
 wp_traits_vehicles_air_mod = {
-	army_disengage_chance_mult = 0.3
-	armies_upkeep_mult = 0.15
-	army_damage_mult = 0.075
-	army_health = -0.075
+	army_disengage_chance_mult = 0.5
+	armies_upkeep_mult = 0.25
+	army_damage_mult = 0.1
+	army_health = -0.05
 }
 
 wp_traits_vehicles_ground_mod = {
-	army_disengage_chance_mult = 0.15
+	army_disengage_chance_mult = 0.25
 	armies_upkeep_mult = 0.3
 	army_health = 0.25
 }
 
 wp_traits_vehicles_orbital_mod = {
-	army_disengage_chance_mult = 0.15
-	armies_upkeep_mult = 0.15
-	army_damage_mult = 0.075
+	army_disengage_chance_mult = 0.25
+	armies_upkeep_mult = 0.2
+	army_damage_mult = 0.1
 	army_morale = 0.05
-
 }
